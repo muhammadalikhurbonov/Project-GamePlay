@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 @font-face {
   font-family: "Font Over";
-  src: url(../font/over/Over.ttf);
+  src: url(../font/font_over/Font\ Over.otf), url(../font/font_over/Notes.txt);
 }
 @font-face {
   font-family: "Cyberpunk";
@@ -16,8 +16,248 @@
   padding: 0;
   box-sizing: border-box;
 }
+* body {
+  background: #1e1e1e;
+}
 * body .container {
   border: 2px solid red;
+}
+* body .container main .section_main {
+  position: relative;
+  background: url(../img/section_main_backdround.png);
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-bottom: 240px;
+}
+* body .container main .section_main .section_main_backdround {
+  z-index: -1;
+  position: absolute;
+  width: 1920px;
+  height: 1273px;
+  top: 0;
+  left: 0;
+}
+* body .container main .section_main .section_main_backdround img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+* body .container main .section_main header {
+  z-index: 99;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 9;
+  padding: 37px 79px 0 79px;
+}
+* body .container main .section_main header .header_left ul {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+* body .container main .section_main header .header_left ul li {
+  list-style-type: none;
+}
+* body .container main .section_main header .header_left ul li:nth-of-type(2) {
+  margin-top: 10px;
+  margin-bottom: 17px;
+}
+* body .container main .section_main header .header_left ul li:nth-of-type(4) {
+  margin-top: 18px;
+}
+* body .container main .section_main header .header_left ul li:nth-of-type(5) {
+  margin-top: 18px;
+}
+* body .container main .section_main header .header_left ul li:nth-of-type(6) {
+  margin-top: 18px;
+}
+* body .container main .section_main header .header_left ul li a {
+  text-decoration: none;
+  font-family: "Font Over";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 120%;
+  display: flex;
+  align-items: center;
+  text-align: right;
+  font-feature-settings: "liga" off;
+  background: linear-gradient(233.38deg, #fcdaff -32.6%, #cf52fe 59.62%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+* body .container main .section_main header .header_right {
+  margin-bottom: 55px;
+}
+* body .container main .section_main header .header_right ul {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+* body .container main .section_main header .header_right ul li {
+  list-style-type: none;
+}
+* body .container main .section_main header .header_right ul li:nth-of-type(2) {
+  margin-top: 10px;
+  margin-bottom: 17px;
+}
+* body .container main .section_main header .header_right ul li a {
+  text-decoration: none;
+  font-family: "Font Over";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 120%;
+  display: flex;
+  align-items: center;
+  text-align: right;
+  font-feature-settings: "liga" off;
+  background: linear-gradient(233.38deg, #fcdaff -32.6%, #cf52fe 59.62%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+* body .container main .section_main .section_main_item .section_main_item_child {
+  display: flex;
+  flex-direction: column;
+  margin-left: 508px;
+}
+* body .container main .section_main .section_main_item .section_main_item_child .section_main_item_child_row:first-of-type {
+  width: 346px;
+  max-width: 346px;
+  height: 177px;
+  max-height: 177px;
+  background-image: url(/./assets/img/section_main_item_child_row.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+* body .container main .section_main .section_main_item .section_main_item_child .section_main_item_child_row:first-of-type h3 {
+  font-family: "Font Over";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 120%;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  font-feature-settings: "liga" off;
+  background: radial-gradient(73.08% 73.08% at 50% -0.51%, #69fedb 0%, #11e5b3 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  border: 1px solid rgba(0, 103, 79, 0.2);
+  margin-left: 32px;
+  margin-top: 50px;
+}
+* body .container main .section_main .section_main_item .section_main_item_child .section_main_item_child_row:first-of-type p {
+  font-family: "Exo 2";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 120%;
+  text-align: center;
+  font-feature-settings: "liga" off;
+  color: #abffeb;
+  margin-top: 7px;
+}
+* body .container main .section_main .section_main_item .section_main_item_child .section_main_item_child_row:last-of-type {
+  width: 346px;
+  max-width: 346px;
+  margin-top: 8px;
+  display: flex;
+  justify-content: space-between;
+}
+* body .container main .section_main .section_main_item .section_main_item_child .section_main_item_child_row:last-of-type h6 {
+  font-family: "Font Over";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 8px;
+  line-height: 120%;
+  display: flex;
+  align-items: center;
+  font-feature-settings: "liga" off;
+  background: radial-gradient(73.08% 73.08% at 50% -0.51%, #69fedb 0%, #11e5b3 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  border: 1px solid rgba(0, 103, 79, 0.2);
+}
+* body .container main .section_main .section_main_item .section_main_item_text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 144px;
+}
+* body .container main .section_main .section_main_item .section_main_item_text h2 {
+  font-family: "Cyberpunk";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 320px;
+  line-height: 88px;
+  text-align: center;
+  letter-spacing: -0.175em;
+  font-feature-settings: "liga" off;
+  color: #ffffff;
+  mix-blend-mode: normal;
+}
+* body .container main .section_main .section_main_item .section_main_item_text h4 {
+  font-family: "Exo 2";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 120%;
+  text-align: center;
+  font-feature-settings: "liga" off;
+  color: #ffffff;
+  margin-top: 60px;
+}
+* body .container main .section_main .section_main_item .section_main_item_text span {
+  margin-top: 7px;
+}
+* body .container main .section_main .section_main_item .section_main_item_text p {
+  font-family: "Exo 2";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 130%;
+  text-align: center;
+  font-feature-settings: "liga" off;
+  color: rgba(255, 255, 255, 0.8);
+  margin-top: 50px;
+}
+* body .container main .section_main .section_main_item .section_main_item_text p span {
+  font-weight: bold;
+}
+* body .container main .section_main .section_main_item .section_main_item_text button {
+  background: linear-gradient(10.53deg, rgba(0, 137, 105, 0.8) 13.41%, rgba(12, 30, 48, 0) 103.35%);
+  border: none;
+  font-family: "Font Over";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 23px;
+  padding: 17px 35px 15px 36px;
+  text-align: center;
+  letter-spacing: 0.1em;
+  font-feature-settings: "liga" off;
+  color: #11e5b3;
+  margin-top: 22px;
+  background: url(../img/button\ background.png);
+  background-repeat: no;
+  background-size: cover;
+  background-position: center center;
+  width: 281px;
+  max-width: 281px;
 }
 @media screen and (min-width: 1920px) {
   * body .container {

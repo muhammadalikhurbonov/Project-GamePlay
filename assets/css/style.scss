@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 @font-face {
   font-family: "Font Over";
-  src: url(../font/over/Over.ttf);
+  src: url(../font/font_over/Font\ Over.otf), url(../font/font_over/Notes.txt);
 }
 @font-face {
   font-family: "Cyberpunk";
@@ -16,7 +16,274 @@
   padding: 0;
   box-sizing: border-box;
   body {
+    background: #1e1e1e;
     .container {
+      main {
+        .section_main {
+          position: relative;
+          background: url(../img/section_main_backdround.png);
+          background-position: center center;
+          background-size: cover;
+          background-repeat: no-repeat;
+          padding-bottom: 240px;
+          .section_main_backdround {
+            z-index: -1;
+            position: absolute;
+            width: 1920px;
+            height: 1273px;
+            top: 0;
+            left: 0;
+            img {
+              width: 100%;
+              height: 100%;
+              object-fit: cover;
+            }
+          }
+          header {
+            z-index: 99;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 9;
+            padding: 37px 79px 0 79px;
+            .header_left {
+              ul {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                li {
+                  &:nth-of-type(2) {
+                    margin-top: 10px;
+                    margin-bottom: 17px;
+                  }
+                  &:nth-of-type(4) {
+                    margin-top: 18px;
+                  }
+                  &:nth-of-type(5) {
+                    margin-top: 18px;
+                  }
+                  &:nth-of-type(6) {
+                    margin-top: 18px;
+                  }
+                  list-style-type: none;
+                  a {
+                    text-decoration: none;
+                    font-family: "Font Over";
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 16px;
+                    line-height: 120%;
+                    display: flex;
+                    align-items: center;
+                    text-align: right;
+                    font-feature-settings: "liga" off;
+                    background: linear-gradient(
+                      233.38deg,
+                      #fcdaff -32.6%,
+                      #cf52fe 59.62%
+                    );
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                    background-clip: text;
+                  }
+                }
+              }
+            }
+            .header_right {
+              margin-bottom: 55px;
+              ul {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-end;
+                li {
+                  &:nth-of-type(2) {
+                    margin-top: 10px;
+                    margin-bottom: 17px;
+                    span {
+                    }
+                  }
+                  list-style-type: none;
+                  a {
+                    text-decoration: none;
+                    font-family: "Font Over";
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 16px;
+                    line-height: 120%;
+                    display: flex;
+                    align-items: center;
+                    text-align: right;
+                    font-feature-settings: "liga" off;
+                    background: linear-gradient(
+                      233.38deg,
+                      #fcdaff -32.6%,
+                      #cf52fe 59.62%
+                    );
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                    background-clip: text;
+                  }
+                }
+              }
+            }
+          }
+          .section_main_item {
+            .section_main_item_child {
+              display: flex;
+              flex-direction: column;
+              margin-left: 508px;
+              .section_main_item_child_row {
+                &:first-of-type {
+                  width: 346px;
+                  max-width: 346px;
+                  height: 177px;
+                  max-height: 177px;
+                  background-image: url(/./assets/img/section_main_item_child_row.png);
+                  background-repeat: no-repeat;
+                  background-size: cover;
+                  background-position: center center;
+                  h3 {
+                    font-family: "Font Over";
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 22px;
+                    line-height: 120%;
+                    display: flex;
+                    align-items: center;
+                    text-align: center;
+                    font-feature-settings: "liga" off;
+                    background: radial-gradient(
+                      73.08% 73.08% at 50% -0.51%,
+                      #69fedb 0%,
+                      #11e5b3 100%
+                    );
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                    background-clip: text;
+                    border: 1px solid rgba(0, 103, 79, 0.2);
+                    margin-left: 32px;
+                    margin-top: 50px;
+                  }
+                  p {
+                    font-family: "Exo 2";
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 120%;
+                    text-align: center;
+                    font-feature-settings: "liga" off;
+                    color: #abffeb;
+                    margin-top: 7px;
+                  }
+                }
+                &:last-of-type {
+                  width: 346px;
+                  max-width: 346px;
+                  margin-top: 8px;
+                  display: flex;
+                  justify-content: space-between;
+                  h6 {
+                    font-family: "Font Over";
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 8px;
+                    line-height: 120%;
+                    display: flex;
+                    align-items: center;
+                    font-feature-settings: "liga" off;
+                    background: radial-gradient(
+                      73.08% 73.08% at 50% -0.51%,
+                      #69fedb 0%,
+                      #11e5b3 100%
+                    );
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                    background-clip: text;
+                    border: 1px solid rgba(0, 103, 79, 0.2);
+                  }
+                }
+              }
+            }
+            .section_main_item_text {
+              display: flex;
+              flex-direction: column;
+              justify-content: center;
+              align-items: center;
+              margin-top: 144px;
+              h2 {
+                font-family: "Cyberpunk";
+                font-style: normal;
+                font-weight: 400;
+                font-size: 320px;
+                line-height: 88px;
+                text-align: center;
+                letter-spacing: -0.175em;
+                font-feature-settings: "liga" off;
+                color: #ffffff;
+                mix-blend-mode: normal;
+              }
+              h4 {
+                font-family: "Exo 2";
+                font-style: normal;
+                font-weight: 400;
+                font-size: 26px;
+                line-height: 120%;
+                text-align: center;
+                font-feature-settings: "liga" off;
+                color: #ffffff;
+                margin-top: 60px;
+              }
+              span {
+                margin-top: 7px;
+              }
+              p {
+                font-family: "Exo 2";
+                font-style: normal;
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 130%;
+                text-align: center;
+                font-feature-settings: "liga" off;
+                color: rgba(255, 255, 255, 0.8);
+                margin-top: 50px;
+                span {
+                  font-weight: bold;
+                }
+              }
+              button {
+                background: linear-gradient(
+                  10.53deg,
+                  rgba(0, 137, 105, 0.8) 13.41%,
+                  rgba(12, 30, 48, 0) 103.35%
+                );
+                border: none;
+                font-family: "Font Over";
+                font-style: normal;
+                font-weight: 500;
+                font-size: 22px;
+                line-height: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 23px;
+                padding: 17px 35px 15px 36px;
+                text-align: center;
+                letter-spacing: 0.1em;
+                font-feature-settings: "liga" off;
+                color: #11e5b3;
+                margin-top: 22px;
+                background: url(../img/button\ background.png);
+                background-repeat: no;
+                background-size: cover;
+                background-position: center center;
+                width: 281px;
+                max-width: 281px;
+              }
+            }
+          }
+        }
+      }
       border: 2px solid red;
       @media screen and (min-width: 1920px) {
         width: 1920px;
