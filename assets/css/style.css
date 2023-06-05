@@ -7,17 +7,13 @@
   font-family: "Cyberpunk";
   src: url(../font/Cyberpunk/Cyberpunk-Regular.ttf);
 }
-@font-face {
-  font-family: "Exo 2";
-  src: url(../font/over/Over.ttf);
-}
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 * body {
-  background: #1e1e1e;
+  background: #001324;
 }
 * body .container {
   border: 2px solid red;
@@ -233,6 +229,7 @@
 }
 * body .container main .section_main .section_main_item .section_main_item_text p span {
   font-weight: bold;
+  cursor: pointer;
 }
 * body .container main .section_main .section_main_item .section_main_item_text button {
   background: linear-gradient(10.53deg, rgba(0, 137, 105, 0.8) 13.41%, rgba(12, 30, 48, 0) 103.35%);
@@ -258,6 +255,796 @@
   background-position: center center;
   width: 281px;
   max-width: 281px;
+  cursor: pointer;
+  transition: all 0.4s;
+}
+* body .container main .section_geroy {
+  width: 100%;
+  position: relative;
+}
+* body .container main .section_geroy .section_geroy_item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  padding: 0 80px;
+  width: 100%;
+}
+* body .container main .section_geroy .section_geroy_item .section_geroy_item_child {
+  transition: all 0.1s;
+  padding: 0 33px 29px 22px;
+  border: 4px solid #224f73;
+  position: relative;
+  width: 431px;
+  max-width: 431px;
+  height: 869px;
+  max-height: 869px;
+}
+* body .container main .section_geroy .section_geroy_item .section_geroy_item_child:hover {
+  background: url(../img/section_geroy_item_child\ hover.png);
+  border: 4px solid #11e5b3;
+}
+* body .container main .section_geroy .section_geroy_item .section_geroy_item_child:nth-of-type(1) .name_box {
+  margin-top: 250px;
+}
+* body .container main .section_geroy .section_geroy_item .section_geroy_item_child:nth-of-type(1) .information_box {
+  margin-top: 10px;
+  background: url(../img/information_box\ background.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  min-height: 154px;
+}
+* body .container main .section_geroy .section_geroy_item .section_geroy_item_child:nth-of-type(1) .information_box span {
+  padding-left: 26px;
+}
+* body .container main .section_geroy .section_geroy_item .section_geroy_item_child:nth-of-type(1) .information_box span svg {
+  margin-top: 13px;
+}
+* body .container main .section_geroy .section_geroy_item .section_geroy_item_child:nth-of-type(1) .information_box p {
+  padding-left: 21px;
+  padding-bottom: 29px;
+  font-family: "Exo 2";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 140%;
+  color: #ffffff;
+  margin-top: 31px;
+}
+* body .container main .section_geroy .section_geroy_item .section_geroy_item_child:nth-of-type(2) .name_box {
+  margin-top: 205px;
+}
+* body .container main .section_geroy .section_geroy_item .section_geroy_item_child:nth-of-type(2) .information_box {
+  margin-top: 10px;
+  background: url(../img/information_box\ background.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  min-height: 154px;
+}
+* body .container main .section_geroy .section_geroy_item .section_geroy_item_child:nth-of-type(2) .information_box span {
+  padding-left: 26px;
+}
+* body .container main .section_geroy .section_geroy_item .section_geroy_item_child:nth-of-type(2) .information_box span svg {
+  margin-top: 13px;
+}
+* body .container main .section_geroy .section_geroy_item .section_geroy_item_child:nth-of-type(2) .information_box p {
+  padding-left: 21px;
+  padding-bottom: 29px;
+  font-family: "Exo 2";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 140%;
+  color: #ffffff;
+  margin-top: 15px;
+}
+* body .container main .section_geroy .section_geroy_item .section_geroy_item_child:nth-of-type(3) .name_box {
+  margin-top: 205px;
+}
+* body .container main .section_geroy .section_geroy_item .section_geroy_item_child:nth-of-type(3) .information_box {
+  margin-top: 10px;
+  background: url(../img/information_box\ background.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  min-height: 144px;
+}
+* body .container main .section_geroy .section_geroy_item .section_geroy_item_child:nth-of-type(3) .information_box span {
+  padding-left: 26px;
+}
+* body .container main .section_geroy .section_geroy_item .section_geroy_item_child:nth-of-type(3) .information_box span svg {
+  margin-top: 13px;
+}
+* body .container main .section_geroy .section_geroy_item .section_geroy_item_child:nth-of-type(3) .information_box p {
+  padding-left: 21px;
+  padding-bottom: 29px;
+  font-family: "Exo 2";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 140%;
+  color: #ffffff;
+  margin-top: 16px;
+}
+* body .container main .section_geroy .section_geroy_item .section_geroy_item_child:nth-of-type(4) .name_box {
+  margin-top: 205px;
+}
+* body .container main .section_geroy .section_geroy_item .section_geroy_item_child:nth-of-type(4) .information_box {
+  margin-top: 10px;
+  background: url(../img/information_box\ background.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  min-height: 144px;
+}
+* body .container main .section_geroy .section_geroy_item .section_geroy_item_child:nth-of-type(4) .information_box span {
+  padding-left: 26px;
+}
+* body .container main .section_geroy .section_geroy_item .section_geroy_item_child:nth-of-type(4) .information_box span svg {
+  margin-top: 13px;
+}
+* body .container main .section_geroy .section_geroy_item .section_geroy_item_child:nth-of-type(4) .information_box p {
+  padding-left: 21px;
+  padding-bottom: 29px;
+  font-family: "Exo 2";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 140%;
+  color: #ffffff;
+  margin-top: 16px;
+}
+* body .container main .section_geroy .section_geroy_item .section_geroy_item_child .img_box {
+  top: 5px;
+  left: 20px;
+  position: absolute;
+  width: 401px;
+  height: 500px;
+  z-index: -1;
+}
+* body .container main .section_geroy .section_geroy_item .section_geroy_item_child .img_box img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+* body .container main .section_geroy .section_geroy_item .section_geroy_item_child .geroy_box {
+  z-index: -1;
+  margin-top: 21px;
+  background: url("../img/geroy_box background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  padding: 15px;
+}
+* body .container main .section_geroy .section_geroy_item .section_geroy_item_child .geroy_box h4 {
+  font-family: "Font Over";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 10.4274px;
+  line-height: 120%;
+  display: flex;
+  align-items: center;
+  font-feature-settings: "liga" off;
+  background: radial-gradient(73.08% 73.08% at 50% -0.51%, #69fedb 0%, #11e5b3 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+* body .container main .section_geroy .section_geroy_item .section_geroy_item_child .indifikatsiya_box {
+  margin-top: 15px;
+}
+* body .container main .section_geroy .section_geroy_item .section_geroy_item_child .indifikatsiya_box p {
+  font-family: "Font Over";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 6.95161px;
+  line-height: 120%;
+  display: flex;
+  align-items: center;
+  font-feature-settings: "liga" off;
+  background: radial-gradient(73.08% 73.08% at 50% -0.51%, #69fedb 0%, #11e5b3 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-top: 5px;
+}
+* body .container main .section_geroy .section_geroy_item .section_geroy_item_child .name_box {
+  z-index: 99 !important;
+  background: url(../img/name_box\ background.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+* body .container main .section_geroy .section_geroy_item .section_geroy_item_child .name_box h2 {
+  font-family: "Exo 2";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 42px;
+  line-height: 100%;
+  text-transform: uppercase;
+  color: #ffffff;
+  padding: 29px 16px 23px 22px;
+}
+* body .container main .section_geroy .section_geroy_item .section_geroy_item_child .klan_box {
+  background: url(../img/klan_box\ background.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-left: 22px;
+  padding-bottom: 34px;
+  margin-top: 9px;
+}
+* body .container main .section_geroy .section_geroy_item .section_geroy_item_child .klan_box .klan_box_item {
+  display: flex;
+  gap: 21px;
+  padding-top: 28px;
+}
+* body .container main .section_geroy .section_geroy_item .section_geroy_item_child .klan_box .klan_box_item .klan_box_item_text h5 {
+  font-family: "Exo 2";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 130%;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: #11e5b3;
+}
+* body .container main .section_geroy .section_geroy_item .section_geroy_item_child .klan_box .klan_box_item .klan_box_item_text p {
+  font-family: "Exo 2";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  color: #ffffff;
+  margin-top: 4px;
+}
+* body .container main .section_geroy .section_geroy_item .section_geroy_item_child .klan_box .klass_box_item {
+  margin-top: 13px;
+  display: flex;
+  align-items: center;
+  gap: 21px;
+}
+* body .container main .section_geroy .section_geroy_item .section_geroy_item_child .klan_box .klass_box_item .klass_box_item_text h5 {
+  font-family: "Exo 2";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 130%;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: #11e5b3;
+}
+* body .container main .section_geroy .section_geroy_item .section_geroy_item_child .klan_box .klass_box_item .klass_box_item_text p {
+  font-family: "Exo 2";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  color: #ffffff;
+  margin-top: 4px;
+}
+* body .container main .section_geroy .section_geroy_modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #1e1e1e;
+  border: 2px solid red;
+  width: 500px;
+  height: 500px;
+  scale: 0;
+}
+* body .container main .section_geroy .section_geroy_modal .remove {
+  position: absolute;
+  color: #fff;
+  border: 1px solid #fff;
+  top: 10px;
+  right: 20px;
+  font-size: 24px;
+  font-family: monospace;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.4s;
+  padding: 0px 6px;
+  border-radius: 3px;
+}
+* body .container main .section_geroy .section_geroy_modal .remove:hover {
+  color: red;
+  border: 1px solid red;
+}
+* body .container main .section_geroy .scale {
+  transition: all 0.4s;
+  scale: 1;
+}
+* body .container main .section_logotips {
+  margin-top: 102px;
+}
+* body .container main .section_logotips h4 {
+  font-family: "Exo 2";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 120%;
+  text-align: center;
+  color: #ffffff;
+}
+* body .container main .section_logotips .section_logotips_item {
+  background: url(../img/section_logotips_item\ background.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 1293px;
+}
+* body .container main .section_logotips .section_logotips_item .section_logotips_item_img {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 60px;
+  margin: auto;
+  margin-top: 42px;
+  width: 1153px;
+  max-width: 1153px;
+}
+* body .container main .section_logotips .section_logotips_item .section_logotips_item_text {
+  margin-top: 665px;
+  position: relative;
+}
+* body .container main .section_logotips .section_logotips_item .section_logotips_item_text img:nth-of-type(1) {
+  position: absolute;
+  left: 24%;
+  top: -80px;
+}
+* body .container main .section_logotips .section_logotips_item .section_logotips_item_text img:nth-of-type(2) {
+  position: absolute;
+  right: 20%;
+  top: -80px;
+}
+* body .container main .section_logotips .section_logotips_item .section_logotips_item_text img:nth-of-type(3) {
+  position: absolute;
+  left: 16%;
+  top: 20px;
+}
+* body .container main .section_logotips .section_logotips_item .section_logotips_item_text img:nth-of-type(4) {
+  position: absolute;
+  right: 26%;
+  top: 100px;
+}
+* body .container main .section_logotips .section_logotips_item .section_logotips_item_text h1 {
+  font-family: "Cyberpunk";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 320px;
+  line-height: 88px;
+  text-align: center;
+  font-feature-settings: "liga" off;
+  color: #ffffff;
+  mix-blend-mode: normal;
+}
+* body .container main .section_logotips .section_logotips_item .section_logotips_item_text p {
+  font-family: "Exo 2";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 120%;
+  text-align: center;
+  font-feature-settings: "liga" off;
+  color: #ffffff;
+  margin-top: 102px;
+}
+* body .container main .section_function {
+  min-height: 1677px;
+  background: url(../img/section_function\ background.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+* body .container main .section_function h3 {
+  font-family: "Exo 2";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 72px;
+  line-height: 100%;
+  text-align: center;
+  background: linear-gradient(92.56deg, #73e5c6 9.18%, #8179ef 54.53%, #cf52fe 99.88%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  padding-top: 169px;
+}
+* body .container main .section_function p {
+  font-family: "Exo 2";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 120%;
+  text-align: center;
+  color: #ffffff;
+  margin-top: 25px;
+}
+* body .container main .section_function .section_function_item {
+  background-image: url(../img/section_function_item\ background.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 981px;
+  margin-top: 100px;
+}
+* body .container main .section_function .section_function_item h4 {
+  font-family: "Font Over";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 120%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background: radial-gradient(73.08% 73.08% at 50% -0.51%, #fcdaff 0%, #cf52fe 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  padding-top: 50px;
+}
+* body .container main .section_function .section_function_item .section_function_item_child {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 80px;
+}
+* body .container main .section_function .section_function_item .section_function_item_child .section_function_item_child_left {
+  display: flex;
+  flex-direction: column;
+  gap: 27px;
+}
+* body .container main .section_function .section_function_item .section_function_item_child .section_function_item_child_left .section_function_item_child_left_row1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 14px;
+}
+* body .container main .section_function .section_function_item .section_function_item_child .section_function_item_child_left .section_function_item_child_left_row1 h5 {
+  font-family: "Exo 2";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 100%;
+  text-align: right;
+  background: linear-gradient(190.07deg, #ffffff 5.03%, #cf52fe 143.72%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+* body .container main .section_function .section_function_item .section_function_item_child .section_function_item_child_left .section_function_item_child_left_row2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 14px;
+}
+* body .container main .section_function .section_function_item .section_function_item_child .section_function_item_child_left .section_function_item_child_left_row2 h5 {
+  font-family: "Exo 2";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 100%;
+  text-align: right;
+  background: linear-gradient(190.07deg, #ffffff 5.03%, #cf52fe 143.72%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+* body .container main .section_function .section_function_item .section_function_item_child .section_function_item_child_left .section_function_item_child_left_row3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 14px;
+}
+* body .container main .section_function .section_function_item .section_function_item_child .section_function_item_child_left .section_function_item_child_left_row3 h5 {
+  font-family: "Exo 2";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 100%;
+  text-align: right;
+  background: linear-gradient(190.07deg, #ffffff 5.03%, #cf52fe 143.72%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+* body .container main .section_function .section_function_item .section_function_item_child .section_function_item_child_left .section_function_item_child_left_row4 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 14px;
+}
+* body .container main .section_function .section_function_item .section_function_item_child .section_function_item_child_left .section_function_item_child_left_row4 h5 {
+  font-family: "Exo 2";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 100%;
+  text-align: right;
+  background: linear-gradient(190.07deg, #ffffff 5.03%, #cf52fe 143.72%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+* body .container main .section_function .section_function_item .section_function_item_child .section_function_item_child_left .section_function_item_child_left_row5 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 14px;
+}
+* body .container main .section_function .section_function_item .section_function_item_child .section_function_item_child_left .section_function_item_child_left_row5 h5 {
+  font-family: "Exo 2";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 100%;
+  text-align: right;
+  background: linear-gradient(190.07deg, #ffffff 5.03%, #cf52fe 143.72%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+* body .container main .section_function .section_function_item .section_function_item_child .section_function_item_child_left .section_function_item_child_left_row6 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 14px;
+}
+* body .container main .section_function .section_function_item .section_function_item_child .section_function_item_child_left .section_function_item_child_left_row6 h5 {
+  font-family: "Exo 2";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 100%;
+  text-align: right;
+  background: linear-gradient(190.07deg, #ffffff 5.03%, #cf52fe 143.72%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+* body .container main .section_function .section_function_item .section_function_item_child .section_function_item_child_left .section_function_item_child_left_row7 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 14px;
+}
+* body .container main .section_function .section_function_item .section_function_item_child .section_function_item_child_left .section_function_item_child_left_row7 h5 {
+  font-family: "Exo 2";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 100%;
+  text-align: right;
+  background: linear-gradient(190.07deg, #ffffff 5.03%, #cf52fe 143.72%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+* body .container main .section_function .section_function_item .section_function_item_child .section_function_item_child_right p {
+  font-family: "Exo 2";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 120%;
+  text-align: center;
+  color: #ffffff;
+  margin-top: 109px;
+}
+* body .container main .section_function .section_function_item .section_function_item_child .section_function_item_child_right .swiper .swiper-wrapper .swiper-slide {
+  background: url(../img/swiper-slide\ background.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin: 40px 48px;
+  padding: 30px 50px;
+  min-height: 500px;
+  border-radius: 2.4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 42px;
+}
+* body .container main .section_servise .section_servise_faq {
+  background: url(../img/section_servise_faq.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: 208px;
+  min-height: 67px;
+}
+* body .container main .section_servise .section_servise_faq h2 {
+  font-family: "Font Over";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 120%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  letter-spacing: 0.085em;
+  font-feature-settings: "liga" off;
+  background: linear-gradient(233.38deg, #fcdaff -32.6%, #cf52fe 59.62%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  padding-top: 30px;
+}
+* body .container main .section_servise .section_servise_main {
+  background: url(../img/Background\ elements.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: 48px;
+  min-height: 578px;
+}
+* body .container main .section_servise .section_servise_main .section_servise_main_item {
+  background: url(../img/section_servise_main_item.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  min-height: 106px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.4s;
+}
+* body .container main .section_servise .section_servise_main .section_servise_main_item:hover {
+  background: url(../img/section_servise_main_item\ hover\ 2.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+* body .container main .section_servise .section_servise_main .section_servise_main_item:nth-of-type(1) {
+  transform: translateY(77px);
+  gap: 661px;
+}
+* body .container main .section_servise .section_servise_main .section_servise_main_item:nth-of-type(3) {
+  gap: 710px;
+  margin-top: 16px;
+}
+* body .container main .section_servise .section_servise_main .section_servise_main_item:nth-of-type(4) {
+  gap: 510px;
+  margin-top: 16px;
+}
+* body .container main .section_servise .section_servise_main .section_servise_main_item .section_servise_main_item_row:first-of-type h6 {
+  font-family: "Font Over";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 120%;
+  display: flex;
+  align-items: center;
+  font-feature-settings: "liga" off;
+  background: radial-gradient(73.08% 73.08% at 50% -0.51%, #69fedb 0%, #11e5b3 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-left: 10px;
+  margin-top: 13px;
+}
+* body .container main .section_servise .section_servise_main .section_servise_main_item .section_servise_main_item_row:first-of-type h3 {
+  font-family: "Exo 2";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 120%;
+  color: #ffffff;
+  margin-left: 17px;
+  margin-top: 19px;
+  margin-bottom: 33px;
+}
+* body .container main .section_servise .section_servise_main .section_servise_main_item .section_servise_main_item_row:last-of-type span svg {
+  margin-top: 20px;
+}
+* body .container main .section_servise .section_servise_main .section_servise_main_child {
+  background: url(../img/section_servise_main_child.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  min-height: 92px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+  margin-top: 75px;
+}
+* body .container main .section_servise .section_servise_main .section_servise_main_child p {
+  font-family: "Exo 2";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 120%;
+  color: #ffffff;
+}
+* body .container main .section_servise .section_servise_main_button {
+  background: url(../img/decorative\ frame.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  padding: 35px;
+}
+* body .container main .section_servise .section_servise_main_button button {
+  z-index: 99;
+  min-height: 158px;
+  font-family: "Font Over";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 26px;
+  line-height: 120%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: auto;
+  text-align: center;
+  font-feature-settings: "liga" off;
+  background: radial-gradient(73.08% 73.08% at 50% -0.51%, #69fedb 0%, #11e5b3 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  border: none;
+  padding-top: 4%;
+}
+* body .container main .section_servise .section_servise_main_button button span {
+  font-family: "Exo 2";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 120%;
+  text-align: center;
+  font-feature-settings: "liga" off;
+  color: #abffeb;
+  margin-top: 3px;
+}
+* body .container main .section_servise h5 {
+  font-family: "Font Over";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 8px;
+  line-height: 120%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-feature-settings: "liga" off;
+  background: radial-gradient(73.08% 73.08% at 50% -0.51%, #69fedb 0%, #11e5b3 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+* body .container footer {
+  background: url(../img/footer\ background.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 1366px;
+}
+* body .container footer h2 {
+  font-family: "Cyberpunk";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 320px;
+  line-height: 88px;
+  text-align: center;
+  letter-spacing: -0.12em;
+  font-feature-settings: "liga" off;
+  color: #ffffff;
+  mix-blend-mode: normal;
+  padding-top: 964px;
+}
+* body .container footer p {
+  margin-top: 80px;
+  font-family: "Exo 2";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 120%;
+  text-align: center;
+  font-feature-settings: "liga" off;
+  color: #ffffff;
 }
 @media screen and (min-width: 1920px) {
   * body .container {
