@@ -1015,6 +1015,41 @@
   -webkit-text-fill-color: transparent;
   background-clip: text;
 }
+* body .container main .section_servise .section_servise_end {
+  padding: 113px 77px 68px 88px;
+}
+* body .container main .section_servise .section_servise_end .section_servise_end_text {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+* body .container main .section_servise .section_servise_end .section_servise_end_text h5 {
+  font-family: "Font Over";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 120%;
+  display: flex;
+  align-items: center;
+  text-align: right;
+  font-feature-settings: "liga" off;
+  background: linear-gradient(233.38deg, #fcdaff -32.6%, #cf52fe 59.62%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+* body .container main .section_servise .section_servise_end .section_servise_end_text h5:nth-of-type(2) {
+  display: flex;
+  justify-content: center;
+  gap: 38px;
+}
+* body .container main .section_servise .section_servise_end .section_servise_end_img {
+  margin-top: 19px;
+  width: 100%;
+}
+* body .container main .section_servise .section_servise_end .section_servise_end_img img {
+  width: 100%;
+}
 * body .container footer {
   background: url(../img/footer\ background.png);
   background-position: center center;
