@@ -13,7 +13,6 @@
   box-sizing: border-box;
   body {
     background: #001324;
-    // overflow-x: hidden;
     .container {
       border: 2px solid red;
       main {
@@ -685,7 +684,7 @@
           background: url(../img/section_function\ background.png);
           background-position: center center;
           background-repeat: no-repeat;
-          background-size: cover;
+          background-size: contain;
           h3 {
             font-family: "Exo 2";
             font-style: normal;
@@ -906,8 +905,7 @@
                   }
                 }
               }
-              .section_function_item_child_right {
-                margin-right: 167px;
+              .swiper {
                 p {
                   font-family: "Exo 2";
                   font-style: normal;
@@ -918,33 +916,71 @@
                   color: #ffffff;
                   margin-top: 152px;
                 }
-                // .swiper {
-                //   background: url(../img/swiper-slide\ background.png);
-                //   background-position: center center;
-                //   background-repeat: no-repeat;
-                //   background-size: contain;
-                //   min-height: 504px;
-                //   .swiper-wrapper {
-                //     .swiper-slide {
-                //       margin: 40px 48px 42px 0px;
-                //       padding: 55px 99px 58px 98px;
-                //       background: linear-gradient(
-                //         93.05deg,
-                //         rgba(205, 81, 252, 0) -2.58%,
-                //         rgba(204, 81, 250, 0.2) 93.31%
-                //       );
-                //       border-radius: 2.4px;
-                //       border: 4px solid #001324;
-                //       height: 442px;
-                //       max-height: 442px;
-                //       display: flex;
-                //       justify-content: center;
-                //       align-items: center;
-                //       gap: 42px;
-                //     }
-                //   }
-                // }
-                
+                .swiper-wrapper {
+                  background: url(../img/swiper-slide\ background.png);
+                  background-position: center center;
+                  background-repeat: no-repeat;
+                  background-size: contain;
+                  min-height: 504px;
+                  margin-right: 167px;
+                  margin-top: 33px;
+                  .swiper-slide {
+                    margin: 40px 48px 42px 0px;
+                    padding: 55px 99px 58px 98px;
+                    // background: linear-gradient(
+                    //   93.05deg,
+                    //   rgba(205, 81, 252, 0) -2.58%,
+                    //   rgba(204, 81, 250, 0.2) 93.31%
+                    // );
+                    // border-radius: 2.4px;
+                    // border: 4px solid #001324;
+                    height: 442px;
+                    max-height: 442px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    gap: 42px;
+                    text-align: center;
+                    font-size: 18px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    img {
+                      display: block;
+                      width: 100%;
+                      height: 100%;
+                      object-fit: cover;
+                    }
+                  }
+                }
+                .autoplay-progress {
+                  position: absolute;
+                  right: 16px;
+                  bottom: 16px;
+                  z-index: 10;
+                  width: 48px;
+                  height: 48px;
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  font-weight: bold;
+                  color: var(--swiper-theme-color);
+                  svg {
+                    --progress: 0;
+                    position: absolute;
+                    left: 0;
+                    top: 0px;
+                    z-index: 10;
+                    width: 100%;
+                    height: 100%;
+                    stroke-width: 4px;
+                    stroke: var(--swiper-theme-color);
+                    fill: none;
+                    stroke-dashoffset: calc(125.6 * (1 - var(--progress)));
+                    stroke-dasharray: 125.6;
+                    transform: rotate(-90deg);
+                  }
+                }
               }
             }
           }
@@ -1310,55 +1346,6 @@
           text-align: center;
           font-feature-settings: "liga" off;
           color: #ffffff;
-        }
-      }
-
-      .swiper {
-        width: 100%;
-        height: 100%;
-        .swiper-wrapper {
-          .swiper-slide {
-            text-align: center;
-            font-size: 18px;
-            background: #fff;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            img {
-              display: block;
-              width: 100%;
-              height: 100%;
-              object-fit: cover;
-            }
-          }
-        }
-        .autoplay-progress {
-          position: absolute;
-          right: 16px;
-          bottom: 16px;
-          z-index: 10;
-          width: 48px;
-          height: 48px;
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          font-weight: bold;
-          color: var(--swiper-theme-color);
-          svg {
-            --progress: 0;
-            position: absolute;
-            left: 0;
-            top: 0px;
-            z-index: 10;
-            width: 100%;
-            height: 100%;
-            stroke-width: 4px;
-            stroke: var(--swiper-theme-color);
-            fill: none;
-            stroke-dashoffset: calc(125.6 * (1 - var(--progress)));
-            stroke-dasharray: 125.6;
-            transform: rotate(-90deg);
-          }
         }
       }
       @media screen and (min-width: 1920px) {
