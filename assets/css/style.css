@@ -693,7 +693,8 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 80px;
+  margin-right: 80px;
+  margin-left: 80px;
 }
 * body .container main .section_function .section_function_item .section_function_item_child .section_function_item_child_left {
   display: flex;
@@ -826,6 +827,9 @@
   -webkit-text-fill-color: transparent;
   background-clip: text;
 }
+* body .container main .section_function .section_function_item .section_function_item_child .section_function_item_child_right {
+  margin-right: 167px;
+}
 * body .container main .section_function .section_function_item .section_function_item_child .section_function_item_child_right p {
   font-family: "Exo 2";
   font-style: normal;
@@ -834,21 +838,111 @@
   line-height: 120%;
   text-align: center;
   color: #ffffff;
-  margin-top: 109px;
+  margin-top: 152px;
 }
-* body .container main .section_function .section_function_item .section_function_item_child .section_function_item_child_right .swiper .swiper-wrapper .swiper-slide {
+* body .container main .section_function .section_function_item .section_function_item_child .section_function_item_child_right .swiper {
   background: url(../img/swiper-slide\ background.png);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: contain;
-  margin: 40px 48px;
-  padding: 30px 50px;
-  min-height: 500px;
+  min-height: 504px;
+}
+* body .container main .section_function .section_function_item .section_function_item_child .section_function_item_child_right .swiper .swiper-wrapper .swiper-slide {
+  margin: 40px 48px 42px 0px;
+  padding: 55px 99px 58px 98px;
+  background: linear-gradient(93.05deg, rgba(205, 81, 252, 0) -2.58%, rgba(204, 81, 250, 0.2) 93.31%);
   border-radius: 2.4px;
+  border: 4px solid #001324;
+  height: 442px;
+  max-height: 442px;
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 42px;
+}
+* body .container main .section_diagramma h2 {
+  font-family: "Exo 2";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 72px;
+  line-height: 100%;
+  color: #ffffff;
+  margin-top: 200px;
+  margin-left: 302px;
+}
+* body .container main .section_diagramma .section_diagramma_item {
+  background: url(../img/section_diagramma\ background.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 882px;
+  margin-top: 63px;
+}
+* body .container main .section_otzivi .section_otzivi_header {
+  background: url(../img/section_servise_faq.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: 205px;
+  min-height: 67px;
+}
+* body .container main .section_otzivi .section_otzivi_header h2 {
+  font-family: "Font Over";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 120%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  letter-spacing: 0.085em;
+  font-feature-settings: "liga" off;
+  background: linear-gradient(233.38deg, #fcdaff -32.6%, #cf52fe 59.62%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  padding-top: 30px;
+}
+* body .container main .section_otzivi .section_otzivi_main {
+  min-height: 762px;
+  background: url(../img/section_otzivi_main\ background.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: 53px;
+}
+* body .container main .section_tarif .section_tarif_header {
+  background: url(../img/section_servise_faq.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: 205px;
+  min-height: 67px;
+}
+* body .container main .section_tarif .section_tarif_header h2 {
+  font-family: "Font Over";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 120%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  letter-spacing: 0.085em;
+  font-feature-settings: "liga" off;
+  background: linear-gradient(233.38deg, #fcdaff -32.6%, #cf52fe 59.62%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  padding-top: 30px;
+}
+* body .container main .section_tarif .section_tarif_main {
+  min-height: 911px;
+  background: url(../img/section_tarif_main\ background.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: 53px;
 }
 * body .container main .section_servise .section_servise_faq {
   background: url(../img/section_servise_faq.png);
@@ -942,15 +1036,16 @@
 }
 * body .container main .section_servise .section_servise_main .section_servise_main_child {
   background: url(../img/section_servise_main_child.png);
-  background-position: center center;
+  background-position: center right;
   background-repeat: no-repeat;
   background-size: contain;
   min-height: 92px;
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
   align-items: center;
   gap: 25px;
   margin-top: 75px;
+  margin-right: 339px;
 }
 * body .container main .section_servise .section_servise_main .section_servise_main_child p {
   font-family: "Exo 2";
@@ -959,13 +1054,14 @@
   font-size: 18px;
   line-height: 120%;
   color: #ffffff;
+  margin-right: 300px;
 }
 * body .container main .section_servise .section_servise_main_button {
   background: url(../img/decorative\ frame.png);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: contain;
-  padding: 35px;
+  padding: 39px;
 }
 * body .container main .section_servise .section_servise_main_button button {
   z-index: 99;
@@ -1000,7 +1096,7 @@
   color: #abffeb;
   margin-top: 3px;
 }
-* body .container main .section_servise h5 {
+* body .container main .section_servise h4 {
   font-family: "Font Over";
   font-style: normal;
   font-weight: 500;
@@ -1014,6 +1110,7 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
+  transform: translateX(-125px);
 }
 * body .container main .section_servise .section_servise_end {
   padding: 113px 77px 68px 88px;

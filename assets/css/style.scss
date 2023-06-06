@@ -745,7 +745,8 @@
               display: flex;
               justify-content: space-between;
               align-items: center;
-              padding: 0 80px;
+              margin-right: 80px;
+              margin-left: 80px;
               .section_function_item_child_left {
                 display: flex;
                 flex-direction: column;
@@ -906,6 +907,7 @@
                 }
               }
               .section_function_item_child_right {
+                margin-right: 167px;
                 p {
                   font-family: "Exo 2";
                   font-style: normal;
@@ -914,25 +916,27 @@
                   line-height: 120%;
                   text-align: center;
                   color: #ffffff;
-                  margin-top: 109px;
+                  margin-top: 152px;
                 }
                 .swiper {
+                  background: url(../img/swiper-slide\ background.png);
+                  background-position: center center;
+                  background-repeat: no-repeat;
+                  background-size: contain;
+                  min-height: 504px;
                   .swiper-wrapper {
                     .swiper-slide {
-                      background: url(../img/swiper-slide\ background.png);
-                      background-position: center center;
-                      background-repeat: no-repeat;
-                      background-size: contain;
-                      margin: 40px 48px;
-                      padding: 30px 50px;
-                      // min-width: 1000px;
-                      min-height: 500px;
-                      // background: linear-gradient(
-                      //   93.05deg,
-                      //   rgba(205, 81, 252, 0) -2.58%,
-                      //   rgba(204, 81, 250, 0.2) 93.31%
-                      // );
+                      margin: 40px 48px 42px 0px;
+                      padding: 55px 99px 58px 98px;
+                      background: linear-gradient(
+                        93.05deg,
+                        rgba(205, 81, 252, 0) -2.58%,
+                        rgba(204, 81, 250, 0.2) 93.31%
+                      );
                       border-radius: 2.4px;
+                      border: 4px solid #001324;
+                      height: 442px;
+                      max-height: 442px;
                       display: flex;
                       justify-content: center;
                       align-items: center;
@@ -942,6 +946,104 @@
                 }
               }
             }
+          }
+        }
+        .section_diagramma {
+          h2 {
+            font-family: "Exo 2";
+            font-style: normal;
+            font-weight: 400;
+            font-size: 72px;
+            line-height: 100%;
+            color: #ffffff;
+            margin-top: 200px;
+            margin-left: 302px;
+          }
+          .section_diagramma_item {
+            background: url(../img/section_diagramma\ background.png);
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            min-height: 882px;
+            margin-top: 63px;
+          }
+        }
+        .section_otzivi {
+          .section_otzivi_header {
+            background: url(../img/section_servise_faq.png);
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            margin-top: 205px;
+            min-height: 67px;
+            h2 {
+              font-family: "Font Over";
+              font-style: normal;
+              font-weight: 500;
+              font-size: 14px;
+              line-height: 120%;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              letter-spacing: 0.085em;
+              font-feature-settings: "liga" off;
+              background: linear-gradient(
+                233.38deg,
+                #fcdaff -32.6%,
+                #cf52fe 59.62%
+              );
+              -webkit-background-clip: text;
+              -webkit-text-fill-color: transparent;
+              background-clip: text;
+              padding-top: 30px;
+            }
+          }
+          .section_otzivi_main {
+            min-height: 762px;
+            background: url(../img/section_otzivi_main\ background.png);
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            margin-top: 53px;
+          }
+        }
+        .section_tarif {
+          .section_tarif_header {
+            background: url(../img/section_servise_faq.png);
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            margin-top: 205px;
+            min-height: 67px;
+            h2 {
+              font-family: "Font Over";
+              font-style: normal;
+              font-weight: 500;
+              font-size: 14px;
+              line-height: 120%;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              letter-spacing: 0.085em;
+              font-feature-settings: "liga" off;
+              background: linear-gradient(
+                233.38deg,
+                #fcdaff -32.6%,
+                #cf52fe 59.62%
+              );
+              -webkit-background-clip: text;
+              -webkit-text-fill-color: transparent;
+              background-clip: text;
+              padding-top: 30px;
+            }
+          }
+          .section_tarif_main {
+            min-height: 911px;
+            background: url(../img/section_tarif_main\ background.png);
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            margin-top: 53px;
           }
         }
         .section_servise {
@@ -1052,15 +1154,16 @@
             }
             .section_servise_main_child {
               background: url(../img/section_servise_main_child.png);
-              background-position: center center;
+              background-position: center right;
               background-repeat: no-repeat;
               background-size: contain;
               min-height: 92px;
               display: flex;
-              justify-content: center;
+              justify-content: flex-end;
               align-items: center;
               gap: 25px;
               margin-top: 75px;
+              margin-right: 339px;
               p {
                 font-family: "Exo 2";
                 font-style: normal;
@@ -1068,6 +1171,7 @@
                 font-size: 18px;
                 line-height: 120%;
                 color: #ffffff;
+                margin-right: 300px;
               }
             }
           }
@@ -1076,7 +1180,7 @@
             background-position: center center;
             background-repeat: no-repeat;
             background-size: contain;
-            padding: 35px;
+            padding: 39px;
             button {
               z-index: 99;
               min-height: 158px;
@@ -1115,7 +1219,7 @@
               }
             }
           }
-          h5 {
+          h4 {
             font-family: "Font Over";
             font-style: normal;
             font-weight: 500;
@@ -1133,6 +1237,7 @@
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-clip: text;
+            transform: translateX(-125px);
           }
           .section_servise_end {
             padding: 113px 77px 68px 88px;
