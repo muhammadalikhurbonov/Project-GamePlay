@@ -1369,7 +1369,227 @@
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+* body .container main .section_tarif .section_tarif_main .section_tarif_main_flex {
   margin-top: 53px;
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+}
+* body .container main .section_tarif .section_tarif_main .section_tarif_main_flex .section_tarif_main_item {
+  margin-top: 48px;
+}
+* body .container main .section_tarif .section_tarif_main .section_tarif_main_flex .section_tarif_main_item:first-of-type {
+  padding: 27px 117px 45px 49px;
+  background: url(../img/Free.png);
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+* body .container main .section_tarif .section_tarif_main .section_tarif_main_flex .section_tarif_main_item:first-of-type h6 {
+  font-family: "Exo 2";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+* body .container main .section_tarif .section_tarif_main .section_tarif_main_flex .section_tarif_main_item:first-of-type h3 {
+  font-family: "Exo 2";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 72px;
+  line-height: 120%;
+  color: #ffffff;
+  margin-top: 33px;
+}
+* body .container main .section_tarif .section_tarif_main .section_tarif_main_flex .section_tarif_main_item:first-of-type ul {
+  margin-top: 23px;
+  align-items: center;
+  gap: 22px;
+}
+* body .container main .section_tarif .section_tarif_main .section_tarif_main_flex .section_tarif_main_item:first-of-type ul li {
+  list-style-type: none;
+  display: flex;
+  gap: 15px;
+  font-family: "Exo 2";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  color: #ffffff;
+  margin-top: 22px;
+}
+* body .container main .section_tarif .section_tarif_main .section_tarif_main_flex .section_tarif_main_item:first-of-type .besplatno_box {
+  margin-top: 72px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+}
+* body .container main .section_tarif .section_tarif_main .section_tarif_main_flex .section_tarif_main_item:first-of-type .besplatno_box h4 {
+  font-family: "Exo 2";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 32px;
+  line-height: 120%;
+  color: #ffffff;
+}
+* body .container main .section_tarif .section_tarif_main .section_tarif_main_flex .section_tarif_main_item:first-of-type .besplatno_box h6 {
+  font-family: "Exo 2";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 130%;
+  font-feature-settings: "liga" off;
+  color: rgba(255, 255, 255, 0.8);
+}
+* body .container main .section_tarif .section_tarif_main .section_tarif_main_flex .section_tarif_main_item:last-of-type {
+  background: url(../img/Profi\ frame\ background.png);
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  padding: 27px 47px 31px 48px;
+}
+* body .container main .section_tarif .section_tarif_main .section_tarif_main_flex .section_tarif_main_item:last-of-type h4 {
+  font-family: "Exo 2";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: #11e5b3;
+  padding-left: 45px;
+}
+* body .container main .section_tarif .section_tarif_main .section_tarif_main_flex .section_tarif_main_item:last-of-type h2 {
+  font-family: "Exo 2";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 72px;
+  line-height: 120%;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin-top: 32px;
+}
+* body .container main .section_tarif .section_tarif_main .section_tarif_main_flex .section_tarif_main_item:last-of-type nav {
+  display: flex;
+  align-items: center;
+  gap: 60px;
+  margin-bottom: 43px;
+}
+* body .container main .section_tarif .section_tarif_main .section_tarif_main_flex .section_tarif_main_item:last-of-type nav ul li {
+  list-style-type: none;
+  font-family: "Exo 2";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  display: flex;
+  gap: 16px;
+  color: #ffffff;
+  margin-top: 23px;
+}
+* body .container main .section_tarif .section_tarif_main .section_tarif_main_flex .section_tarif_main_item:last-of-type .premium {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+* body .container main .section_tarif .section_tarif_main .section_tarif_main_flex .section_tarif_main_item:last-of-type .premium .premium_item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+}
+* body .container main .section_tarif .section_tarif_main .section_tarif_main_flex .section_tarif_main_item:last-of-type .premium .premium_item h5 {
+  font-family: "Exo 2";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 32px;
+  line-height: 120%;
+  color: #ffffff;
+}
+* body .container main .section_tarif .section_tarif_main .section_tarif_main_flex .section_tarif_main_item:last-of-type .premium .premium_item h6 {
+  font-family: "Exo 2";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 130%;
+  font-feature-settings: "liga" off;
+  color: rgba(255, 255, 255, 0.8);
+}
+* body .container main .section_tarif .section_tarif_main .section_tarif_main_flex .section_tarif_main_item:last-of-type .premium .premium_button {
+  cursor: pointer;
+  background: #001324;
+  border: 2px solid #11e5b3;
+  box-shadow: inset 18px -16px 120px rgba(46, 240, 194, 0.4);
+  border-radius: 2px;
+  padding: 6px 18px 6px 6px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 19px;
+}
+* body .container main .section_tarif .section_tarif_main .section_tarif_main_flex .section_tarif_main_item:last-of-type .premium .premium_button button {
+  cursor: pointer;
+  font-family: "Exo 2";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 130%;
+  color: #001324;
+  padding: 10px 18px 14px 18px;
+  background: #11e5b3;
+  border-radius: 2px;
+}
+* body .container main .section_tarif .section_tarif_main .section_tarif_main_flex .section_tarif_main_item:last-of-type .premium .premium_button span {
+  cursor: pointer;
+  font-family: "Exo 2";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 130%;
+  color: #ffffff;
+}
+* body .container main .section_tarif .section_tarif_main .section_tarif_footer {
+  margin-top: 80px;
+}
+* body .container main .section_tarif .section_tarif_main .section_tarif_footer p {
+  font-family: "Exo 2";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 130%;
+  text-align: center;
+  font-feature-settings: "liga" off;
+  color: rgba(255, 255, 255, 0.8);
+}
+* body .container main .section_tarif .section_tarif_main .section_tarif_footer button {
+  background: url(../img/Group\ 54.png);
+  height: 54px;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: "Font Over";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 100%;
+  padding: 18px 46px 14px 45px;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+  text-align: center;
+  letter-spacing: 0.1em;
+  font-feature-settings: "liga" off;
+  color: #11e5b3;
+  margin: auto;
+  margin-top: 34px;
+  cursor: pointer;
 }
 * body .container main .section_servise .section_servise_faq {
   background: url(../img/section_servise_faq.png);
