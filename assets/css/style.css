@@ -117,12 +117,18 @@
   -webkit-text-fill-color: transparent;
   background-clip: text;
 }
-* body .container main .section_main .section_main_item .section_main_item_child {
+* body .container main .section_main .section_main_item .section_main_item_width {
+  max-width: 1340px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+* body .container main .section_main .section_main_item .section_main_item_width .section_main_item_child {
   display: flex;
   flex-direction: column;
-  margin-left: 508px;
+  justify-content: flex-start;
 }
-* body .container main .section_main .section_main_item .section_main_item_child .section_main_item_child_row:first-of-type {
+* body .container main .section_main .section_main_item .section_main_item_width .section_main_item_child .section_main_item_child_row:first-of-type {
   width: 346px;
   max-width: 346px;
   height: 177px;
@@ -132,7 +138,7 @@
   background-size: cover;
   background-position: center center;
 }
-* body .container main .section_main .section_main_item .section_main_item_child .section_main_item_child_row:first-of-type h3 {
+* body .container main .section_main .section_main_item .section_main_item_width .section_main_item_child .section_main_item_child_row:first-of-type h3 {
   font-family: "Font Over";
   font-style: normal;
   font-weight: 500;
@@ -146,11 +152,10 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
-  border: 1px solid rgba(0, 103, 79, 0.2);
   margin-left: 32px;
   margin-top: 50px;
 }
-* body .container main .section_main .section_main_item .section_main_item_child .section_main_item_child_row:first-of-type p {
+* body .container main .section_main .section_main_item .section_main_item_width .section_main_item_child .section_main_item_child_row:first-of-type p {
   font-family: "Exo 2";
   font-style: normal;
   font-weight: 400;
@@ -161,14 +166,14 @@
   color: #abffeb;
   margin-top: 7px;
 }
-* body .container main .section_main .section_main_item .section_main_item_child .section_main_item_child_row:last-of-type {
+* body .container main .section_main .section_main_item .section_main_item_width .section_main_item_child .section_main_item_child_row:last-of-type {
   width: 346px;
   max-width: 346px;
   margin-top: 8px;
   display: flex;
   justify-content: space-between;
 }
-* body .container main .section_main .section_main_item .section_main_item_child .section_main_item_child_row:last-of-type h6 {
+* body .container main .section_main .section_main_item .section_main_item_width .section_main_item_child .section_main_item_child_row:last-of-type h6 {
   font-family: "Font Over";
   font-style: normal;
   font-weight: 500;
@@ -181,7 +186,10 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
-  border: 1px solid rgba(0, 103, 79, 0.2);
+  cursor: pointer;
+}
+* body .container main .section_main .section_main_item .section_main_item_width .section_main_item_child .section_main_item_child_row:last-of-type span {
+  cursor: pointer;
 }
 * body .container main .section_main .section_main_item .section_main_item_text {
   display: flex;
@@ -586,12 +594,14 @@
   gap: 60px;
   margin: auto;
   margin-top: 42px;
-  width: 1153px;
   max-width: 1153px;
 }
 * body .container main .section_logotips .section_logotips_item .section_logotips_item_text {
   margin-top: 665px;
   position: relative;
+}
+* body .container main .section_logotips .section_logotips_item .section_logotips_item_text img {
+  position: absolute;
 }
 * body .container main .section_logotips .section_logotips_item .section_logotips_item_text img:nth-of-type(1) {
   position: absolute;
@@ -944,15 +954,21 @@
   background: #083940;
   border: 2px solid #11e5b3;
 }
-* body .container main .section_diagramma h2 {
+* body .container main .section_diagramma .section_diagramma_text {
+  max-width: 1150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+* body .container main .section_diagramma .section_diagramma_text h2 {
   font-family: "Exo 2";
   font-style: normal;
   font-weight: 400;
   font-size: 72px;
   line-height: 100%;
   color: #ffffff;
-  margin-top: 200px;
-  margin-left: 302px;
+  display: flex;
+  justify-content: flex-start;
 }
 * body .container main .section_diagramma .section_diagramma_item {
   background: url(../img/section_diagramma\ background.png);
@@ -987,6 +1003,7 @@
   color: #ffffff;
 }
 * body .container main .section_diagramma .section_diagramma_item .section_diagramma_item_child:first-of-type .section_diagramma_item_child_row:first-of-type img {
+  width: 100%;
   margin-top: 25px;
 }
 * body .container main .section_diagramma .section_diagramma_item .section_diagramma_item_child:first-of-type .section_diagramma_item_child_row:last-of-type {
@@ -1017,7 +1034,7 @@
   background-clip: text;
 }
 * body .container main .section_diagramma .section_diagramma_item .section_diagramma_item_child:last-of-type {
-  margin-top: 50px;
+  margin-top: 38px;
 }
 * body .container main .section_diagramma .section_diagramma_item .section_diagramma_item_child:last-of-type .section_diagramma_item_child_row:first-of-type {
   background: url(../img/section_diagramma_item_child_row\ 22.png);
@@ -1046,6 +1063,7 @@
   background-position: center center;
   background-repeat: no-repeat;
   background-size: contain;
+  margin-top: 12px;
 }
 * body .container main .section_diagramma .section_diagramma_item .section_diagramma_item_child:last-of-type .section_diagramma_item_child_row:last-of-type .section_diagramma_item_child_row_col:nth-of-type(1) {
   display: flex;
@@ -1055,15 +1073,15 @@
   gap: 16px;
 }
 * body .container main .section_diagramma .section_diagramma_item .section_diagramma_item_child:last-of-type .section_diagramma_item_child_row:last-of-type .section_diagramma_item_child_row_col:nth-of-type(1) .section_diagramma_item_child_row_col_item {
-  width: 813px;
-  max-width: 813px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   border: 2px solid #053245;
   padding: 16px 16px 16px 30px;
+  width: 813px;
+  max-width: 813px;
 }
-* body .container main .section_diagramma .section_diagramma_item .section_diagramma_item_child:last-of-type .section_diagramma_item_child_row:last-of-type .section_diagramma_item_child_row_col:nth-of-type(1) .section_diagramma_item_child_row_col_item h6 {
+* body .container main .section_diagramma .section_diagramma_item .section_diagramma_item_child:last-of-type .section_diagramma_item_child_row:last-of-type .section_diagramma_item_child_row_col:nth-of-type(1) .section_diagramma_item_child_row_col_item:nth-of-type(1) h6 {
   font-family: "Exo 2";
   font-style: normal;
   font-weight: 400;
@@ -1071,7 +1089,7 @@
   line-height: 120%;
   color: #ffffff;
 }
-* body .container main .section_diagramma .section_diagramma_item .section_diagramma_item_child:last-of-type .section_diagramma_item_child_row:last-of-type .section_diagramma_item_child_row_col:nth-of-type(1) .section_diagramma_item_child_row_col_item button {
+* body .container main .section_diagramma .section_diagramma_item .section_diagramma_item_child:last-of-type .section_diagramma_item_child_row:last-of-type .section_diagramma_item_child_row_col:nth-of-type(1) .section_diagramma_item_child_row_col_item:nth-of-type(1) button {
   font-family: "Exo 2";
   font-style: normal;
   font-weight: 600;
@@ -1082,7 +1100,27 @@
   background: #03233e;
   border: 1px solid #03233e;
 }
-* body .container main .section_diagramma .section_diagramma_item .section_diagramma_item_child:last-of-type .section_diagramma_item_child_row:last-of-type .section_diagramma_item_child_row_col:nth-of-type(1) .section_diagramma_item_child_row_col_item img {
+* body .container main .section_diagramma .section_diagramma_item .section_diagramma_item_child:last-of-type .section_diagramma_item_child_row:last-of-type .section_diagramma_item_child_row_col:nth-of-type(1) .section_diagramma_item_child_row_col_item:nth-of-type(2) h6 {
+  font-family: "Exo 2";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 120%;
+  color: #ffffff;
+}
+* body .container main .section_diagramma .section_diagramma_item .section_diagramma_item_child:last-of-type .section_diagramma_item_child_row:last-of-type .section_diagramma_item_child_row_col:nth-of-type(1) .section_diagramma_item_child_row_col_item:nth-of-type(2) img {
+  width: 386px;
+  height: 39px;
+}
+* body .container main .section_diagramma .section_diagramma_item .section_diagramma_item_child:last-of-type .section_diagramma_item_child_row:last-of-type .section_diagramma_item_child_row_col:nth-of-type(1) .section_diagramma_item_child_row_col_item:nth-of-type(3) h6 {
+  font-family: "Exo 2";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 120%;
+  color: #ffffff;
+}
+* body .container main .section_diagramma .section_diagramma_item .section_diagramma_item_child:last-of-type .section_diagramma_item_child_row:last-of-type .section_diagramma_item_child_row_col:nth-of-type(1) .section_diagramma_item_child_row_col_item:nth-of-type(3) img {
   width: 386px;
   height: 39px;
 }
@@ -1144,7 +1182,7 @@
 * body .container main .section_diagramma .section_diagramma_item .section_diagramma_item_child:last-of-type .section_diagramma_item_child_row:last-of-type .section_diagramma_item_child_row_col:nth-of-type(3) {
   margin-top: 46px;
 }
-* body .container main .section_diagramma .section_diagramma_item .section_diagramma_item_child:last-of-type .section_diagramma_item_child_row:last-of-type .section_diagramma_item_child_row_col:nth-of-type(3) h2 {
+* body .container main .section_diagramma .section_diagramma_item .section_diagramma_item_child:last-of-type .section_diagramma_item_child_row:last-of-type .section_diagramma_item_child_row_col:nth-of-type(3) .diagramma_text span {
   font-family: "Font Over";
   font-style: normal;
   font-weight: 500;
@@ -1152,6 +1190,7 @@
   line-height: 100%;
   display: flex;
   align-items: center;
+  justify-content: center;
   text-align: center;
   letter-spacing: 0.1em;
   background: linear-gradient(96.81deg, #9541de 14.94%, #3ab2c0 89.57%);
@@ -1159,7 +1198,7 @@
   -webkit-text-fill-color: transparent;
   background-clip: text;
 }
-* body .container main .section_diagramma .section_diagramma_item .section_diagramma_item_child:last-of-type .section_diagramma_item_child_row:last-of-type .section_diagramma_item_child_row_col:nth-of-type(3) p {
+* body .container main .section_diagramma .section_diagramma_item .section_diagramma_item_child:last-of-type .section_diagramma_item_child_row:last-of-type .section_diagramma_item_child_row_col:nth-of-type(3) .diagramma_text p {
   font-family: "Exo 2";
   font-style: normal;
   font-weight: 400;
@@ -1172,11 +1211,12 @@
   color: #ffffff;
 }
 * body .container main .section_diagramma .section_diagramma_item .section_diagramma_item_child:last-of-type .section_diagramma_item_child_row:last-of-type .section_diagramma_item_child_row_col:nth-of-type(3) img {
-  width: 816px;
+  width: 100%;
   height: 41px;
   margin-top: 21px;
 }
 * body .container main .section_diagramma .section_diagramma_item .section_diagramma_item_child:last-of-type .section_diagramma_item_child_row:last-of-type .section_diagramma_item_child_row_col:nth-of-type(3) button {
+  cursor: pointer;
   background: url(../img/button.png);
   background-position: center center;
   background-repeat: no-repeat;
@@ -1198,24 +1238,6 @@
   color: #11e5b3;
   margin: auto;
   margin-top: 46px;
-}
-* body .container main .section_inerfeys h2 {
-  margin-top: 204px;
-  font-family: "Exo 2";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 72px;
-  line-height: 100%;
-  color: #ffffff;
-  margin-left: 307px;
-}
-* body .container main .section_inerfeys .section_inerfeys_item {
-  margin-top: 20px;
-  background: url(../img/section_inerfeys\ background.png);
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: contain;
-  min-height: 670px;
 }
 * body .container main .section_otzivi .section_otzivi_header {
   background: url(../img/section_servise_faq.png);
@@ -1337,6 +1359,162 @@
   height: 12px;
   background: #083940;
   border: 2px solid #11e5b3;
+}
+* body .container main .section_inerfeys .section_inerfeys_h2 {
+  max-width: 1200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 204px;
+}
+* body .container main .section_inerfeys .section_inerfeys_h2 h2 {
+  font-family: "Exo 2";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 72px;
+  line-height: 100%;
+  color: #ffffff;
+  display: flex;
+  justify-content: flex-start;
+}
+* body .container main .section_inerfeys .section_inerfeys_item {
+  margin-top: 20px;
+  background: url(../img/background\ elements\ loctarrrr.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  min-height: 670px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 150px;
+  padding-bottom: 230px;
+  padding-left: 200px;
+  padding-top: 100px;
+}
+* body .container main .section_inerfeys .section_inerfeys_item .section_inerfeys_item_child_1 {
+  padding-top: 155px;
+  padding-left: 138px;
+  padding-bottom: 3px;
+}
+* body .container main .section_inerfeys .section_inerfeys_item .section_inerfeys_item_child_1 ul:nth-of-type(2) {
+  margin-top: 72px;
+}
+* body .container main .section_inerfeys .section_inerfeys_item .section_inerfeys_item_child_1 ul li {
+  list-style-type: none;
+  font-family: "Exo 2";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 120%;
+  color: #ffffff;
+  margin-top: 44px;
+}
+* body .container main .section_inerfeys .section_inerfeys_item .section_inerfeys_item_child_2 {
+  background: url(../img/Other.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+  padding-top: 44px;
+  padding-right: 74px;
+  padding-left: 73px;
+  height: 790px;
+  transition: all 0.4s;
+}
+* body .container main .section_inerfeys .section_inerfeys_item .section_inerfeys_item_child_2:hover {
+  background: url(../img/Loktar\ other.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+}
+* body .container main .section_inerfeys .section_inerfeys_item .section_inerfeys_item_child_2 h2 {
+  font-family: "Font Over";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 100%;
+  letter-spacing: 0.1em;
+  font-feature-settings: "liga" off;
+  color: #053245;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: auto;
+}
+* body .container main .section_inerfeys .section_inerfeys_item .section_inerfeys_item_child_2 .section_inerfeys_item_child_item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+* body .container main .section_inerfeys .section_inerfeys_item .section_inerfeys_item_child_2 .section_inerfeys_item_child_item h4 {
+  font-family: "Exo 2";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #ffffff;
+  margin-top: 37px;
+}
+* body .container main .section_inerfeys .section_inerfeys_item .section_inerfeys_item_child_2 .section_inerfeys_item_child_item h4:nth-of-type(1) {
+  margin-top: 82px;
+}
+* body .container main .section_inerfeys .section_inerfeys_item .section_inerfeys_item_child_3 {
+  background: url(/./assets/img/Other.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+  padding-top: 44px;
+  padding-right: 73px;
+  padding-left: 74px;
+  height: 790px !important;
+  transition: all 0.4s;
+}
+* body .container main .section_inerfeys .section_inerfeys_item .section_inerfeys_item_child_3:hover {
+  background: url(../img/Loktar\ other.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+}
+* body .container main .section_inerfeys .section_inerfeys_item .section_inerfeys_item_child_3 h2 {
+  font-family: "Font Over";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 100%;
+  letter-spacing: 0.1em;
+  font-feature-settings: "liga" off;
+  color: #053245;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: auto;
+}
+* body .container main .section_inerfeys .section_inerfeys_item .section_inerfeys_item_child_3 .section_inerfeys_item_child_item_3 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+* body .container main .section_inerfeys .section_inerfeys_item .section_inerfeys_item_child_3 .section_inerfeys_item_child_item_3 h4 {
+  font-family: "Exo 2";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #ffffff;
+  margin-top: 42px;
+}
+* body .container main .section_inerfeys .section_inerfeys_item .section_inerfeys_item_child_3 .section_inerfeys_item_child_item_3 h4:nth-of-type(1) {
+  margin-top: 82px;
 }
 * body .container main .section_tarif .section_tarif_header {
   background: url(../img/section_servise_faq.png);
@@ -1713,6 +1891,7 @@
   padding: 39px;
 }
 * body .container main .section_servise .section_servise_main_button button {
+  cursor: pointer;
   z-index: 99;
   min-height: 158px;
   font-family: "Font Over";
