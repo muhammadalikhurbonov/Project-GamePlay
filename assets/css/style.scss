@@ -751,18 +751,26 @@
             }
             .section_function_item_child {
               display: flex;
-              justify-content: space-between;
+              justify-content: space-around;
               align-items: center;
-              margin-left: 220px;
+              // margin-left: 220px;
               .section_function_item_child_left {
                 display: flex;
                 flex-direction: column;
                 gap: 27px;
                 .section_function_item_child_left_row1 {
+                  background: url(../img/Group\ 71\ 22.png);
+                  background-position: center center;
+                  background-repeat: no-repeat;
+                  background-size: contain;
+                  padding: 18px 33px 22px 133px;
+                  margin-left: 125px;
                   display: flex;
-                  justify-content: center;
+                  // justify-content: center;
                   align-items: center;
                   gap: 14px;
+                  height: 80px;
+                  max-height: 80px;
                   h5 {
                     font-family: "Exo 2";
                     font-style: normal;
@@ -933,32 +941,16 @@
                     min-height: 504px;
                     margin: 40px 48px 42px 0px;
                     padding: 55px 99px 58px 98px;
-                    // background: linear-gradient(
-                    //   93.05deg,
-                    //   rgba(205, 81, 252, 0) -2.58%,
-                    //   rgba(204, 81, 250, 0.2) 93.31%
-                    // );
-                    // border-radius: 2.4px;
-                    // border: 4px solid #001324;
-                    height: 442px;
-                    max-height: 442px;
                     display: flex;
                     justify-content: center;
                     align-items: center;
                     gap: 42px;
-                    text-align: center;
-                    font-size: 18px;
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    width: 0;
                     .swiper-slide_item {
                       img {
                         display: block;
                         width: 100%;
                         height: 100%;
                         object-fit: cover;
-                        margin-bottom: 0;
                       }
                       h4 {
                         font-family: "Font Over";
@@ -977,13 +969,12 @@
                         -webkit-text-fill-color: transparent;
                         background-clip: text;
                         margin-bottom: 18px;
-                        margin-top: 0;
                       }
                     }
                   }
                 }
                 .swiper-button-next {
-                  right: var(--swiper-navigation-sides-offset, 12.5%);
+                  right: var(--swiper-navigation-sides-offset, 10%);
                   top: var(--swiper-navigation-sides-offset, 65%);
                   background: url("/./assets/img/Group 94.png");
                   background-position: center center;
@@ -996,7 +987,7 @@
                 }
                 .swiper-button-prev {
                   position: absolute;
-                  left: var(--swiper-navigation-sides-offset, 12.5%);
+                  left: var(--swiper-navigation-sides-offset, 10%);
                   top: var(--swiper-navigation-sides-offset, 65%);
                   background: url("/./assets/img/Group 95.png");
                   background-position: center center;
@@ -1679,7 +1670,7 @@
                   display: flex;
                   align-items: center;
                   text-align: center;
-                  color: #11E5B3;
+                  color: #11e5b3;
                   margin-top: 37px;
                 }
               }

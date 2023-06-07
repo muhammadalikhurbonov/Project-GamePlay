@@ -702,9 +702,8 @@
 }
 * body .container main .section_function .section_function_item .section_function_item_child {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
-  margin-left: 220px;
 }
 * body .container main .section_function .section_function_item .section_function_item_child .section_function_item_child_left {
   display: flex;
@@ -712,10 +711,17 @@
   gap: 27px;
 }
 * body .container main .section_function .section_function_item .section_function_item_child .section_function_item_child_left .section_function_item_child_left_row1 {
+  background: url(../img/Group\ 71\ 22.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  padding: 18px 33px 22px 133px;
+  margin-left: 125px;
   display: flex;
-  justify-content: center;
   align-items: center;
   gap: 14px;
+  height: 80px;
+  max-height: 80px;
 }
 * body .container main .section_function .section_function_item .section_function_item_child .section_function_item_child_left .section_function_item_child_left_row1 h5 {
   font-family: "Exo 2";
@@ -855,18 +861,10 @@
   min-height: 504px;
   margin: 40px 48px 42px 0px;
   padding: 55px 99px 58px 98px;
-  height: 442px;
-  max-height: 442px;
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 42px;
-  text-align: center;
-  font-size: 18px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 0;
 }
 * body .container main .section_function .section_function_item .section_function_item_child .swiper .swiper-wrapper .swiper-slide .swiper-slide_item img {
   display: block;
@@ -874,7 +872,6 @@
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
-  margin-bottom: 0;
 }
 * body .container main .section_function .section_function_item .section_function_item_child .swiper .swiper-wrapper .swiper-slide .swiper-slide_item h4 {
   font-family: "Font Over";
@@ -889,10 +886,9 @@
   -webkit-text-fill-color: transparent;
   background-clip: text;
   margin-bottom: 18px;
-  margin-top: 0;
 }
 * body .container main .section_function .section_function_item .section_function_item_child .swiper .swiper-button-next {
-  right: var(--swiper-navigation-sides-offset, 12.5%);
+  right: var(--swiper-navigation-sides-offset, 10%);
   top: var(--swiper-navigation-sides-offset, 65%);
   background: url("/./assets/img/Group 94.png");
   background-position: center center;
@@ -905,7 +901,7 @@
 }
 * body .container main .section_function .section_function_item .section_function_item_child .swiper .swiper-button-prev {
   position: absolute;
-  left: var(--swiper-navigation-sides-offset, 12.5%);
+  left: var(--swiper-navigation-sides-offset, 10%);
   top: var(--swiper-navigation-sides-offset, 65%);
   background: url("/./assets/img/Group 95.png");
   background-position: center center;
@@ -1512,7 +1508,7 @@
   display: flex;
   align-items: center;
   text-align: center;
-  color: #11E5B3;
+  color: #11e5b3;
   margin-top: 37px;
 }
 * body .container main .section_inerfeys .section_inerfeys_item .section_inerfeys_item_child_2 .section_inerfeys_item_child_item h4:nth-of-type(1) {
