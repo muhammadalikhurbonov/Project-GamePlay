@@ -12,6 +12,7 @@
   padding: 0;
   box-sizing: border-box;
   body {
+    overflow-x: hidden;
     background: #001324;
     .container {
       border: 2px solid red;
@@ -1624,7 +1625,8 @@
               }
             }
             .section_inerfeys_item_child_2 {
-              background: url(../img/Other.png);
+              // background: url(../img/Other.png);
+              background: url(../img/Loktar\ other.png);
               background-repeat: no-repeat;
               background-size: contain;
               background-position: center center;
@@ -1633,26 +1635,32 @@
               padding-left: 73px;
               height: 790px;
               transition: all 0.4s;
-              &:hover {
-                background: url(../img/Loktar\ other.png);
-                background-repeat: no-repeat;
-                background-size: contain;
-                background-position: center center;
-              }
+              // &:hover {
+              //   background: url(../img/Loktar\ other.png);
+              //   background-repeat: no-repeat;
+              //   background-size: contain;
+              //   background-position: center center;
+              // }
               h2 {
                 font-family: "Font Over";
                 font-style: normal;
                 font-weight: 500;
-                font-size: 24px;
+                font-size: 32px;
                 line-height: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                text-align: center;
                 letter-spacing: 0.1em;
                 font-feature-settings: "liga" off;
-                color: #053245;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                text-align: center;
-                margin: auto;
+                background: radial-gradient(
+                  62.5% 62.5% at 50% 37.5%,
+                  #97fae2 0%,
+                  #11e5b3 100%
+                );
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                background-clip: text;
               }
               .section_inerfeys_item_child_item {
                 display: flex;
@@ -1671,7 +1679,7 @@
                   display: flex;
                   align-items: center;
                   text-align: center;
-                  color: #ffffff;
+                  color: #11E5B3;
                   margin-top: 37px;
                 }
               }
@@ -1686,12 +1694,12 @@
               padding-left: 74px;
               height: 790px !important;
               transition: all 0.4s;
-              &:hover {
-                background: url(../img/Loktar\ other.png);
-                background-repeat: no-repeat;
-                background-size: contain;
-                background-position: center center;
-              }
+              // &:hover {
+              //   background: url(../img/Loktar\ other.png);
+              //   background-repeat: no-repeat;
+              //   background-size: contain;
+              //   background-position: center center;
+              // }
               h2 {
                 font-family: "Font Over";
                 font-style: normal;
