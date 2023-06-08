@@ -599,30 +599,19 @@
 }
 * body .container main .section_logotips .section_logotips_item .section_logotips_item_text {
   margin-top: 665px;
+}
+* body .container main .section_logotips .section_logotips_item .section_logotips_item_text .section_logotips_item_text_img {
   position: relative;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin: auto;
+  width: 1062px;
 }
-* body .container main .section_logotips .section_logotips_item .section_logotips_item_text img {
+* body .container main .section_logotips .section_logotips_item .section_logotips_item_text .section_logotips_item_text_img img {
+  margin-top: 200px;
+  width: 100%;
   position: absolute;
-}
-* body .container main .section_logotips .section_logotips_item .section_logotips_item_text img:nth-of-type(1) {
-  position: absolute;
-  left: 24%;
-  top: -80px;
-}
-* body .container main .section_logotips .section_logotips_item .section_logotips_item_text img:nth-of-type(2) {
-  position: absolute;
-  right: 20%;
-  top: -80px;
-}
-* body .container main .section_logotips .section_logotips_item .section_logotips_item_text img:nth-of-type(3) {
-  position: absolute;
-  left: 16%;
-  top: 20px;
-}
-* body .container main .section_logotips .section_logotips_item .section_logotips_item_text img:nth-of-type(4) {
-  position: absolute;
-  right: 26%;
-  top: 100px;
 }
 * body .container main .section_logotips .section_logotips_item .section_logotips_item_text h1 {
   font-family: "Cyberpunk";
@@ -644,7 +633,8 @@
   text-align: center;
   font-feature-settings: "liga" off;
   color: #ffffff;
-  margin-top: 102px;
+  margin-top: 152px;
+  margin-left: 70px;
 }
 * body .container main .section_function {
   min-height: 1677px;

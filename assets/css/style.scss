@@ -639,28 +639,17 @@
             }
             .section_logotips_item_text {
               margin-top: 665px;
-              position: relative;
-              img {
-                position: absolute;
-                &:nth-of-type(1) {
+              .section_logotips_item_text_img{
+                position: relative;
+                display: flex;
+                justify-content:flex-start;
+                align-items: center;
+                margin: auto;
+                width: 1062px;
+                img{
+                  margin-top: 200px;
+                  width: 100%;
                   position: absolute;
-                  left: 24%;
-                  top: -80px;
-                }
-                &:nth-of-type(2) {
-                  position: absolute;
-                  right: 20%;
-                  top: -80px;
-                }
-                &:nth-of-type(3) {
-                  position: absolute;
-                  left: 16%;
-                  top: 20px;
-                }
-                &:nth-of-type(4) {
-                  position: absolute;
-                  right: 26%;
-                  top: 100px;
                 }
               }
               h1 {
@@ -683,7 +672,8 @@
                 text-align: center;
                 font-feature-settings: "liga" off;
                 color: #ffffff;
-                margin-top: 102px;
+                margin-top: 152px;
+                margin-left: 70px;
               }
             }
           }
