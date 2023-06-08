@@ -1319,6 +1319,9 @@
   justify-content: center;
   align-items: center;
 }
+* body .container main .section_otzivi .section_otzivi_main .swiper .swiper-wrapper .swiper-slide .swiper-slide_child:first-of-type .slide_child_text {
+  width: 38%;
+}
 * body .container main .section_otzivi .section_otzivi_main .swiper .swiper-wrapper .swiper-slide .swiper-slide_child:first-of-type .slide_child_text h3 {
   font-family: "Font Over";
   font-style: normal;
@@ -1334,6 +1337,7 @@
   margin-top: 60px;
 }
 * body .container main .section_otzivi .section_otzivi_main .swiper .swiper-wrapper .swiper-slide .swiper-slide_child:first-of-type .slide_child_text_information {
+  width: 39%;
   margin-top: 24px;
   display: flex;
   justify-content: flex-start;
