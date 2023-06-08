@@ -1286,6 +1286,12 @@
   min-height: 562px;
   margin-bottom: 30px;
 }
+* body .container main .section_otzivi .section_otzivi_main .swiper .swiper-wrapper .swiper-slide .swiper-slide_child:first-of-type {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 * body .container main .section_otzivi .section_otzivi_main .swiper .swiper-wrapper .swiper-slide .swiper-slide_child:first-of-type .slide_child_text h3 {
   font-family: "Font Over";
   font-style: normal;
@@ -1294,20 +1300,18 @@
   line-height: 100%;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   letter-spacing: 0.1em;
   font-feature-settings: "liga" off;
   color: #11e5b3;
   margin-top: 60px;
-  margin-right: 31%;
 }
 * body .container main .section_otzivi .section_otzivi_main .swiper .swiper-wrapper .swiper-slide .swiper-slide_child:first-of-type .slide_child_text_information {
   margin-top: 24px;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   gap: 37px;
-  margin-right: 15%;
 }
 * body .container main .section_otzivi .section_otzivi_main .swiper .swiper-wrapper .swiper-slide .swiper-slide_child:first-of-type .slide_child_text_information .swiper-slide_child_item:first-of-type img {
   width: 100%;
