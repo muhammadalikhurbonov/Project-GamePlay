@@ -694,6 +694,7 @@
           background-position: center center;
           background-repeat: no-repeat;
           background-size: contain;
+          background-color: #001324;
           h3 {
             font-family: "Exo 2";
             font-style: normal;
@@ -753,24 +754,20 @@
               display: flex;
               justify-content: space-around;
               align-items: center;
-              // margin-left: 220px;
               .section_function_item_child_left {
+                margin-top: 80px;
                 display: flex;
                 flex-direction: column;
-                gap: 27px;
+                gap: 30px;
                 .section_function_item_child_left_row1 {
-                  background: url(../img/Group\ 71\ 22.png);
+                  background: url(../img/Rectangle\ 126\ 22.png);
                   background-position: center center;
                   background-repeat: no-repeat;
                   background-size: contain;
-                  padding: 18px 33px 22px 133px;
-                  margin-left: 125px;
+                  padding: 16px 31px 15px 173px;
                   display: flex;
-                  // justify-content: center;
                   align-items: center;
                   gap: 14px;
-                  height: 80px;
-                  max-height: 80px;
                   h5 {
                     font-family: "Exo 2";
                     font-style: normal;
@@ -789,8 +786,12 @@
                   }
                 }
                 .section_function_item_child_left_row2 {
+                  background: url(../img/section_function_item_child_left_row2\ 22.png);
+                  background-position: center center;
+                  background-repeat: no-repeat;
+                  background-size: contain;
+                  padding: 16px 36px 16px 85px;
                   display: flex;
-                  justify-content: center;
                   align-items: center;
                   gap: 14px;
                   h5 {
@@ -811,8 +812,12 @@
                   }
                 }
                 .section_function_item_child_left_row3 {
+                  background: url(../img/section_function_item_child_left_row2\ 333.png);
+                  background-position: center center;
+                  background-repeat: no-repeat;
+                  background-size: contain;
+                  padding: 16px 36px 20px 85px;
                   display: flex;
-                  justify-content: center;
                   align-items: center;
                   gap: 14px;
                   h5 {
@@ -833,8 +838,13 @@
                   }
                 }
                 .section_function_item_child_left_row4 {
+                  background: url(../img/section_function_item_child_left_row4\ 44.png);
+                  background-position: center center;
+                  background-repeat: no-repeat;
+                  background-size: contain;
+                  padding: 16px 36px 20px 65px;
                   display: flex;
-                  justify-content: center;
+                  justify-content: flex-start;
                   align-items: center;
                   gap: 14px;
                   h5 {
@@ -855,6 +865,11 @@
                   }
                 }
                 .section_function_item_child_left_row5 {
+                  background: url(../img/section_function_item_child_left_row5\ 55.png);
+                  background-position: center center;
+                  background-repeat: no-repeat;
+                  background-size: contain;
+                  padding: 16px 36px 20px 65px;
                   display: flex;
                   justify-content: center;
                   align-items: center;
@@ -877,9 +892,14 @@
                   }
                 }
                 .section_function_item_child_left_row6 {
+                  background: url(../img/section_function_item_child_left_row6\ 6666.png);
+                  background-position: center center;
+                  background-repeat: no-repeat;
+                  background-size: contain;
+                  padding: 16px 36px 20px 65px;
                   display: flex;
-                  justify-content: center;
                   align-items: center;
+                  justify-content: center;
                   gap: 14px;
                   h5 {
                     font-family: "Exo 2";
@@ -899,9 +919,14 @@
                   }
                 }
                 .section_function_item_child_left_row7 {
+                  background: url(../img/section_function_item_child_left_row7\ 7777.png);
+                  background-position: center center;
+                  background-repeat: no-repeat;
+                  background-size: contain;
+                  padding: 16px 36px 20px 65px;
                   display: flex;
-                  justify-content: center;
                   align-items: center;
+                  justify-content: center;
                   gap: 14px;
                   h5 {
                     font-family: "Exo 2";
