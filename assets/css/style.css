@@ -1278,19 +1278,13 @@
   background-repeat: no-repeat;
   background-size: contain;
 }
-* body .container main .section_otzivi .section_otzivi_main .swiper .swiper-wrapper {
-  background: url(../img/Review\ background.png);
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: contain;
-  min-height: 562px;
-}
 * body .container main .section_otzivi .section_otzivi_main .swiper .swiper-wrapper .swiper-slide {
-  background: url(../img/review\ background\ elements\ 999.png);
+  background: url(../img/Review\ background\ ttt.png);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: contain;
   min-height: 562px;
+  margin-bottom: 30px;
 }
 * body .container main .section_otzivi .section_otzivi_main .swiper .swiper-wrapper .swiper-slide .swiper-slide_child:first-of-type .slide_child_text h3 {
   font-family: "Font Over";
@@ -1304,7 +1298,7 @@
   letter-spacing: 0.1em;
   font-feature-settings: "liga" off;
   color: #11e5b3;
-  margin-top: 56px;
+  margin-top: 60px;
   margin-right: 31%;
 }
 * body .container main .section_otzivi .section_otzivi_main .swiper .swiper-wrapper .swiper-slide .swiper-slide_child:first-of-type .slide_child_text_information {
@@ -1438,19 +1432,17 @@
   background-position: center center;
   background-repeat: no-repeat;
   background-size: contain;
-  min-height: 670px;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 150px;
-  padding-bottom: 230px;
-  padding-left: 200px;
-  padding-top: 100px;
+  padding-bottom: 200px;
+  padding-left: 50px;
+  padding-top: 200px;
 }
 * body .container main .section_inerfeys .section_inerfeys_item .section_inerfeys_item_child_1 {
-  padding-top: 155px;
+  padding-top: 115px;
   padding-left: 138px;
-  padding-bottom: 3px;
+  padding-bottom: 53px;
 }
 * body .container main .section_inerfeys .section_inerfeys_item .section_inerfeys_item_child_1 ul:nth-of-type(2) {
   margin-top: 72px;
@@ -1470,7 +1462,7 @@
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center center;
-  padding-top: 44px;
+  padding-top: 34px;
   padding-right: 74px;
   padding-left: 73px;
   height: 790px;
@@ -1566,8 +1558,8 @@
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
-  margin-top: 205px;
   min-height: 67px;
+  margin-top: 50px;
 }
 * body .container main .section_tarif .section_tarif_header h2 {
   font-family: "Font Over";
