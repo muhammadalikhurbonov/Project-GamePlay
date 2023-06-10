@@ -1079,6 +1079,7 @@ line-height: 130%;
         .section_geroy {
           width: 100%;
           position: relative;
+          
           .section_geroy_item {
             display: flex;
             justify-content: center;
@@ -1361,6 +1362,63 @@ line-height: 130%;
                 }
               }
             }
+            
+          }
+          .swiper-button-next {
+            right: var(--swiper-navigation-sides-offset, 10%);
+            top: var(--swiper-navigation-sides-offset, 65%);
+            background: url("/./assets/img/Group 94.png");
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: contain;
+            padding: 20px;
+            &::after {
+              content: none;
+            }
+          }
+          .swiper-button-prev {
+            position: absolute;
+            left: var(--swiper-navigation-sides-offset, 10%);
+            top: var(--swiper-navigation-sides-offset, 65%);
+            background: url("/./assets/img/Group 95.png");
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: contain;
+            padding: 20px;
+            &::after {
+              content: none;
+            }
+          }
+          .swiper-pagination {
+            font-style: normal;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            letter-spacing: 0.1em;
+            font-feature-settings: 'liga' off;
+            color: #11E5B3;
+            display: flex;
+justify-content: center;
+align-items: center;
+            span {
+              font-style: normal;
+              font-weight: 500;
+              font-size: 16px;
+              line-height: 100%;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              text-align: center;
+              letter-spacing: 0.1em;
+              font-feature-settings: 'liga' off;
+              color: #11E5B3;
+              // background: #083940;
+              // border: 2px solid #11e5b3;
+            }
           }
           .section_geroy_modal {
             position: absolute;
@@ -1398,6 +1456,7 @@ line-height: 130%;
         }
         .section_logotips {
           margin-top: 102px;
+         
           h4 {
             font-family: "Exo 2";
             font-style: normal;
@@ -1414,6 +1473,8 @@ line-height: 130%;
             background-size: cover;
             min-height: 1293px;
             .section_logotips_item_img {
+              padding-right: 20px;
+              padding-left: 20px;
               display: flex;
               flex-wrap: wrap;
               justify-content: center;
@@ -1460,6 +1521,230 @@ line-height: 130%;
                 color: #ffffff;
                 margin-top: 152px;
                 margin-left: 70px;
+              }
+            }
+          }
+          @media screen and (max-width:1124px){
+            .section_logotips_item{
+              .section_logotips_item_text{
+                margin-top: 565px;
+                .section_logotips_item_text_img{
+                  width: 862px;
+                }
+                h1{
+                  font-size: 280px;
+                  line-height: 68px;
+                }
+                p{
+                  font-size: 24px;
+                  line-height: 120%;
+                  margin-top: 142px;
+                }
+              }
+            }
+          }
+          @media screen and (max-width:932px){
+            .section_logotips_item{
+              min-height: 1100px;
+              .section_logotips_item_text{
+                margin-top: 465px;
+                .section_logotips_item_text_img{
+                  width: 762px;
+                }
+                h1{
+                  font-size: 220px;
+                  line-height: 68px;
+                }
+                p{
+                  font-size: 22px;
+                  line-height: 120%;
+                  margin-top: 122px;
+                }
+              }
+            }
+          }
+          @media screen and (max-width:821px){
+            h4{
+              font-size: 18px;
+line-height: 120%;
+            }
+            .section_logotips_item{
+              min-height: 1100px;
+              .section_logotips_item_img{
+                img{
+                  width: 141px;
+                  height: 43px;
+                  object-fit: contain;
+                }
+              }
+              .section_logotips_item_text{
+                margin-top: 465px;
+                .section_logotips_item_text_img{
+                  width: 762px;
+                }
+                h1{
+                  font-size: 220px;
+                  line-height: 68px;
+                }
+                p{
+                  font-size: 22px;
+                  line-height: 120%;
+                  margin-top: 122px;
+                }
+              }
+            }
+          }
+          @media screen and (max-width:808px){
+            h4{
+              font-size: 18px;
+line-height: 120%;
+            }
+            .section_logotips_item{
+              min-height: 1100px;
+              .section_logotips_item_text{
+                margin-top: 465px;
+                .section_logotips_item_text_img{
+                  width: 662px;
+                }
+                h1{
+                  font-size: 180px;
+                  line-height: 68px;
+                }
+                p{
+                  font-size: 22px;
+                  line-height: 120%;
+                  margin-top: 112px;
+                }
+              }
+            }
+          }
+          @media screen and (max-width:692px){
+            h4{
+              font-size: 18px;
+line-height: 120%;
+            }
+            .section_logotips_item{
+              min-height: 1050px;
+              .section_logotips_item_img{
+                img{
+                  width: 141px;
+                  height: 43px;
+                  object-fit: contain;
+                }
+              }
+              .section_logotips_item_text{
+                margin-top: 415px;
+                .section_logotips_item_text_img{
+                  width: 562px;
+                }
+                h1{
+                  font-size: 180px;
+                  line-height: 68px;
+                }
+                p{
+                  font-size: 22px;
+                  line-height: 120%;
+                  margin-top: 102px;
+                }
+              }
+            }
+          }
+          @media screen and (max-width:586px){
+            h4{
+              font-size: 18px;
+line-height: 120%;
+            }
+            .section_logotips_item{
+              min-height: 1050px;
+              .section_logotips_item_img{
+                img{
+                  width: 141px;
+                  height: 43px;
+                  object-fit: contain;
+                }
+              }
+              .section_logotips_item_text{
+                margin-top: 305px;
+                .section_logotips_item_text_img{
+                  width: 462px;
+                }
+                h1{
+                  font-size: 130px;
+                  line-height: 68px;
+                }
+                p{
+                  font-size: 20px;
+                  line-height: 120%;
+                  margin-top: 82px;
+                }
+              }
+            }
+          }
+          @media screen and (max-width:476px){
+            h4{
+              font-size: 18px;
+line-height: 120%;
+            }
+            .section_logotips_item{
+              min-height: 1050px;
+              .section_logotips_item_img{
+                img{
+                  width: 141px;
+                  height: 43px;
+                  object-fit: contain;
+                }
+              }
+              .section_logotips_item_text{
+                margin-top: 305px;
+                .section_logotips_item_text_img{
+                  width: 362px;
+                  img{
+                    margin-top: 50px;
+                  }
+                }
+                h1{
+                  font-size: 130px;
+                  line-height: 68px;
+                }
+                p{
+                  font-size: 20px;
+                  line-height: 120%;
+                  margin-top: 82px;
+                }
+              }
+            }
+          }
+          @media screen and (max-width:385px){
+            h4{
+              font-size: 18px;
+line-height: 120%;
+            }
+            .section_logotips_item{
+              min-height: 1250px;
+              .section_logotips_item_img{
+                img{
+                  width: 141px;
+                  height: 43px;
+                  object-fit: contain;
+                }
+              }
+              .section_logotips_item_text{
+                margin-top: 105px;
+                .section_logotips_item_text_img{
+                  width: 262px;
+                  img{
+                    margin-top: 80px;
+                  }
+                }
+                h1{
+                  font-size: 100px;
+                  line-height: 52px;
+                }
+                p{
+                  font-size: 14px;
+                  line-height: 120%;
+                  margin-top: 42px;
+                }
               }
             }
           }
@@ -3043,6 +3328,53 @@ line-height: 130%;
           text-align: center;
           font-feature-settings: "liga" off;
           color: #ffffff;
+        }
+        @media screen and (max-width:725px){
+          h2{
+            font-size: 250px;
+            line-height: 78px;
+          }
+          p{
+            font-size: 24px;
+            line-height: 120%;
+          }
+        }
+        @media screen and (max-width:582px){
+          h2{
+            font-size: 200px;
+            line-height: 68px;
+          }
+          p{
+            font-size: 22px;
+            line-height: 120%;
+            margin-top: 60px;
+          }
+        }
+        @media screen and (max-width:470px){
+          min-height: 700px;
+          h2{
+            font-size: 150px;
+            line-height: 58px;
+            padding-top: 400px;
+          }
+          p{
+            font-size: 20px;
+            line-height: 120%;
+            margin-top: 50px;
+          }
+        }
+        @media screen and (max-width:380px){
+          min-height: 500px;
+          h2{
+            font-size: 100px;
+            line-height: 48px;
+            padding-top: 200px;
+          }
+          p{
+            font-size: 16px;
+            line-height: 120%;
+            margin-top: 30px;
+          }
         }
       }
       @media screen and (min-width: 1920px) {
