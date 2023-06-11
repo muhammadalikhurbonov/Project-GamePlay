@@ -1,7 +1,13 @@
 "use strict";
 
 function modalFunction() {
-  document.querySelector(".section_geroy_modal").classList.toggle("scale");
+  document.querySelector(".section_geroy_modal").classList.add("scale");
+  document.querySelector("body").style.overflow = "hidden";
+}
+
+function removeFunction() {
+  document.querySelector(".section_geroy_modal").classList.remove("scale");
+  document.querySelector("body").style.overflow = "auto";
 }
 
 var acc = document.getElementsByClassName("section_servise_main_item");
@@ -38,11 +44,11 @@ var swiper = new Swiper(".MYSwiper", {
     },
     "@1.50": {
       slidesPerView: 3,
-      spaceBetween: 40,
+      spaceBetween: 20,
     },
     "@2.00": {
       slidesPerView: 4,
-      spaceBetween: 40,
+      spaceBetween: 20,
     },
   },
 });

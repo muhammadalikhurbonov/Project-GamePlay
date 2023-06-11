@@ -16,9 +16,6 @@
   overflow-x: hidden;
   background: #001324;
 }
-* body .container {
-  border: 2px solid red;
-}
 * body .container main .section_main {
   position: relative;
   background: url(../img/section_main_backdround.png);
@@ -86,6 +83,19 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
+  transition: all 0.4s;
+  position: relative;
+}
+* body .container main .section_main header .header_left ul li a::before {
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(233.38deg, #fcdaff -32.6%, #cf52fe 59.62%);
+  top: 100%;
+  transition: all 0.4s;
+}
+* body .container main .section_main header .header_left ul li a:hover::before {
+  width: 100%;
 }
 * body .container main .section_main header .header_right {
   margin-bottom: 55px;
@@ -892,11 +902,11 @@
 }
 * body .container main .section_geroy {
   width: 100%;
-  position: relative;
   height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
 }
 * body .container main .section_geroy .section_geroy_item .section_geroy_item_child {
   margin-left: 15px;
@@ -1032,12 +1042,13 @@
   width: 401px;
   height: 500px;
   z-index: -1;
+  overflow: hidden;
 }
 * body .container main .section_geroy .section_geroy_item .section_geroy_item_child .img_box img {
   width: 100%;
   height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  -o-object-fit: contain;
+     object-fit: contain;
   display: block;
 }
 * body .container main .section_geroy .section_geroy_item .section_geroy_item_child .geroy_box {
@@ -1217,6 +1228,7 @@
   width: 500px;
   height: 500px;
   scale: 0;
+  z-index: 99999;
 }
 * body .container main .section_geroy .section_geroy_modal .remove {
   position: absolute;
@@ -1239,6 +1251,59 @@
 * body .container main .section_geroy .scale {
   transition: all 0.4s;
   scale: 1;
+}
+@media screen and (max-width: 1773px) {
+  * body .container main .section_geroy .section_geroy_item .section_geroy_item_child .img_box {
+    width: 301px;
+    height: 400px;
+    overflow: hidden;
+  }
+}
+@media screen and (max-width: 1677px) {
+  * body .container main .section_geroy .section_geroy_item .section_geroy_item_child .img_box {
+    width: 301px;
+    height: 400px;
+    overflow: hidden;
+  }
+  * body .container main .section_geroy .section_geroy_item .section_geroy_item_child:nth-of-type(2) .information_box p {
+    font-size: 16px;
+    line-height: 130%;
+  }
+}
+@media screen and (max-width: 1594px) {
+  * body .container main .section_geroy .section_geroy_item .section_geroy_item_child .img_box {
+    width: 301px;
+    height: 400px;
+    overflow: hidden;
+  }
+  * body .container main .section_geroy .section_geroy_item .section_geroy_item_child:nth-of-type(2) .information_box span svg {
+    margin-top: 23px;
+  }
+  * body .container main .section_geroy .section_geroy_item .section_geroy_item_child:nth-of-type(2) .information_box p {
+    font-size: 15px;
+    line-height: 130%;
+  }
+  * body .container main .section_geroy .section_geroy_item .section_geroy_item_child:nth-of-type(3) .information_box span svg {
+    margin-top: 23px;
+  }
+  * body .container main .section_geroy .section_geroy_item .section_geroy_item_child:nth-of-type(3) .information_box p {
+    font-size: 16px;
+    line-height: 130%;
+  }
+  * body .container main .section_geroy .section_geroy_item .section_geroy_item_child:nth-of-type(1) .information_box span svg {
+    margin-top: 23px;
+  }
+  * body .container main .section_geroy .section_geroy_item .section_geroy_item_child:nth-of-type(1) .information_box p {
+    font-size: 16px;
+    line-height: 130%;
+  }
+  * body .container main .section_geroy .section_geroy_item .section_geroy_item_child:nth-of-type(4) .information_box span svg {
+    margin-top: 23px;
+  }
+  * body .container main .section_geroy .section_geroy_item .section_geroy_item_child:nth-of-type(4) .information_box p {
+    font-size: 16px;
+    line-height: 130%;
+  }
 }
 * body .container main .section_logotips {
   margin-top: 102px;
@@ -1534,6 +1599,7 @@
   background-repeat: no-repeat;
   background-size: contain;
   background-color: #001324;
+  padding-top: 169px;
 }
 * body .container main .section_function h3 {
   font-family: "Exo 2";
@@ -1546,7 +1612,6 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
-  padding-top: 169px;
 }
 * body .container main .section_function p {
   font-family: "Exo 2";
@@ -1588,12 +1653,14 @@
   align-items: center;
 }
 * body .container main .section_function .section_function_item .section_function_item_child .section_function_item_child_left {
-  margin-top: 80px;
+  margin-top: 90px;
   display: flex;
   flex-direction: column;
   gap: 30px;
+  margin-left: 80px;
 }
 * body .container main .section_function .section_function_item .section_function_item_child .section_function_item_child_left .section_function_item_child_left_row1 {
+  cursor: pointer;
   background: url(../img/Rectangle\ 126\ 22.png);
   background-position: center center;
   background-repeat: no-repeat;
@@ -1602,6 +1669,8 @@
   display: flex;
   align-items: center;
   gap: 14px;
+  transform: translateX(60px);
+  max-width: 450px;
 }
 * body .container main .section_function .section_function_item .section_function_item_child .section_function_item_child_left .section_function_item_child_left_row1 h5 {
   font-family: "Exo 2";
@@ -1616,6 +1685,7 @@
   background-clip: text;
 }
 * body .container main .section_function .section_function_item .section_function_item_child .section_function_item_child_left .section_function_item_child_left_row2 {
+  cursor: pointer;
   background: url(../img/section_function_item_child_left_row2\ 22.png);
   background-position: center center;
   background-repeat: no-repeat;
@@ -1624,6 +1694,8 @@
   display: flex;
   align-items: center;
   gap: 14px;
+  max-width: 415px;
+  transform: translateX(30px);
 }
 * body .container main .section_function .section_function_item .section_function_item_child .section_function_item_child_left .section_function_item_child_left_row2 h5 {
   font-family: "Exo 2";
@@ -1638,6 +1710,7 @@
   background-clip: text;
 }
 * body .container main .section_function .section_function_item .section_function_item_child .section_function_item_child_left .section_function_item_child_left_row3 {
+  cursor: pointer;
   background: url(../img/section_function_item_child_left_row2\ 333.png);
   background-position: center center;
   background-repeat: no-repeat;
@@ -1646,6 +1719,8 @@
   display: flex;
   align-items: center;
   gap: 14px;
+  margin-left: 45px;
+  max-width: 382px;
 }
 * body .container main .section_function .section_function_item .section_function_item_child .section_function_item_child_left .section_function_item_child_left_row3 h5 {
   font-family: "Exo 2";
@@ -1660,6 +1735,7 @@
   background-clip: text;
 }
 * body .container main .section_function .section_function_item .section_function_item_child .section_function_item_child_left .section_function_item_child_left_row4 {
+  cursor: pointer;
   background: url(../img/section_function_item_child_left_row4\ 44.png);
   background-position: center center;
   background-repeat: no-repeat;
@@ -1669,6 +1745,7 @@
   justify-content: flex-start;
   align-items: center;
   gap: 14px;
+  max-width: 350px;
 }
 * body .container main .section_function .section_function_item .section_function_item_child .section_function_item_child_left .section_function_item_child_left_row4 h5 {
   font-family: "Exo 2";
@@ -1683,6 +1760,7 @@
   background-clip: text;
 }
 * body .container main .section_function .section_function_item .section_function_item_child .section_function_item_child_left .section_function_item_child_left_row5 {
+  cursor: pointer;
   background: url(../img/section_function_item_child_left_row5\ 55.png);
   background-position: center center;
   background-repeat: no-repeat;
@@ -1692,6 +1770,8 @@
   justify-content: center;
   align-items: center;
   gap: 14px;
+  margin-left: 8px;
+  max-width: 321px;
 }
 * body .container main .section_function .section_function_item .section_function_item_child .section_function_item_child_left .section_function_item_child_left_row5 h5 {
   font-family: "Exo 2";
@@ -1706,6 +1786,7 @@
   background-clip: text;
 }
 * body .container main .section_function .section_function_item .section_function_item_child .section_function_item_child_left .section_function_item_child_left_row6 {
+  cursor: pointer;
   background: url(../img/section_function_item_child_left_row6\ 6666.png);
   background-position: center center;
   background-repeat: no-repeat;
@@ -1715,6 +1796,8 @@
   align-items: center;
   justify-content: center;
   gap: 14px;
+  margin-left: 5px;
+  max-width: 296px;
 }
 * body .container main .section_function .section_function_item .section_function_item_child .section_function_item_child_left .section_function_item_child_left_row6 h5 {
   font-family: "Exo 2";
@@ -1729,6 +1812,7 @@
   background-clip: text;
 }
 * body .container main .section_function .section_function_item .section_function_item_child .section_function_item_child_left .section_function_item_child_left_row7 {
+  cursor: pointer;
   background: url(../img/section_function_item_child_left_row7\ 7777.png);
   background-position: center center;
   background-repeat: no-repeat;
@@ -1738,6 +1822,7 @@
   align-items: center;
   justify-content: center;
   gap: 14px;
+  max-width: 275px;
 }
 * body .container main .section_function .section_function_item .section_function_item_child .section_function_item_child_left .section_function_item_child_left_row7 h5 {
   font-family: "Exo 2";
@@ -1858,6 +1943,253 @@
   height: 12px;
   background: #083940;
   border: 2px solid #11e5b3;
+}
+@media screen and (max-width: 1839px) {
+  * body .container main .section_function .section_function_item .section_function_item_child .section_function_item_child_left {
+    margin-left: 70px;
+  }
+  * body .container main .section_function .section_function_item .section_function_item_child .swiper .swiper-button-prev {
+    left: var(--swiper-navigation-sides-offset, 5%);
+  }
+  * body .container main .section_function .section_function_item .section_function_item_child .swiper .swiper-button-next {
+    right: var(--swiper-navigation-sides-offset, 5%);
+  }
+}
+@media screen and (max-width: 1807px) {
+  * body .container main .section_function .section_function_item .section_function_item_child .section_function_item_child_left {
+    margin-left: 60px;
+  }
+}
+@media screen and (max-width: 1777px) {
+  * body .container main .section_function .section_function_item .section_function_item_child .section_function_item_child_left {
+    margin-left: 50px;
+  }
+}
+@media screen and (max-width: 1717px) {
+  * body .container main .section_function .section_function_item .section_function_item_child .section_function_item_child_left {
+    margin-left: 0px;
+  }
+}
+@media screen and (max-width: 1659px) {
+  * body .container main .section_function .section_function_item .section_function_item_child .section_function_item_child_left {
+    margin-left: 0px;
+  }
+  * body .container main .section_function .section_function_item .section_function_item_child .section_function_item_child_left .section_function_item_child_left_row1 {
+    transform: translateX(60px);
+  }
+  * body .container main .section_function .section_function_item .section_function_item_child .section_function_item_child_left .section_function_item_child_left_row1 h5 {
+    font-size: 18px;
+    line-height: 100%;
+  }
+  * body .container main .section_function .section_function_item .section_function_item_child .section_function_item_child_left .section_function_item_child_left_row2 {
+    transform: translateX(30px);
+  }
+  * body .container main .section_function .section_function_item .section_function_item_child .section_function_item_child_left .section_function_item_child_left_row2 h5 {
+    font-size: 18px;
+    line-height: 100%;
+  }
+  * body .container main .section_function .section_function_item .section_function_item_child .section_function_item_child_left .section_function_item_child_left_row3 {
+    margin-left: 0px;
+    max-width: 362px;
+  }
+  * body .container main .section_function .section_function_item .section_function_item_child .section_function_item_child_left .section_function_item_child_left_row3 h5 {
+    font-size: 18px;
+    line-height: 100%;
+  }
+  * body .container main .section_function .section_function_item .section_function_item_child .section_function_item_child_left .section_function_item_child_left_row4 {
+    max-width: 330px;
+  }
+  * body .container main .section_function .section_function_item .section_function_item_child .section_function_item_child_left .section_function_item_child_left_row4 h5 {
+    font-size: 18px;
+    line-height: 100%;
+  }
+  * body .container main .section_function .section_function_item .section_function_item_child .section_function_item_child_left .section_function_item_child_left_row5 {
+    margin-left: 0px;
+    max-width: 301px;
+  }
+  * body .container main .section_function .section_function_item .section_function_item_child .section_function_item_child_left .section_function_item_child_left_row5 h5 {
+    font-size: 18px;
+    line-height: 100%;
+  }
+  * body .container main .section_function .section_function_item .section_function_item_child .section_function_item_child_left .section_function_item_child_left_row6 {
+    margin-left: 0px;
+    max-width: 266px;
+  }
+  * body .container main .section_function .section_function_item .section_function_item_child .section_function_item_child_left .section_function_item_child_left_row6 h5 {
+    font-size: 18px;
+    line-height: 100%;
+  }
+  * body .container main .section_function .section_function_item .section_function_item_child .section_function_item_child_left .section_function_item_child_left_row7 {
+    max-width: 235px;
+  }
+  * body .container main .section_function .section_function_item .section_function_item_child .section_function_item_child_left .section_function_item_child_left_row7 h5 {
+    font-size: 18px;
+    line-height: 100%;
+  }
+}
+@media screen and (max-width: 1600px) {
+  * body .container main .section_function {
+    min-height: 1477px;
+  }
+  * body .container main .section_function .section_function_item .section_function_item_child .swiper .swiper-button-prev {
+    left: var(--swiper-navigation-sides-offset, 2%);
+  }
+  * body .container main .section_function .section_function_item .section_function_item_child .swiper .swiper-button-next {
+    right: var(--swiper-navigation-sides-offset, 2%);
+  }
+}
+@media screen and (max-width: 1595px) {
+  * body .container main .section_function .section_function_item .section_function_item_child .section_function_item_child_left {
+    margin-left: 0px;
+  }
+  * body .container main .section_function .section_function_item .section_function_item_child .section_function_item_child_left .section_function_item_child_left_row1 {
+    transform: translateX(30px);
+  }
+  * body .container main .section_function .section_function_item .section_function_item_child .section_function_item_child_left .section_function_item_child_left_row1 h5 {
+    font-size: 18px;
+    line-height: 100%;
+  }
+  * body .container main .section_function .section_function_item .section_function_item_child .section_function_item_child_left .section_function_item_child_left_row2 {
+    transform: translateX(0px);
+  }
+  * body .container main .section_function .section_function_item .section_function_item_child .section_function_item_child_left .section_function_item_child_left_row2 h5 {
+    font-size: 18px;
+    line-height: 100%;
+  }
+  * body .container main .section_function .section_function_item .section_function_item_child .section_function_item_child_left .section_function_item_child_left_row2 h5 span {
+    display: none;
+  }
+  * body .container main .section_function .section_function_item .section_function_item_child .section_function_item_child_left .section_function_item_child_left_row3 {
+    margin-left: 0px;
+    max-width: 332px;
+  }
+  * body .container main .section_function .section_function_item .section_function_item_child .section_function_item_child_left .section_function_item_child_left_row3 h5 {
+    font-size: 18px;
+    line-height: 100%;
+  }
+  * body .container main .section_function .section_function_item .section_function_item_child .section_function_item_child_left .section_function_item_child_left_row3 h5 span {
+    display: none;
+  }
+  * body .container main .section_function .section_function_item .section_function_item_child .section_function_item_child_left .section_function_item_child_left_row4 {
+    max-width: 300px;
+  }
+  * body .container main .section_function .section_function_item .section_function_item_child .section_function_item_child_left .section_function_item_child_left_row4 h5 {
+    font-size: 18px;
+    line-height: 80%;
+  }
+  * body .container main .section_function .section_function_item .section_function_item_child .section_function_item_child_left .section_function_item_child_left_row4 h5 span {
+    display: none;
+  }
+  * body .container main .section_function .section_function_item .section_function_item_child .section_function_item_child_left .section_function_item_child_left_row5 {
+    margin-left: 0px;
+    max-width: 271px;
+  }
+  * body .container main .section_function .section_function_item .section_function_item_child .section_function_item_child_left .section_function_item_child_left_row5 h5 {
+    font-size: 18px;
+    line-height: 100%;
+  }
+  * body .container main .section_function .section_function_item .section_function_item_child .section_function_item_child_left .section_function_item_child_left_row6 {
+    margin-left: 0px;
+    max-width: 236px;
+  }
+  * body .container main .section_function .section_function_item .section_function_item_child .section_function_item_child_left .section_function_item_child_left_row6 h5 {
+    font-size: 18px;
+    line-height: 100%;
+  }
+  * body .container main .section_function .section_function_item .section_function_item_child .section_function_item_child_left .section_function_item_child_left_row7 {
+    max-width: 205px;
+    padding: 16px 36px 20px 35px;
+  }
+  * body .container main .section_function .section_function_item .section_function_item_child .section_function_item_child_left .section_function_item_child_left_row7 h5 {
+    font-size: 18px;
+    line-height: 100%;
+  }
+}
+@media screen and (max-width: 1546px) {
+  * body .container main .section_function .section_function_item .section_function_item_child .section_function_item_child_left {
+    margin-left: 0px;
+    margin-top: 120px;
+  }
+  * body .container main .section_function .section_function_item .section_function_item_child .section_function_item_child_left .section_function_item_child_left_row1 {
+    transform: translateX(30px);
+    max-width: 335px;
+    gap: 10px;
+  }
+  * body .container main .section_function .section_function_item .section_function_item_child .section_function_item_child_left .section_function_item_child_left_row1 h5 {
+    font-size: 16px;
+    line-height: 100%;
+  }
+  * body .container main .section_function .section_function_item .section_function_item_child .section_function_item_child_left .section_function_item_child_left_row2 {
+    transform: translateX(0px);
+    max-width: 335px;
+    gap: 10px;
+  }
+  * body .container main .section_function .section_function_item .section_function_item_child .section_function_item_child_left .section_function_item_child_left_row2 h5 {
+    font-size: 16px;
+    line-height: 100%;
+  }
+  * body .container main .section_function .section_function_item .section_function_item_child .section_function_item_child_left .section_function_item_child_left_row2 h5 span {
+    display: none;
+  }
+  * body .container main .section_function .section_function_item .section_function_item_child .section_function_item_child_left .section_function_item_child_left_row3 {
+    margin-left: 0px;
+    max-width: 302px;
+    gap: 10px;
+  }
+  * body .container main .section_function .section_function_item .section_function_item_child .section_function_item_child_left .section_function_item_child_left_row3 h5 {
+    font-size: 16px;
+    line-height: 100%;
+  }
+  * body .container main .section_function .section_function_item .section_function_item_child .section_function_item_child_left .section_function_item_child_left_row3 h5 span {
+    display: none;
+  }
+  * body .container main .section_function .section_function_item .section_function_item_child .section_function_item_child_left .section_function_item_child_left_row4 {
+    max-width: 270px;
+    gap: 10px;
+  }
+  * body .container main .section_function .section_function_item .section_function_item_child .section_function_item_child_left .section_function_item_child_left_row4 h5 {
+    font-size: 16px;
+    line-height: 80%;
+  }
+  * body .container main .section_function .section_function_item .section_function_item_child .section_function_item_child_left .section_function_item_child_left_row4 h5 span {
+    display: none;
+  }
+  * body .container main .section_function .section_function_item .section_function_item_child .section_function_item_child_left .section_function_item_child_left_row5 {
+    margin-left: 0px;
+    max-width: 241px;
+    gap: 10px;
+  }
+  * body .container main .section_function .section_function_item .section_function_item_child .section_function_item_child_left .section_function_item_child_left_row5 h5 {
+    font-size: 16px;
+    line-height: 100%;
+  }
+  * body .container main .section_function .section_function_item .section_function_item_child .section_function_item_child_left .section_function_item_child_left_row6 {
+    margin-left: 0px;
+    max-width: 206px;
+    gap: 10px;
+  }
+  * body .container main .section_function .section_function_item .section_function_item_child .section_function_item_child_left .section_function_item_child_left_row6 h5 {
+    font-size: 16px;
+    line-height: 100%;
+  }
+  * body .container main .section_function .section_function_item .section_function_item_child .section_function_item_child_left .section_function_item_child_left_row7 {
+    max-width: 175px;
+    padding: 16px 36px 20px 35px;
+    gap: 10px;
+  }
+  * body .container main .section_function .section_function_item .section_function_item_child .section_function_item_child_left .section_function_item_child_left_row7 h5 {
+    font-size: 16px;
+    line-height: 100%;
+  }
+  * body .container main .section_function .section_function_item .section_function_item_child .swiper .swiper-button-prev {
+    left: var(--swiper-navigation-sides-offset, 0%);
+  }
+  * body .container main .section_function .section_function_item .section_function_item_child .swiper .swiper-button-next {
+    right: var(--swiper-navigation-sides-offset, 0%);
+  }
+}
+* body .container main .section_diagramma {
+  margin-top: 169px;
 }
 * body .container main .section_diagramma .section_diagramma_text {
   max-width: 1150px;
@@ -6006,6 +6338,1570 @@
   margin: auto;
   margin-top: 34px;
   cursor: pointer;
+}
+@media screen and (max-width: 1335px) {
+  * body .container main .section_tarif .section_tarif_main {
+    min-height: 801px;
+  }
+  * body .container main .section_tarif .section_tarif_main .section_tarif_main_flex .section_tarif_main_item:first-of-type {
+    padding: 27px 50px 45px 49px;
+  }
+  * body .container main .section_tarif .section_tarif_main .section_tarif_main_flex .section_tarif_main_item:first-of-type h6 {
+    font-size: 14px;
+    line-height: 17px;
+    transform: translateY(-8px);
+  }
+  * body .container main .section_tarif .section_tarif_main .section_tarif_main_flex .section_tarif_main_item:first-of-type h3 {
+    font-size: 54px;
+    line-height: 120%;
+    margin-top: 23px;
+  }
+  * body .container main .section_tarif .section_tarif_main .section_tarif_main_flex .section_tarif_main_item:first-of-type ul {
+    gap: 20px;
+  }
+  * body .container main .section_tarif .section_tarif_main .section_tarif_main_flex .section_tarif_main_item:first-of-type ul li {
+    font-size: 16px;
+    line-height: 20px;
+    margin-top: 20px;
+  }
+  * body .container main .section_tarif .section_tarif_main .section_tarif_main_flex .section_tarif_main_item:first-of-type .besplatno_box {
+    margin-top: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  * body .container main .section_tarif .section_tarif_main .section_tarif_main_flex .section_tarif_main_item:first-of-type .besplatno_box h4 {
+    font-size: 30px;
+    line-height: 120%;
+    transform: translateY(-8px);
+  }
+  * body .container main .section_tarif .section_tarif_main .section_tarif_main_flex .section_tarif_main_item:first-of-type .besplatno_box h6 {
+    font-size: 12px;
+    line-height: 130%;
+  }
+  * body .container main .section_tarif .section_tarif_main .section_tarif_main_flex .section_tarif_main_item:last-of-type {
+    background: url(../img/Profi\ frame\ background\ 22.png);
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding: 27px 47px 31px 48px;
+  }
+  * body .container main .section_tarif .section_tarif_main .section_tarif_main_flex .section_tarif_main_item:last-of-type h4 {
+    font-size: 14px;
+    line-height: 17px;
+    padding-left: 25px;
+    transform: translateY(-7px);
+  }
+  * body .container main .section_tarif .section_tarif_main .section_tarif_main_flex .section_tarif_main_item:last-of-type h2 {
+    font-size: 54px;
+    line-height: 120%;
+    margin-top: 10px;
+    transform: translateY(10px);
+  }
+  * body .container main .section_tarif .section_tarif_main .section_tarif_main_flex .section_tarif_main_item:last-of-type nav {
+    margin-bottom: 10px;
+    gap: 50px;
+    justify-content: center;
+  }
+  * body .container main .section_tarif .section_tarif_main .section_tarif_main_flex .section_tarif_main_item:last-of-type nav ul li {
+    font-size: 14px;
+    line-height: 18px;
+  }
+  * body .container main .section_tarif .section_tarif_main .section_tarif_main_flex .section_tarif_main_item:last-of-type .premium .premium_item h5 {
+    font-size: 30px;
+    line-height: 120%;
+  }
+  * body .container main .section_tarif .section_tarif_main .section_tarif_main_flex .section_tarif_main_item:last-of-type .premium .premium_item h6 {
+    font-size: 12px;
+    line-height: 130%;
+  }
+  * body .container main .section_tarif .section_tarif_main .section_tarif_main_flex .section_tarif_main_item:last-of-type .premium .premium_button {
+    padding: 4px 16px 4px 4px;
+  }
+  * body .container main .section_tarif .section_tarif_main .section_tarif_main_flex .section_tarif_main_item:last-of-type .premium .premium_button button {
+    padding: 8px 16px 12px 16px;
+    font-size: 12px;
+    line-height: 120%;
+  }
+  * body .container main .section_tarif .section_tarif_main .section_tarif_main_flex .section_tarif_main_item:last-of-type .premium .premium_button span {
+    font-size: 12px;
+    line-height: 100%;
+  }
+}
+@media screen and (max-width: 1078px) {
+  * body .container main .section_tarif .section_tarif_main {
+    min-height: 691px;
+  }
+  * body .container main .section_tarif .section_tarif_main .section_tarif_main_flex .section_tarif_main_item:first-of-type {
+    padding: 27px 30px 35px 39px;
+  }
+  * body .container main .section_tarif .section_tarif_main .section_tarif_main_flex .section_tarif_main_item:first-of-type h6 {
+    font-size: 12px;
+    line-height: 15px;
+    transform: translate(-5px, -10px);
+  }
+  * body .container main .section_tarif .section_tarif_main .section_tarif_main_flex .section_tarif_main_item:first-of-type h3 {
+    font-size: 44px;
+    line-height: 120%;
+    margin-top: 10px;
+  }
+  * body .container main .section_tarif .section_tarif_main .section_tarif_main_flex .section_tarif_main_item:first-of-type ul {
+    gap: 15px;
+  }
+  * body .container main .section_tarif .section_tarif_main .section_tarif_main_flex .section_tarif_main_item:first-of-type ul li {
+    font-size: 14px;
+    line-height: 18px;
+    margin-top: 15px;
+  }
+  * body .container main .section_tarif .section_tarif_main .section_tarif_main_flex .section_tarif_main_item:first-of-type .besplatno_box {
+    margin-top: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  * body .container main .section_tarif .section_tarif_main .section_tarif_main_flex .section_tarif_main_item:first-of-type .besplatno_box h4 {
+    font-size: 26px;
+    line-height: 120%;
+    transform: translateY(-8px);
+  }
+  * body .container main .section_tarif .section_tarif_main .section_tarif_main_flex .section_tarif_main_item:first-of-type .besplatno_box h6 {
+    font-size: 10px;
+    line-height: 130%;
+  }
+  * body .container main .section_tarif .section_tarif_main .section_tarif_main_flex .section_tarif_main_item:last-of-type {
+    background: url(../img/Profi\ frame\ background\ 22.png);
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding: 27px 47px 31px 48px;
+  }
+  * body .container main .section_tarif .section_tarif_main .section_tarif_main_flex .section_tarif_main_item:last-of-type h4 {
+    font-size: 12px;
+    line-height: 15px;
+    padding-left: 15px;
+    transform: translateY(-7px);
+  }
+  * body .container main .section_tarif .section_tarif_main .section_tarif_main_flex .section_tarif_main_item:last-of-type h2 {
+    font-size: 44px;
+    line-height: 120%;
+    margin-top: 10px;
+    transform: translateY(10px);
+  }
+  * body .container main .section_tarif .section_tarif_main .section_tarif_main_flex .section_tarif_main_item:last-of-type nav {
+    margin-bottom: 10px;
+    gap: 30px;
+    justify-content: center;
+  }
+  * body .container main .section_tarif .section_tarif_main .section_tarif_main_flex .section_tarif_main_item:last-of-type nav ul li {
+    font-size: 12px;
+    line-height: 16px;
+    margin-top: 20px;
+  }
+  * body .container main .section_tarif .section_tarif_main .section_tarif_main_flex .section_tarif_main_item:last-of-type nav ul li span svg {
+    width: 20px;
+    height: 20px;
+  }
+  * body .container main .section_tarif .section_tarif_main .section_tarif_main_flex .section_tarif_main_item:last-of-type .premium .premium_item h5 {
+    font-size: 26px;
+    line-height: 120%;
+  }
+  * body .container main .section_tarif .section_tarif_main .section_tarif_main_flex .section_tarif_main_item:last-of-type .premium .premium_item h6 {
+    font-size: 10px;
+    line-height: 130%;
+  }
+  * body .container main .section_tarif .section_tarif_main .section_tarif_main_flex .section_tarif_main_item:last-of-type .premium .premium_button {
+    padding: 2px 14px 2px 2px;
+  }
+  * body .container main .section_tarif .section_tarif_main .section_tarif_main_flex .section_tarif_main_item:last-of-type .premium .premium_button button {
+    padding: 6px 14px 10px 14px;
+    font-size: 10px;
+    line-height: 120%;
+  }
+  * body .container main .section_tarif .section_tarif_main .section_tarif_main_flex .section_tarif_main_item:last-of-type .premium .premium_button span {
+    font-size: 10px;
+    line-height: 100%;
+  }
+  * body .container main .section_tarif .section_tarif_main .section_tarif_footer {
+    margin-top: 70px;
+  }
+  * body .container main .section_tarif .section_tarif_main .section_tarif_footer p {
+    font-size: 14px;
+    line-height: 120%;
+  }
+  * body .container main .section_tarif .section_tarif_main .section_tarif_footer button {
+    font-size: 20px;
+    line-height: 100%;
+    padding: 14px 42px 10px 41px;
+    gap: 12px;
+    margin-top: 24px;
+  }
+  * body .container main .section_tarif .section_tarif_main .section_tarif_footer button span svg {
+    width: 17px;
+    height: 17px;
+  }
+}
+@media screen and (max-width: 913px) {
+  * body .container main .section_tarif .section_tarif_main {
+    min-height: 701px;
+  }
+  * body .container main .section_tarif .section_tarif_main .section_tarif_main_flex .section_tarif_main_item:first-of-type {
+    padding: 27px 30px 35px 39px;
+  }
+  * body .container main .section_tarif .section_tarif_main .section_tarif_main_flex .section_tarif_main_item:first-of-type h6 {
+    font-size: 12px;
+    line-height: 15px;
+    transform: translate(-10px, -13px);
+  }
+  * body .container main .section_tarif .section_tarif_main .section_tarif_main_flex .section_tarif_main_item:first-of-type h3 {
+    font-size: 40px;
+    line-height: 120%;
+    margin-top: 10px;
+  }
+  * body .container main .section_tarif .section_tarif_main .section_tarif_main_flex .section_tarif_main_item:first-of-type ul {
+    gap: 15px;
+  }
+  * body .container main .section_tarif .section_tarif_main .section_tarif_main_flex .section_tarif_main_item:first-of-type ul li {
+    font-size: 14px;
+    line-height: 18px;
+    margin-top: 12px;
+  }
+  * body .container main .section_tarif .section_tarif_main .section_tarif_main_flex .section_tarif_main_item:first-of-type .besplatno_box {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  * body .container main .section_tarif .section_tarif_main .section_tarif_main_flex .section_tarif_main_item:first-of-type .besplatno_box h4 {
+    font-size: 26px;
+    line-height: 120%;
+    transform: translateY(-18px);
+  }
+  * body .container main .section_tarif .section_tarif_main .section_tarif_main_flex .section_tarif_main_item:first-of-type .besplatno_box h6 {
+    font-size: 10px;
+    line-height: 130%;
+  }
+  * body .container main .section_tarif .section_tarif_main .section_tarif_main_flex .section_tarif_main_item:last-of-type {
+    background: url(../img/Profi\ frame\ background\ 44.png);
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding: 27px 27px 28px 28px;
+    padding: 27px 47px 31px 48px;
+  }
+  * body .container main .section_tarif .section_tarif_main .section_tarif_main_flex .section_tarif_main_item:last-of-type h4 {
+    font-size: 12px;
+    line-height: 15px;
+    padding-left: 0px;
+    transform: translateY(3px);
+  }
+  * body .container main .section_tarif .section_tarif_main .section_tarif_main_flex .section_tarif_main_item:last-of-type h2 {
+    font-size: 40px;
+    line-height: 120%;
+    margin-top: 20px;
+    transform: translateY(0px);
+  }
+  * body .container main .section_tarif .section_tarif_main .section_tarif_main_flex .section_tarif_main_item:last-of-type nav {
+    margin-bottom: 10px;
+    gap: 30px;
+    display: block;
+  }
+  * body .container main .section_tarif .section_tarif_main .section_tarif_main_flex .section_tarif_main_item:last-of-type nav ul li {
+    font-size: 14px;
+    line-height: 14px;
+    margin-top: 10px;
+  }
+  * body .container main .section_tarif .section_tarif_main .section_tarif_main_flex .section_tarif_main_item:last-of-type nav ul li span svg {
+    width: 18px;
+    height: 18px;
+  }
+  * body .container main .section_tarif .section_tarif_main .section_tarif_main_flex .section_tarif_main_item:last-of-type .premium {
+    gap: 15px;
+  }
+  * body .container main .section_tarif .section_tarif_main .section_tarif_main_flex .section_tarif_main_item:last-of-type .premium .premium_item h5 {
+    font-size: 26px;
+    line-height: 120%;
+  }
+  * body .container main .section_tarif .section_tarif_main .section_tarif_main_flex .section_tarif_main_item:last-of-type .premium .premium_item h6 {
+    font-size: 10px;
+    line-height: 130%;
+  }
+  * body .container main .section_tarif .section_tarif_main .section_tarif_main_flex .section_tarif_main_item:last-of-type .premium .premium_button {
+    padding: 2px 14px 2px 2px;
+  }
+  * body .container main .section_tarif .section_tarif_main .section_tarif_main_flex .section_tarif_main_item:last-of-type .premium .premium_button button {
+    padding: 6px 14px 10px 14px;
+    font-size: 10px;
+    line-height: 120%;
+  }
+  * body .container main .section_tarif .section_tarif_main .section_tarif_main_flex .section_tarif_main_item:last-of-type .premium .premium_button span {
+    font-size: 10px;
+    line-height: 100%;
+  }
+  * body .container main .section_tarif .section_tarif_main .section_tarif_footer {
+    margin-top: 60px;
+  }
+  * body .container main .section_tarif .section_tarif_main .section_tarif_footer p {
+    font-size: 14px;
+    line-height: 120%;
+  }
+  * body .container main .section_tarif .section_tarif_main .section_tarif_footer button {
+    font-size: 16px;
+    line-height: 100%;
+    padding: 12px 38px 8px 38px;
+    gap: 10px;
+    margin-top: 20px;
+  }
+  * body .container main .section_tarif .section_tarif_main .section_tarif_footer button span svg {
+    width: 17px;
+    height: 17px;
+  }
+}
+@media screen and (max-width: 788px) {
+  * body .container main .section_tarif .section_tarif_main {
+    min-height: 601px;
+  }
+  * body .container main .section_tarif .section_tarif_main .section_tarif_main_flex .section_tarif_main_item:first-of-type {
+    padding: 17px 20px 20px 19px;
+  }
+  * body .container main .section_tarif .section_tarif_main .section_tarif_main_flex .section_tarif_main_item:first-of-type h6 {
+    font-size: 10px;
+    line-height: 13px;
+    transform: translate(0px, -5px);
+  }
+  * body .container main .section_tarif .section_tarif_main .section_tarif_main_flex .section_tarif_main_item:first-of-type h3 {
+    font-size: 35px;
+    line-height: 120%;
+    margin-top: 10px;
+  }
+  * body .container main .section_tarif .section_tarif_main .section_tarif_main_flex .section_tarif_main_item:first-of-type ul {
+    margin-top: 13px;
+    gap: 10px;
+  }
+  * body .container main .section_tarif .section_tarif_main .section_tarif_main_flex .section_tarif_main_item:first-of-type ul li {
+    font-size: 12px;
+    line-height: 16px;
+    gap: 10px;
+    margin-top: 10px;
+  }
+  * body .container main .section_tarif .section_tarif_main .section_tarif_main_flex .section_tarif_main_item:first-of-type ul li span svg {
+    width: 16px;
+    height: 16px;
+  }
+  * body .container main .section_tarif .section_tarif_main .section_tarif_main_flex .section_tarif_main_item:first-of-type .besplatno_box {
+    margin-top: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  * body .container main .section_tarif .section_tarif_main .section_tarif_main_flex .section_tarif_main_item:first-of-type .besplatno_box h4 {
+    font-size: 22px;
+    line-height: 120%;
+    transform: translateY(-18px);
+  }
+  * body .container main .section_tarif .section_tarif_main .section_tarif_main_flex .section_tarif_main_item:first-of-type .besplatno_box h6 {
+    font-size: 10px;
+    line-height: 130%;
+  }
+  * body .container main .section_tarif .section_tarif_main .section_tarif_main_flex .section_tarif_main_item:last-of-type {
+    background: url(../img/Profi\ frame\ background\ 44.png);
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding: 17px 17px 18px 18px;
+    max-width: 400px;
+  }
+  * body .container main .section_tarif .section_tarif_main .section_tarif_main_flex .section_tarif_main_item:last-of-type h4 {
+    font-size: 10px;
+    line-height: 13px;
+    padding-left: 15px;
+    transform: translateY(8px);
+  }
+  * body .container main .section_tarif .section_tarif_main .section_tarif_main_flex .section_tarif_main_item:last-of-type h2 {
+    font-size: 35px;
+    line-height: 120%;
+    margin-top: 20px;
+    transform: translateY(0px);
+  }
+  * body .container main .section_tarif .section_tarif_main .section_tarif_main_flex .section_tarif_main_item:last-of-type nav {
+    margin-bottom: 10px;
+    gap: 20px;
+    display: block;
+  }
+  * body .container main .section_tarif .section_tarif_main .section_tarif_main_flex .section_tarif_main_item:last-of-type nav ul li {
+    font-size: 12px;
+    line-height: 12px;
+    margin-top: 7px;
+  }
+  * body .container main .section_tarif .section_tarif_main .section_tarif_main_flex .section_tarif_main_item:last-of-type nav ul li span svg {
+    width: 16px;
+    height: 16px;
+  }
+  * body .container main .section_tarif .section_tarif_main .section_tarif_main_flex .section_tarif_main_item:last-of-type .premium {
+    gap: 10px;
+  }
+  * body .container main .section_tarif .section_tarif_main .section_tarif_main_flex .section_tarif_main_item:last-of-type .premium .premium_item h5 {
+    font-size: 22px;
+    line-height: 120%;
+  }
+  * body .container main .section_tarif .section_tarif_main .section_tarif_main_flex .section_tarif_main_item:last-of-type .premium .premium_item h6 {
+    font-size: 10px;
+    line-height: 130%;
+  }
+  * body .container main .section_tarif .section_tarif_main .section_tarif_main_flex .section_tarif_main_item:last-of-type .premium .premium_button {
+    padding: 2px 14px 2px 2px;
+  }
+  * body .container main .section_tarif .section_tarif_main .section_tarif_main_flex .section_tarif_main_item:last-of-type .premium .premium_button button {
+    padding: 4px 12px 8px 12px;
+    font-size: 10px;
+    line-height: 120%;
+  }
+  * body .container main .section_tarif .section_tarif_main .section_tarif_main_flex .section_tarif_main_item:last-of-type .premium .premium_button span {
+    font-size: 10px;
+    line-height: 100%;
+  }
+  * body .container main .section_tarif .section_tarif_main .section_tarif_footer {
+    margin-top: 60px;
+  }
+  * body .container main .section_tarif .section_tarif_main .section_tarif_footer p {
+    font-size: 14px;
+    line-height: 120%;
+  }
+  * body .container main .section_tarif .section_tarif_main .section_tarif_footer button {
+    font-size: 16px;
+    line-height: 100%;
+    padding: 12px 38px 8px 38px;
+    gap: 10px;
+    margin-top: 20px;
+  }
+  * body .container main .section_tarif .section_tarif_main .section_tarif_footer button span svg {
+    width: 17px;
+    height: 17px;
+  }
+}
+@media screen and (max-width: 648px) {
+  * body .container main .section_tarif .section_tarif_main {
+    min-height: 601px;
+  }
+  * body .container main .section_tarif .section_tarif_main .section_tarif_main_flex {
+    display: block;
+  }
+  * body .container main .section_tarif .section_tarif_main .section_tarif_main_flex .section_tarif_main_item:first-of-type {
+    margin-left: 30px;
+    background: url(../img/Free\ 333.png);
+    background-position: left center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding: 37px 40px 30px 49px;
+  }
+  * body .container main .section_tarif .section_tarif_main .section_tarif_main_flex .section_tarif_main_item:first-of-type h6 {
+    font-size: 12px;
+    line-height: 14px;
+    transform: translateY(-15px);
+  }
+  * body .container main .section_tarif .section_tarif_main .section_tarif_main_flex .section_tarif_main_item:first-of-type h3 {
+    font-size: 40px;
+    line-height: 120%;
+    margin-top: 10px;
+  }
+  * body .container main .section_tarif .section_tarif_main .section_tarif_main_flex .section_tarif_main_item:first-of-type ul {
+    gap: 10px;
+    margin-top: 13px;
+  }
+  * body .container main .section_tarif .section_tarif_main .section_tarif_main_flex .section_tarif_main_item:first-of-type ul li {
+    font-size: 14px;
+    line-height: 18px;
+    gap: 10px;
+    margin-top: 15px;
+  }
+  * body .container main .section_tarif .section_tarif_main .section_tarif_main_flex .section_tarif_main_item:first-of-type ul li span svg {
+    width: 16px;
+    height: 16px;
+  }
+  * body .container main .section_tarif .section_tarif_main .section_tarif_main_flex .section_tarif_main_item:first-of-type .besplatno_box {
+    margin-top: 35px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  * body .container main .section_tarif .section_tarif_main .section_tarif_main_flex .section_tarif_main_item:first-of-type .besplatno_box h4 {
+    font-size: 26px;
+    line-height: 120%;
+    transform: translateY(-18px);
+  }
+  * body .container main .section_tarif .section_tarif_main .section_tarif_main_flex .section_tarif_main_item:first-of-type .besplatno_box h6 {
+    font-size: 12px;
+    line-height: 130%;
+  }
+  * body .container main .section_tarif .section_tarif_main .section_tarif_main_flex .section_tarif_main_item:last-of-type {
+    background: url(../img/Profi\ frame\ background\ 44.png);
+    background-position: left center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding: 37px 7px 18px 38px;
+    max-width: none;
+    margin: auto;
+    margin-top: 10px;
+    margin-left: 30px;
+  }
+  * body .container main .section_tarif .section_tarif_main .section_tarif_main_flex .section_tarif_main_item:last-of-type h4 {
+    font-size: 12px;
+    line-height: 13px;
+    padding-left: 15px;
+    transform: translateY(-6px);
+  }
+  * body .container main .section_tarif .section_tarif_main .section_tarif_main_flex .section_tarif_main_item:last-of-type h2 {
+    font-size: 40px;
+    line-height: 120%;
+    margin-top: 20px;
+    transform: translateY(0px);
+  }
+  * body .container main .section_tarif .section_tarif_main .section_tarif_main_flex .section_tarif_main_item:last-of-type nav {
+    margin-bottom: 10px;
+    gap: 20px;
+    display: block;
+  }
+  * body .container main .section_tarif .section_tarif_main .section_tarif_main_flex .section_tarif_main_item:last-of-type nav ul li {
+    font-size: 14px;
+    line-height: 16px;
+    margin-top: 10px;
+  }
+  * body .container main .section_tarif .section_tarif_main .section_tarif_main_flex .section_tarif_main_item:last-of-type nav ul li span svg {
+    width: 16px;
+    height: 16px;
+  }
+  * body .container main .section_tarif .section_tarif_main .section_tarif_main_flex .section_tarif_main_item:last-of-type .premium {
+    margin-top: 0px;
+    justify-content: flex-start;
+    gap: 35px;
+  }
+  * body .container main .section_tarif .section_tarif_main .section_tarif_main_flex .section_tarif_main_item:last-of-type .premium .premium_item h5 {
+    font-size: 22px;
+    line-height: 120%;
+  }
+  * body .container main .section_tarif .section_tarif_main .section_tarif_main_flex .section_tarif_main_item:last-of-type .premium .premium_item h6 {
+    font-size: 10px;
+    line-height: 130%;
+  }
+  * body .container main .section_tarif .section_tarif_main .section_tarif_main_flex .section_tarif_main_item:last-of-type .premium .premium_button {
+    padding: 4px 16px 4px 4px;
+  }
+  * body .container main .section_tarif .section_tarif_main .section_tarif_main_flex .section_tarif_main_item:last-of-type .premium .premium_button button {
+    padding: 6px 14px 10px 14px;
+    font-size: 12px;
+    line-height: 120%;
+  }
+  * body .container main .section_tarif .section_tarif_main .section_tarif_main_flex .section_tarif_main_item:last-of-type .premium .premium_button span {
+    font-size: 12px;
+    line-height: 100%;
+  }
+  * body .container main .section_tarif .section_tarif_main .section_tarif_footer {
+    margin-top: 60px;
+  }
+  * body .container main .section_tarif .section_tarif_main .section_tarif_footer p {
+    font-size: 14px;
+    line-height: 120%;
+  }
+  * body .container main .section_tarif .section_tarif_main .section_tarif_footer button {
+    font-size: 16px;
+    line-height: 100%;
+    padding: 12px 38px 8px 38px;
+    gap: 10px;
+    margin-top: 20px;
+  }
+  * body .container main .section_tarif .section_tarif_main .section_tarif_footer button span svg {
+    width: 17px;
+    height: 17px;
+  }
+}
+@media screen and (max-width: 521px) {
+  * body .container main .section_tarif .section_tarif_main {
+    min-height: 601px;
+  }
+  * body .container main .section_tarif .section_tarif_main .section_tarif_main_flex {
+    display: block;
+  }
+  * body .container main .section_tarif .section_tarif_main .section_tarif_main_flex .section_tarif_main_item:first-of-type {
+    margin-left: 10px;
+    background: url(../img/Free\ 333.png);
+    background-position: left center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding: 37px 40px 30px 49px;
+  }
+  * body .container main .section_tarif .section_tarif_main .section_tarif_main_flex .section_tarif_main_item:first-of-type h6 {
+    font-size: 12px;
+    line-height: 14px;
+    transform: translateY(-15px);
+  }
+  * body .container main .section_tarif .section_tarif_main .section_tarif_main_flex .section_tarif_main_item:first-of-type h3 {
+    font-size: 40px;
+    line-height: 120%;
+    margin-top: 10px;
+  }
+  * body .container main .section_tarif .section_tarif_main .section_tarif_main_flex .section_tarif_main_item:first-of-type ul {
+    gap: 10px;
+    margin-top: 13px;
+  }
+  * body .container main .section_tarif .section_tarif_main .section_tarif_main_flex .section_tarif_main_item:first-of-type ul li {
+    font-size: 14px;
+    line-height: 18px;
+    gap: 10px;
+    margin-top: 15px;
+  }
+  * body .container main .section_tarif .section_tarif_main .section_tarif_main_flex .section_tarif_main_item:first-of-type ul li span svg {
+    width: 16px;
+    height: 16px;
+  }
+  * body .container main .section_tarif .section_tarif_main .section_tarif_main_flex .section_tarif_main_item:first-of-type .besplatno_box {
+    margin-top: 35px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  * body .container main .section_tarif .section_tarif_main .section_tarif_main_flex .section_tarif_main_item:first-of-type .besplatno_box h4 {
+    font-size: 26px;
+    line-height: 120%;
+    transform: translateY(-18px);
+  }
+  * body .container main .section_tarif .section_tarif_main .section_tarif_main_flex .section_tarif_main_item:first-of-type .besplatno_box h6 {
+    font-size: 12px;
+    line-height: 130%;
+  }
+  * body .container main .section_tarif .section_tarif_main .section_tarif_main_flex .section_tarif_main_item:last-of-type {
+    background: url(../img/Profi\ frame\ background\ 44.png);
+    background-position: left center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding: 37px 0px 10px 28px;
+    max-width: 450px;
+    margin: auto;
+    margin-top: 10px;
+    margin-left: 10px;
+  }
+  * body .container main .section_tarif .section_tarif_main .section_tarif_main_flex .section_tarif_main_item:last-of-type h4 {
+    font-size: 12px;
+    line-height: 13px;
+    padding-left: 15px;
+    transform: translateY(-6px);
+  }
+  * body .container main .section_tarif .section_tarif_main .section_tarif_main_flex .section_tarif_main_item:last-of-type h2 {
+    font-size: 40px;
+    line-height: 120%;
+    margin-top: 20px;
+    transform: translateY(0px);
+  }
+  * body .container main .section_tarif .section_tarif_main .section_tarif_main_flex .section_tarif_main_item:last-of-type nav {
+    margin-bottom: 10px;
+    gap: 20px;
+    display: block;
+  }
+  * body .container main .section_tarif .section_tarif_main .section_tarif_main_flex .section_tarif_main_item:last-of-type nav ul li {
+    font-size: 12px;
+    line-height: 14px;
+    margin-top: 10px;
+  }
+  * body .container main .section_tarif .section_tarif_main .section_tarif_main_flex .section_tarif_main_item:last-of-type nav ul li span svg {
+    width: 14px;
+    height: 14px;
+  }
+  * body .container main .section_tarif .section_tarif_main .section_tarif_main_flex .section_tarif_main_item:last-of-type .premium {
+    margin-top: 0px;
+    justify-content: flex-start;
+    gap: 25px;
+  }
+  * body .container main .section_tarif .section_tarif_main .section_tarif_main_flex .section_tarif_main_item:last-of-type .premium .premium_item h5 {
+    font-size: 20px;
+    line-height: 120%;
+  }
+  * body .container main .section_tarif .section_tarif_main .section_tarif_main_flex .section_tarif_main_item:last-of-type .premium .premium_item h6 {
+    font-size: 10px;
+    line-height: 130%;
+  }
+  * body .container main .section_tarif .section_tarif_main .section_tarif_main_flex .section_tarif_main_item:last-of-type .premium .premium_button {
+    padding: 2px 14px 2px 2px;
+  }
+  * body .container main .section_tarif .section_tarif_main .section_tarif_main_flex .section_tarif_main_item:last-of-type .premium .premium_button button {
+    padding: 4px 12px 8px 12px;
+    font-size: 12px;
+    line-height: 120%;
+  }
+  * body .container main .section_tarif .section_tarif_main .section_tarif_main_flex .section_tarif_main_item:last-of-type .premium .premium_button span {
+    font-size: 10px;
+    line-height: 100%;
+  }
+  * body .container main .section_tarif .section_tarif_main .section_tarif_footer {
+    margin-top: 60px;
+  }
+  * body .container main .section_tarif .section_tarif_main .section_tarif_footer p {
+    font-size: 14px;
+    line-height: 120%;
+  }
+  * body .container main .section_tarif .section_tarif_main .section_tarif_footer button {
+    font-size: 16px;
+    line-height: 100%;
+    padding: 12px 38px 8px 38px;
+    gap: 10px;
+    margin-top: 20px;
+  }
+  * body .container main .section_tarif .section_tarif_main .section_tarif_footer button span svg {
+    width: 17px;
+    height: 17px;
+  }
+}
+@media screen and (max-width: 470px) {
+  * body .container main .section_tarif .section_tarif_main {
+    min-height: 601px;
+  }
+  * body .container main .section_tarif .section_tarif_main .section_tarif_main_flex {
+    display: block;
+  }
+  * body .container main .section_tarif .section_tarif_main .section_tarif_main_flex .section_tarif_main_item:first-of-type {
+    margin-left: 10px;
+    background: url(../img/Free\ 333.png);
+    background-position: left center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding: 37px 0px 0px 29px;
+    max-width: 350px;
+  }
+  * body .container main .section_tarif .section_tarif_main .section_tarif_main_flex .section_tarif_main_item:first-of-type h6 {
+    font-size: 12px;
+    line-height: 14px;
+    transform: translateY(-15px);
+  }
+  * body .container main .section_tarif .section_tarif_main .section_tarif_main_flex .section_tarif_main_item:first-of-type h3 {
+    font-size: 35px;
+    line-height: 120%;
+    margin-top: 10px;
+  }
+  * body .container main .section_tarif .section_tarif_main .section_tarif_main_flex .section_tarif_main_item:first-of-type ul {
+    gap: 10px;
+    margin-top: 13px;
+  }
+  * body .container main .section_tarif .section_tarif_main .section_tarif_main_flex .section_tarif_main_item:first-of-type ul li {
+    font-size: 12px;
+    line-height: 14px;
+    gap: 10px;
+    margin-top: 15px;
+  }
+  * body .container main .section_tarif .section_tarif_main .section_tarif_main_flex .section_tarif_main_item:first-of-type ul li span svg {
+    width: 16px;
+    height: 16px;
+  }
+  * body .container main .section_tarif .section_tarif_main .section_tarif_main_flex .section_tarif_main_item:first-of-type .besplatno_box {
+    margin-top: 35px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  * body .container main .section_tarif .section_tarif_main .section_tarif_main_flex .section_tarif_main_item:first-of-type .besplatno_box h4 {
+    font-size: 22px;
+    line-height: 120%;
+    transform: translateY(-18px);
+  }
+  * body .container main .section_tarif .section_tarif_main .section_tarif_main_flex .section_tarif_main_item:first-of-type .besplatno_box h6 {
+    font-size: 10px;
+    line-height: 130%;
+  }
+  * body .container main .section_tarif .section_tarif_main .section_tarif_main_flex .section_tarif_main_item:last-of-type {
+    background: url(../img/Profi\ 4444.png);
+    background-position: left center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding: 37px 30px 20px 28px;
+    margin: auto;
+    margin-top: 10px;
+    margin-left: 20px;
+  }
+  * body .container main .section_tarif .section_tarif_main .section_tarif_main_flex .section_tarif_main_item:last-of-type h4 {
+    font-size: 11px;
+    line-height: 12px;
+    padding-left: 0px;
+    transform: translate(-15px, -12px);
+  }
+  * body .container main .section_tarif .section_tarif_main .section_tarif_main_flex .section_tarif_main_item:last-of-type h2 {
+    font-size: 40px;
+    line-height: 120%;
+    margin-top: 10px;
+  }
+  * body .container main .section_tarif .section_tarif_main .section_tarif_main_flex .section_tarif_main_item:last-of-type nav {
+    margin-bottom: 20px;
+    gap: 20px;
+    display: block;
+  }
+  * body .container main .section_tarif .section_tarif_main .section_tarif_main_flex .section_tarif_main_item:last-of-type nav ul li {
+    font-size: 12px;
+    line-height: 14px;
+    margin-top: 10px;
+  }
+  * body .container main .section_tarif .section_tarif_main .section_tarif_main_flex .section_tarif_main_item:last-of-type nav ul li span svg {
+    width: 14px;
+    height: 14px;
+  }
+  * body .container main .section_tarif .section_tarif_main .section_tarif_main_flex .section_tarif_main_item:last-of-type .premium {
+    margin-top: 0px;
+    justify-content: flex-start;
+    gap: 5px;
+    flex-direction: column;
+    transform: translateX(-40px);
+  }
+  * body .container main .section_tarif .section_tarif_main .section_tarif_main_flex .section_tarif_main_item:last-of-type .premium .premium_item h5 {
+    font-size: 20px;
+    line-height: 120%;
+  }
+  * body .container main .section_tarif .section_tarif_main .section_tarif_main_flex .section_tarif_main_item:last-of-type .premium .premium_item h6 {
+    font-size: 10px;
+    line-height: 130%;
+  }
+  * body .container main .section_tarif .section_tarif_main .section_tarif_main_flex .section_tarif_main_item:last-of-type .premium .premium_button {
+    padding: 2px 14px 2px 2px;
+    margin-right: 50px;
+  }
+  * body .container main .section_tarif .section_tarif_main .section_tarif_main_flex .section_tarif_main_item:last-of-type .premium .premium_button button {
+    padding: 4px 12px 8px 12px;
+    font-size: 12px;
+    line-height: 120%;
+  }
+  * body .container main .section_tarif .section_tarif_main .section_tarif_main_flex .section_tarif_main_item:last-of-type .premium .premium_button span {
+    font-size: 10px;
+    line-height: 100%;
+  }
+  * body .container main .section_tarif .section_tarif_main .section_tarif_footer {
+    margin-top: 60px;
+  }
+  * body .container main .section_tarif .section_tarif_main .section_tarif_footer p {
+    font-size: 14px;
+    line-height: 120%;
+  }
+  * body .container main .section_tarif .section_tarif_main .section_tarif_footer button {
+    font-size: 16px;
+    line-height: 100%;
+    padding: 12px 38px 8px 38px;
+    gap: 10px;
+    margin-top: 20px;
+  }
+  * body .container main .section_tarif .section_tarif_main .section_tarif_footer button span svg {
+    width: 17px;
+    height: 17px;
+  }
+}
+@media screen and (max-width: 452px) {
+  * body .container main .section_tarif .section_tarif_main {
+    min-height: 601px;
+  }
+  * body .container main .section_tarif .section_tarif_main .section_tarif_main_flex {
+    display: block;
+  }
+  * body .container main .section_tarif .section_tarif_main .section_tarif_main_flex .section_tarif_main_item:first-of-type {
+    margin-left: 10px;
+    background: url(../img/Free\ 333.png);
+    background-position: left center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding: 37px 0px 0px 29px;
+    max-width: 350px;
+  }
+  * body .container main .section_tarif .section_tarif_main .section_tarif_main_flex .section_tarif_main_item:first-of-type h6 {
+    font-size: 12px;
+    line-height: 14px;
+    transform: translateY(-15px);
+  }
+  * body .container main .section_tarif .section_tarif_main .section_tarif_main_flex .section_tarif_main_item:first-of-type h3 {
+    font-size: 35px;
+    line-height: 120%;
+    margin-top: 10px;
+  }
+  * body .container main .section_tarif .section_tarif_main .section_tarif_main_flex .section_tarif_main_item:first-of-type ul {
+    gap: 10px;
+    margin-top: 13px;
+  }
+  * body .container main .section_tarif .section_tarif_main .section_tarif_main_flex .section_tarif_main_item:first-of-type ul li {
+    font-size: 12px;
+    line-height: 14px;
+    gap: 10px;
+    margin-top: 15px;
+  }
+  * body .container main .section_tarif .section_tarif_main .section_tarif_main_flex .section_tarif_main_item:first-of-type ul li span svg {
+    width: 16px;
+    height: 16px;
+  }
+  * body .container main .section_tarif .section_tarif_main .section_tarif_main_flex .section_tarif_main_item:first-of-type .besplatno_box {
+    margin-top: 35px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  * body .container main .section_tarif .section_tarif_main .section_tarif_main_flex .section_tarif_main_item:first-of-type .besplatno_box h4 {
+    font-size: 22px;
+    line-height: 120%;
+    transform: translateY(-18px);
+  }
+  * body .container main .section_tarif .section_tarif_main .section_tarif_main_flex .section_tarif_main_item:first-of-type .besplatno_box h6 {
+    font-size: 10px;
+    line-height: 130%;
+  }
+  * body .container main .section_tarif .section_tarif_main .section_tarif_main_flex .section_tarif_main_item:last-of-type {
+    background: url(../img/Profi\ 4444.png);
+    background-position: left center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding: 37px 30px 20px 28px;
+    margin: auto;
+    margin-top: 10px;
+    margin-left: 20px;
+  }
+  * body .container main .section_tarif .section_tarif_main .section_tarif_main_flex .section_tarif_main_item:last-of-type h4 {
+    font-size: 11px;
+    line-height: 12px;
+    padding-left: 0px;
+    transform: translate(-15px, -12px);
+  }
+  * body .container main .section_tarif .section_tarif_main .section_tarif_main_flex .section_tarif_main_item:last-of-type h2 {
+    font-size: 40px;
+    line-height: 120%;
+    margin-top: 10px;
+  }
+  * body .container main .section_tarif .section_tarif_main .section_tarif_main_flex .section_tarif_main_item:last-of-type nav {
+    margin-bottom: 20px;
+    gap: 20px;
+    display: block;
+  }
+  * body .container main .section_tarif .section_tarif_main .section_tarif_main_flex .section_tarif_main_item:last-of-type nav ul li {
+    font-size: 12px;
+    line-height: 14px;
+    margin-top: 10px;
+  }
+  * body .container main .section_tarif .section_tarif_main .section_tarif_main_flex .section_tarif_main_item:last-of-type nav ul li span svg {
+    width: 14px;
+    height: 14px;
+  }
+  * body .container main .section_tarif .section_tarif_main .section_tarif_main_flex .section_tarif_main_item:last-of-type .premium {
+    margin-top: 0px;
+    justify-content: flex-start;
+    gap: 5px;
+    flex-direction: column;
+    transform: translateX(-30px);
+  }
+  * body .container main .section_tarif .section_tarif_main .section_tarif_main_flex .section_tarif_main_item:last-of-type .premium .premium_item h5 {
+    font-size: 16px;
+    line-height: 120%;
+  }
+  * body .container main .section_tarif .section_tarif_main .section_tarif_main_flex .section_tarif_main_item:last-of-type .premium .premium_item h6 {
+    font-size: 10px;
+    line-height: 130%;
+  }
+  * body .container main .section_tarif .section_tarif_main .section_tarif_main_flex .section_tarif_main_item:last-of-type .premium .premium_button {
+    padding: 2px 14px 2px 2px;
+    margin-right: 50px;
+  }
+  * body .container main .section_tarif .section_tarif_main .section_tarif_main_flex .section_tarif_main_item:last-of-type .premium .premium_button button {
+    padding: 2px 10px 6px 10px;
+    font-size: 10px;
+    line-height: 120%;
+  }
+  * body .container main .section_tarif .section_tarif_main .section_tarif_main_flex .section_tarif_main_item:last-of-type .premium .premium_button span {
+    font-size: 10px;
+    line-height: 100%;
+  }
+  * body .container main .section_tarif .section_tarif_main .section_tarif_footer {
+    margin-top: 60px;
+  }
+  * body .container main .section_tarif .section_tarif_main .section_tarif_footer p {
+    font-size: 14px;
+    line-height: 120%;
+  }
+  * body .container main .section_tarif .section_tarif_main .section_tarif_footer button {
+    font-size: 16px;
+    line-height: 100%;
+    padding: 12px 38px 8px 38px;
+    gap: 10px;
+    margin-top: 20px;
+  }
+  * body .container main .section_tarif .section_tarif_main .section_tarif_footer button span svg {
+    width: 17px;
+    height: 17px;
+  }
+}
+@media screen and (max-width: 404px) {
+  * body .container main .section_tarif .section_tarif_main {
+    min-height: 601px;
+  }
+  * body .container main .section_tarif .section_tarif_main .section_tarif_main_flex {
+    display: block;
+  }
+  * body .container main .section_tarif .section_tarif_main .section_tarif_main_flex .section_tarif_main_item:first-of-type {
+    margin-left: 10px;
+    background: url(../img/Free\ 333.png);
+    background-position: left center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding: 37px 0px 0px 29px;
+    max-width: 350px;
+  }
+  * body .container main .section_tarif .section_tarif_main .section_tarif_main_flex .section_tarif_main_item:first-of-type h6 {
+    font-size: 12px;
+    line-height: 14px;
+    transform: translateY(-15px);
+  }
+  * body .container main .section_tarif .section_tarif_main .section_tarif_main_flex .section_tarif_main_item:first-of-type h3 {
+    font-size: 35px;
+    line-height: 120%;
+    margin-top: 10px;
+  }
+  * body .container main .section_tarif .section_tarif_main .section_tarif_main_flex .section_tarif_main_item:first-of-type ul {
+    gap: 10px;
+    margin-top: 13px;
+  }
+  * body .container main .section_tarif .section_tarif_main .section_tarif_main_flex .section_tarif_main_item:first-of-type ul li {
+    font-size: 12px;
+    line-height: 14px;
+    gap: 10px;
+    margin-top: 15px;
+  }
+  * body .container main .section_tarif .section_tarif_main .section_tarif_main_flex .section_tarif_main_item:first-of-type ul li span svg {
+    width: 16px;
+    height: 16px;
+  }
+  * body .container main .section_tarif .section_tarif_main .section_tarif_main_flex .section_tarif_main_item:first-of-type .besplatno_box {
+    margin-top: 35px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  * body .container main .section_tarif .section_tarif_main .section_tarif_main_flex .section_tarif_main_item:first-of-type .besplatno_box h4 {
+    font-size: 22px;
+    line-height: 120%;
+    transform: translateY(-18px);
+  }
+  * body .container main .section_tarif .section_tarif_main .section_tarif_main_flex .section_tarif_main_item:first-of-type .besplatno_box h6 {
+    font-size: 10px;
+    line-height: 130%;
+  }
+  * body .container main .section_tarif .section_tarif_main .section_tarif_main_flex .section_tarif_main_item:last-of-type {
+    background: url(../img/Profi\ 4444.png);
+    background-position: left center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding: 37px 30px 20px 28px;
+    margin: auto;
+    margin-top: 10px;
+    margin-left: 20px;
+  }
+  * body .container main .section_tarif .section_tarif_main .section_tarif_main_flex .section_tarif_main_item:last-of-type h4 {
+    font-size: 11px;
+    line-height: 12px;
+    padding-left: 0px;
+    transform: translate(-15px, -12px);
+  }
+  * body .container main .section_tarif .section_tarif_main .section_tarif_main_flex .section_tarif_main_item:last-of-type h2 {
+    font-size: 40px;
+    line-height: 120%;
+    margin-top: 10px;
+  }
+  * body .container main .section_tarif .section_tarif_main .section_tarif_main_flex .section_tarif_main_item:last-of-type nav {
+    margin-bottom: 20px;
+    gap: 20px;
+    display: block;
+  }
+  * body .container main .section_tarif .section_tarif_main .section_tarif_main_flex .section_tarif_main_item:last-of-type nav ul li {
+    font-size: 12px;
+    line-height: 14px;
+    margin-top: 10px;
+  }
+  * body .container main .section_tarif .section_tarif_main .section_tarif_main_flex .section_tarif_main_item:last-of-type nav ul li span svg {
+    width: 14px;
+    height: 14px;
+  }
+  * body .container main .section_tarif .section_tarif_main .section_tarif_main_flex .section_tarif_main_item:last-of-type .premium {
+    margin-top: 0px;
+    justify-content: flex-start;
+    gap: 5px;
+    flex-direction: column;
+    transform: translateX(-10px);
+  }
+  * body .container main .section_tarif .section_tarif_main .section_tarif_main_flex .section_tarif_main_item:last-of-type .premium .premium_item h5 {
+    font-size: 16px;
+    line-height: 120%;
+  }
+  * body .container main .section_tarif .section_tarif_main .section_tarif_main_flex .section_tarif_main_item:last-of-type .premium .premium_item h6 {
+    font-size: 10px;
+    line-height: 130%;
+  }
+  * body .container main .section_tarif .section_tarif_main .section_tarif_main_flex .section_tarif_main_item:last-of-type .premium .premium_button {
+    padding: 2px 14px 2px 2px;
+    margin-right: 50px;
+  }
+  * body .container main .section_tarif .section_tarif_main .section_tarif_main_flex .section_tarif_main_item:last-of-type .premium .premium_button button {
+    padding: 2px 10px 6px 10px;
+    font-size: 10px;
+    line-height: 120%;
+  }
+  * body .container main .section_tarif .section_tarif_main .section_tarif_main_flex .section_tarif_main_item:last-of-type .premium .premium_button span {
+    font-size: 10px;
+    line-height: 100%;
+  }
+  * body .container main .section_tarif .section_tarif_main .section_tarif_footer {
+    margin-top: 60px;
+  }
+  * body .container main .section_tarif .section_tarif_main .section_tarif_footer p {
+    font-size: 14px;
+    line-height: 120%;
+  }
+  * body .container main .section_tarif .section_tarif_main .section_tarif_footer button {
+    font-size: 16px;
+    line-height: 100%;
+    padding: 12px 38px 8px 38px;
+    gap: 10px;
+    margin-top: 20px;
+  }
+  * body .container main .section_tarif .section_tarif_main .section_tarif_footer button span svg {
+    width: 17px;
+    height: 17px;
+  }
+}
+@media screen and (max-width: 367px) {
+  * body .container main .section_tarif .section_tarif_header {
+    min-height: 47px;
+  }
+  * body .container main .section_tarif .section_tarif_header h2 {
+    font-size: 12px;
+    line-height: 120%;
+    padding-top: 17px;
+  }
+  * body .container main .section_tarif .section_tarif_main {
+    min-height: 601px;
+  }
+  * body .container main .section_tarif .section_tarif_main .section_tarif_main_flex {
+    display: block;
+  }
+  * body .container main .section_tarif .section_tarif_main .section_tarif_main_flex .section_tarif_main_item:first-of-type {
+    margin-left: 0px;
+    background: url(../img/Free\ 333.png);
+    background-position: left center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding: 37px 0px 0px 29px;
+    max-width: 350px;
+  }
+  * body .container main .section_tarif .section_tarif_main .section_tarif_main_flex .section_tarif_main_item:first-of-type h6 {
+    font-size: 12px;
+    line-height: 14px;
+    transform: translateY(-15px);
+  }
+  * body .container main .section_tarif .section_tarif_main .section_tarif_main_flex .section_tarif_main_item:first-of-type h3 {
+    font-size: 35px;
+    line-height: 120%;
+    margin-top: 10px;
+  }
+  * body .container main .section_tarif .section_tarif_main .section_tarif_main_flex .section_tarif_main_item:first-of-type ul {
+    gap: 10px;
+    margin-top: 13px;
+  }
+  * body .container main .section_tarif .section_tarif_main .section_tarif_main_flex .section_tarif_main_item:first-of-type ul li {
+    font-size: 12px;
+    line-height: 14px;
+    gap: 10px;
+    margin-top: 15px;
+  }
+  * body .container main .section_tarif .section_tarif_main .section_tarif_main_flex .section_tarif_main_item:first-of-type ul li span svg {
+    width: 16px;
+    height: 16px;
+  }
+  * body .container main .section_tarif .section_tarif_main .section_tarif_main_flex .section_tarif_main_item:first-of-type .besplatno_box {
+    margin-top: 35px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  * body .container main .section_tarif .section_tarif_main .section_tarif_main_flex .section_tarif_main_item:first-of-type .besplatno_box h4 {
+    font-size: 22px;
+    line-height: 120%;
+    transform: translateY(-18px);
+  }
+  * body .container main .section_tarif .section_tarif_main .section_tarif_main_flex .section_tarif_main_item:first-of-type .besplatno_box h6 {
+    font-size: 10px;
+    line-height: 130%;
+  }
+  * body .container main .section_tarif .section_tarif_main .section_tarif_main_flex .section_tarif_main_item:last-of-type {
+    background: url(../img/Profi\ 4444.png);
+    background-position: left center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding: 37px 30px 20px 28px;
+    margin: auto;
+    margin-top: 10px;
+    margin-left: 20px;
+  }
+  * body .container main .section_tarif .section_tarif_main .section_tarif_main_flex .section_tarif_main_item:last-of-type h4 {
+    font-size: 11px;
+    line-height: 12px;
+    padding-left: 0px;
+    transform: translate(-15px, -12px);
+  }
+  * body .container main .section_tarif .section_tarif_main .section_tarif_main_flex .section_tarif_main_item:last-of-type h2 {
+    font-size: 40px;
+    line-height: 120%;
+    margin-top: 10px;
+  }
+  * body .container main .section_tarif .section_tarif_main .section_tarif_main_flex .section_tarif_main_item:last-of-type nav {
+    margin-bottom: 20px;
+    gap: 20px;
+    display: block;
+  }
+  * body .container main .section_tarif .section_tarif_main .section_tarif_main_flex .section_tarif_main_item:last-of-type nav ul li {
+    font-size: 12px;
+    line-height: 14px;
+    margin-top: 10px;
+  }
+  * body .container main .section_tarif .section_tarif_main .section_tarif_main_flex .section_tarif_main_item:last-of-type nav ul li span svg {
+    width: 14px;
+    height: 14px;
+  }
+  * body .container main .section_tarif .section_tarif_main .section_tarif_main_flex .section_tarif_main_item:last-of-type .premium {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    flex-direction: column;
+    transform: translateX(10px);
+    margin: auto;
+    margin-top: 0px;
+  }
+  * body .container main .section_tarif .section_tarif_main .section_tarif_main_flex .section_tarif_main_item:last-of-type .premium .premium_item h5 {
+    font-size: 16px;
+    line-height: 120%;
+  }
+  * body .container main .section_tarif .section_tarif_main .section_tarif_main_flex .section_tarif_main_item:last-of-type .premium .premium_item h6 {
+    font-size: 10px;
+    line-height: 130%;
+  }
+  * body .container main .section_tarif .section_tarif_main .section_tarif_main_flex .section_tarif_main_item:last-of-type .premium .premium_button {
+    padding: 2px 14px 2px 2px;
+    margin-right: 50px;
+  }
+  * body .container main .section_tarif .section_tarif_main .section_tarif_main_flex .section_tarif_main_item:last-of-type .premium .premium_button button {
+    padding: 1px 6px 2px 4px;
+    font-size: 8px;
+    line-height: 120%;
+  }
+  * body .container main .section_tarif .section_tarif_main .section_tarif_main_flex .section_tarif_main_item:last-of-type .premium .premium_button span {
+    font-size: 8px;
+    line-height: 100%;
+  }
+  * body .container main .section_tarif .section_tarif_main .section_tarif_footer {
+    margin-top: 60px;
+  }
+  * body .container main .section_tarif .section_tarif_main .section_tarif_footer p {
+    font-size: 12px;
+    line-height: 120%;
+  }
+  * body .container main .section_tarif .section_tarif_main .section_tarif_footer button {
+    font-size: 14px;
+    line-height: 100%;
+    padding: 10px 30px 6px 30px;
+    gap: 7px;
+    margin-top: 10px;
+  }
+  * body .container main .section_tarif .section_tarif_main .section_tarif_footer button span svg {
+    width: 15px;
+    height: 15px;
+  }
+}
+@media screen and (max-width: 342px) {
+  * body .container main .section_tarif .section_tarif_header {
+    min-height: 47px;
+  }
+  * body .container main .section_tarif .section_tarif_header h2 {
+    font-size: 12px;
+    line-height: 120%;
+    padding-top: 17px;
+  }
+  * body .container main .section_tarif .section_tarif_main {
+    min-height: 601px;
+  }
+  * body .container main .section_tarif .section_tarif_main .section_tarif_main_flex {
+    display: block;
+  }
+  * body .container main .section_tarif .section_tarif_main .section_tarif_main_flex .section_tarif_main_item:first-of-type {
+    margin-left: 0px;
+    background: url(../img/Free\ 333.png);
+    background-position: left center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding: 37px 0px 0px 29px;
+    max-width: 350px;
+  }
+  * body .container main .section_tarif .section_tarif_main .section_tarif_main_flex .section_tarif_main_item:first-of-type h6 {
+    font-size: 12px;
+    line-height: 14px;
+    transform: translateY(-20px);
+    padding-left: 0;
+  }
+  * body .container main .section_tarif .section_tarif_main .section_tarif_main_flex .section_tarif_main_item:first-of-type h3 {
+    font-size: 30px;
+    line-height: 120%;
+    margin-top: 5px;
+  }
+  * body .container main .section_tarif .section_tarif_main .section_tarif_main_flex .section_tarif_main_item:first-of-type ul {
+    gap: 10px;
+    margin-top: 13px;
+  }
+  * body .container main .section_tarif .section_tarif_main .section_tarif_main_flex .section_tarif_main_item:first-of-type ul li {
+    font-size: 12px;
+    line-height: 14px;
+    gap: 10px;
+    margin-top: 15px;
+  }
+  * body .container main .section_tarif .section_tarif_main .section_tarif_main_flex .section_tarif_main_item:first-of-type ul li span svg {
+    width: 16px;
+    height: 16px;
+  }
+  * body .container main .section_tarif .section_tarif_main .section_tarif_main_flex .section_tarif_main_item:first-of-type .besplatno_box {
+    margin-top: 25px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  * body .container main .section_tarif .section_tarif_main .section_tarif_main_flex .section_tarif_main_item:first-of-type .besplatno_box h4 {
+    font-size: 20px;
+    line-height: 120%;
+    transform: translateY(-18px);
+  }
+  * body .container main .section_tarif .section_tarif_main .section_tarif_main_flex .section_tarif_main_item:first-of-type .besplatno_box h6 {
+    font-size: 8px;
+    line-height: 130%;
+  }
+  * body .container main .section_tarif .section_tarif_main .section_tarif_main_flex .section_tarif_main_item:last-of-type {
+    background: url(../img/Profi\ 4444.png);
+    background-position: left center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding: 37px 30px 20px 28px;
+    margin: auto;
+    margin-top: 10px;
+    margin-left: 10px;
+  }
+  * body .container main .section_tarif .section_tarif_main .section_tarif_main_flex .section_tarif_main_item:last-of-type h4 {
+    font-size: 11px;
+    line-height: 12px;
+    padding-left: 0px;
+    transform: translate(-15px, -12px);
+  }
+  * body .container main .section_tarif .section_tarif_main .section_tarif_main_flex .section_tarif_main_item:last-of-type h2 {
+    font-size: 40px;
+    line-height: 120%;
+    margin-top: 10px;
+  }
+  * body .container main .section_tarif .section_tarif_main .section_tarif_main_flex .section_tarif_main_item:last-of-type nav {
+    margin-bottom: 20px;
+    gap: 20px;
+    display: block;
+  }
+  * body .container main .section_tarif .section_tarif_main .section_tarif_main_flex .section_tarif_main_item:last-of-type nav ul li {
+    font-size: 12px;
+    line-height: 14px;
+    margin-top: 10px;
+  }
+  * body .container main .section_tarif .section_tarif_main .section_tarif_main_flex .section_tarif_main_item:last-of-type nav ul li span svg {
+    width: 14px;
+    height: 14px;
+  }
+  * body .container main .section_tarif .section_tarif_main .section_tarif_main_flex .section_tarif_main_item:last-of-type .premium {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    flex-direction: column;
+    transform: translateX(10px);
+    margin: auto;
+    margin-top: 0px;
+  }
+  * body .container main .section_tarif .section_tarif_main .section_tarif_main_flex .section_tarif_main_item:last-of-type .premium .premium_item h5 {
+    font-size: 16px;
+    line-height: 120%;
+  }
+  * body .container main .section_tarif .section_tarif_main .section_tarif_main_flex .section_tarif_main_item:last-of-type .premium .premium_item h6 {
+    font-size: 10px;
+    line-height: 130%;
+  }
+  * body .container main .section_tarif .section_tarif_main .section_tarif_main_flex .section_tarif_main_item:last-of-type .premium .premium_button {
+    padding: 2px 14px 2px 2px;
+    margin-right: 50px;
+  }
+  * body .container main .section_tarif .section_tarif_main .section_tarif_main_flex .section_tarif_main_item:last-of-type .premium .premium_button button {
+    padding: 1px 6px 4px 6px;
+    font-size: 8px;
+    line-height: 120%;
+  }
+  * body .container main .section_tarif .section_tarif_main .section_tarif_main_flex .section_tarif_main_item:last-of-type .premium .premium_button span {
+    font-size: 8px;
+    line-height: 100%;
+  }
+  * body .container main .section_tarif .section_tarif_main .section_tarif_footer {
+    margin-top: 60px;
+  }
+  * body .container main .section_tarif .section_tarif_main .section_tarif_footer p {
+    font-size: 12px;
+    line-height: 120%;
+  }
+  * body .container main .section_tarif .section_tarif_main .section_tarif_footer button {
+    font-size: 14px;
+    line-height: 100%;
+    padding: 10px 30px 6px 30px;
+    gap: 7px;
+    margin-top: 10px;
+  }
+  * body .container main .section_tarif .section_tarif_main .section_tarif_footer button span svg {
+    width: 15px;
+    height: 15px;
+  }
+}
+@media screen and (max-width: 328px) {
+  * body .container main .section_tarif .section_tarif_header {
+    min-height: 47px;
+  }
+  * body .container main .section_tarif .section_tarif_header h2 {
+    font-size: 12px;
+    line-height: 120%;
+    padding-top: 17px;
+  }
+  * body .container main .section_tarif .section_tarif_main {
+    min-height: 601px;
+  }
+  * body .container main .section_tarif .section_tarif_main .section_tarif_main_flex {
+    display: block;
+  }
+  * body .container main .section_tarif .section_tarif_main .section_tarif_main_flex .section_tarif_main_item:first-of-type {
+    margin-left: 0px;
+    background: url(../img/Free\ 333.png);
+    background-position: left center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding: 37px 0px 0px 29px;
+    max-width: 350px;
+  }
+  * body .container main .section_tarif .section_tarif_main .section_tarif_main_flex .section_tarif_main_item:first-of-type h6 {
+    font-size: 12px;
+    line-height: 14px;
+    transform: translateY(-20px);
+    padding-left: 0;
+  }
+  * body .container main .section_tarif .section_tarif_main .section_tarif_main_flex .section_tarif_main_item:first-of-type h3 {
+    font-size: 30px;
+    line-height: 120%;
+    margin-top: 5px;
+  }
+  * body .container main .section_tarif .section_tarif_main .section_tarif_main_flex .section_tarif_main_item:first-of-type ul {
+    gap: 10px;
+    margin-top: 13px;
+  }
+  * body .container main .section_tarif .section_tarif_main .section_tarif_main_flex .section_tarif_main_item:first-of-type ul li {
+    font-size: 12px;
+    line-height: 14px;
+    gap: 10px;
+    margin-top: 15px;
+  }
+  * body .container main .section_tarif .section_tarif_main .section_tarif_main_flex .section_tarif_main_item:first-of-type ul li span svg {
+    width: 16px;
+    height: 16px;
+  }
+  * body .container main .section_tarif .section_tarif_main .section_tarif_main_flex .section_tarif_main_item:first-of-type .besplatno_box {
+    margin-top: 25px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  * body .container main .section_tarif .section_tarif_main .section_tarif_main_flex .section_tarif_main_item:first-of-type .besplatno_box h4 {
+    font-size: 20px;
+    line-height: 120%;
+    transform: translateY(-18px);
+  }
+  * body .container main .section_tarif .section_tarif_main .section_tarif_main_flex .section_tarif_main_item:first-of-type .besplatno_box h6 {
+    font-size: 8px;
+    line-height: 130%;
+  }
+  * body .container main .section_tarif .section_tarif_main .section_tarif_main_flex .section_tarif_main_item:last-of-type {
+    background: url(../img/Profi\ 4444.png);
+    background-position: left center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding: 37px 30px 20px 28px;
+    margin: auto;
+    margin-top: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+  * body .container main .section_tarif .section_tarif_main .section_tarif_main_flex .section_tarif_main_item:last-of-type h4 {
+    font-size: 11px;
+    line-height: 12px;
+    padding-left: 0px;
+    transform: translate(-15px, -12px);
+  }
+  * body .container main .section_tarif .section_tarif_main .section_tarif_main_flex .section_tarif_main_item:last-of-type h2 {
+    font-size: 40px;
+    line-height: 120%;
+    margin-top: 10px;
+  }
+  * body .container main .section_tarif .section_tarif_main .section_tarif_main_flex .section_tarif_main_item:last-of-type nav {
+    margin-bottom: 20px;
+    gap: 20px;
+    display: block;
+  }
+  * body .container main .section_tarif .section_tarif_main .section_tarif_main_flex .section_tarif_main_item:last-of-type nav ul li {
+    font-size: 12px;
+    line-height: 14px;
+    margin-top: 10px;
+  }
+  * body .container main .section_tarif .section_tarif_main .section_tarif_main_flex .section_tarif_main_item:last-of-type nav ul li span svg {
+    width: 14px;
+    height: 14px;
+  }
+  * body .container main .section_tarif .section_tarif_main .section_tarif_main_flex .section_tarif_main_item:last-of-type .premium {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    flex-direction: column;
+    transform: translateX(15px);
+    margin: auto;
+    margin-top: 0px;
+  }
+  * body .container main .section_tarif .section_tarif_main .section_tarif_main_flex .section_tarif_main_item:last-of-type .premium .premium_item h5 {
+    font-size: 16px;
+    line-height: 120%;
+  }
+  * body .container main .section_tarif .section_tarif_main .section_tarif_main_flex .section_tarif_main_item:last-of-type .premium .premium_item h6 {
+    font-size: 10px;
+    line-height: 130%;
+  }
+  * body .container main .section_tarif .section_tarif_main .section_tarif_main_flex .section_tarif_main_item:last-of-type .premium .premium_button {
+    padding: 2px 14px 2px 2px;
+    margin-right: 50px;
+  }
+  * body .container main .section_tarif .section_tarif_main .section_tarif_main_flex .section_tarif_main_item:last-of-type .premium .premium_button button {
+    padding: 1px 6px 4px 6px;
+    font-size: 8px;
+    line-height: 120%;
+  }
+  * body .container main .section_tarif .section_tarif_main .section_tarif_main_flex .section_tarif_main_item:last-of-type .premium .premium_button span {
+    font-size: 8px;
+    line-height: 100%;
+  }
+  * body .container main .section_tarif .section_tarif_main .section_tarif_footer {
+    margin-top: 60px;
+  }
+  * body .container main .section_tarif .section_tarif_main .section_tarif_footer p {
+    font-size: 12px;
+    line-height: 120%;
+  }
+  * body .container main .section_tarif .section_tarif_main .section_tarif_footer button {
+    font-size: 14px;
+    line-height: 100%;
+    padding: 10px 30px 6px 30px;
+    gap: 7px;
+    margin-top: 10px;
+  }
+  * body .container main .section_tarif .section_tarif_main .section_tarif_footer button span svg {
+    width: 15px;
+    height: 15px;
+  }
 }
 * body .container main .section_servise .section_servise_faq {
   background: url(../img/section_servise_faq.png);
