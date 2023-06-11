@@ -1005,7 +1005,7 @@
                       }
                       p {
                         font-size: 5px;
-line-height: 120%;
+                        line-height: 120%;
                         margin-top: 2px;
                       }
                     }
@@ -1015,7 +1015,7 @@ line-height: 120%;
                       max-height: 53px;
                       h6 {
                         font-size: 4px;
-line-height: 120%;
+                        line-height: 120%;
                       }
                       span {
                         svg {
@@ -1034,7 +1034,7 @@ line-height: 120%;
                 }
                 h4 {
                   font-size: 8px;
-line-height: 120%;
+                  line-height: 120%;
                   margin-top: 15px;
                 }
                 span {
@@ -1046,7 +1046,7 @@ line-height: 120%;
                 }
                 p {
                   font-size: 10px;
-line-height: 130%;
+                  line-height: 130%;
                   margin-top: 26px;
                 }
                 button {
@@ -1079,15 +1079,13 @@ line-height: 130%;
         .section_geroy {
           width: 100%;
           position: relative;
-          
+          height: 100%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
           .section_geroy_item {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            gap: 12px;
-            padding: 0 80px;
-            width: 100%;
             .section_geroy_item_child {
+              margin-left: 15px;
               transition: all 0.1s;
               &:hover {
                 background: url(../img/section_geroy_item_child\ hover.png);
@@ -1231,6 +1229,7 @@ line-height: 130%;
                   width: 100%;
                   height: 100%;
                   object-fit: cover;
+                  display: block;
                 }
               }
               .geroy_box {
@@ -1362,7 +1361,34 @@ line-height: 130%;
                 }
               }
             }
-            
+          }
+          .swiper-pagination {
+            font-style: normal;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            letter-spacing: 0.1em;
+            font-feature-settings: "liga" off;
+            color: #11e5b3;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            span {
+              background: url(/./assets/img/Ellipse\ 25.png);
+              background-position: center center;
+              background-repeat: no-repeat;
+              background-size: cover;
+              width: 12px;
+              height: 12px;
+              background: #083940;
+              border: 2px solid #11e5b3;
+              // background: #083940;
+              // border: 2px solid #11e5b3;
+            }
           }
           .swiper-button-next {
             right: var(--swiper-navigation-sides-offset, 10%);
@@ -1387,37 +1413,6 @@ line-height: 130%;
             padding: 20px;
             &::after {
               content: none;
-            }
-          }
-          .swiper-pagination {
-            font-style: normal;
-            font-weight: 500;
-            font-size: 16px;
-            line-height: 100%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-            letter-spacing: 0.1em;
-            font-feature-settings: 'liga' off;
-            color: #11E5B3;
-            display: flex;
-justify-content: center;
-align-items: center;
-            span {
-              font-style: normal;
-              font-weight: 500;
-              font-size: 16px;
-              line-height: 100%;
-              display: flex;
-              justify-content: center;
-              align-items: center;
-              text-align: center;
-              letter-spacing: 0.1em;
-              font-feature-settings: 'liga' off;
-              color: #11E5B3;
-              // background: #083940;
-              // border: 2px solid #11e5b3;
             }
           }
           .section_geroy_modal {
@@ -1456,7 +1451,7 @@ align-items: center;
         }
         .section_logotips {
           margin-top: 102px;
-         
+
           h4 {
             font-family: "Exo 2";
             font-style: normal;
@@ -1524,18 +1519,18 @@ align-items: center;
               }
             }
           }
-          @media screen and (max-width:1124px){
-            .section_logotips_item{
-              .section_logotips_item_text{
+          @media screen and (max-width: 1124px) {
+            .section_logotips_item {
+              .section_logotips_item_text {
                 margin-top: 565px;
-                .section_logotips_item_text_img{
+                .section_logotips_item_text_img {
                   width: 862px;
                 }
-                h1{
+                h1 {
                   font-size: 280px;
                   line-height: 68px;
                 }
-                p{
+                p {
                   font-size: 24px;
                   line-height: 120%;
                   margin-top: 142px;
@@ -1543,19 +1538,19 @@ align-items: center;
               }
             }
           }
-          @media screen and (max-width:932px){
-            .section_logotips_item{
+          @media screen and (max-width: 932px) {
+            .section_logotips_item {
               min-height: 1100px;
-              .section_logotips_item_text{
+              .section_logotips_item_text {
                 margin-top: 465px;
-                .section_logotips_item_text_img{
+                .section_logotips_item_text_img {
                   width: 762px;
                 }
-                h1{
+                h1 {
                   font-size: 220px;
                   line-height: 68px;
                 }
-                p{
+                p {
                   font-size: 22px;
                   line-height: 120%;
                   margin-top: 122px;
@@ -1563,30 +1558,30 @@ align-items: center;
               }
             }
           }
-          @media screen and (max-width:821px){
-            h4{
+          @media screen and (max-width: 821px) {
+            h4 {
               font-size: 18px;
-line-height: 120%;
+              line-height: 120%;
             }
-            .section_logotips_item{
+            .section_logotips_item {
               min-height: 1100px;
-              .section_logotips_item_img{
-                img{
+              .section_logotips_item_img {
+                img {
                   width: 141px;
                   height: 43px;
                   object-fit: contain;
                 }
               }
-              .section_logotips_item_text{
+              .section_logotips_item_text {
                 margin-top: 465px;
-                .section_logotips_item_text_img{
+                .section_logotips_item_text_img {
                   width: 762px;
                 }
-                h1{
+                h1 {
                   font-size: 220px;
                   line-height: 68px;
                 }
-                p{
+                p {
                   font-size: 22px;
                   line-height: 120%;
                   margin-top: 122px;
@@ -1594,23 +1589,23 @@ line-height: 120%;
               }
             }
           }
-          @media screen and (max-width:808px){
-            h4{
+          @media screen and (max-width: 808px) {
+            h4 {
               font-size: 18px;
-line-height: 120%;
+              line-height: 120%;
             }
-            .section_logotips_item{
+            .section_logotips_item {
               min-height: 1100px;
-              .section_logotips_item_text{
+              .section_logotips_item_text {
                 margin-top: 465px;
-                .section_logotips_item_text_img{
+                .section_logotips_item_text_img {
                   width: 662px;
                 }
-                h1{
+                h1 {
                   font-size: 180px;
                   line-height: 68px;
                 }
-                p{
+                p {
                   font-size: 22px;
                   line-height: 120%;
                   margin-top: 112px;
@@ -1618,30 +1613,30 @@ line-height: 120%;
               }
             }
           }
-          @media screen and (max-width:692px){
-            h4{
+          @media screen and (max-width: 692px) {
+            h4 {
               font-size: 18px;
-line-height: 120%;
+              line-height: 120%;
             }
-            .section_logotips_item{
+            .section_logotips_item {
               min-height: 1050px;
-              .section_logotips_item_img{
-                img{
+              .section_logotips_item_img {
+                img {
                   width: 141px;
                   height: 43px;
                   object-fit: contain;
                 }
               }
-              .section_logotips_item_text{
+              .section_logotips_item_text {
                 margin-top: 415px;
-                .section_logotips_item_text_img{
+                .section_logotips_item_text_img {
                   width: 562px;
                 }
-                h1{
+                h1 {
                   font-size: 180px;
                   line-height: 68px;
                 }
-                p{
+                p {
                   font-size: 22px;
                   line-height: 120%;
                   margin-top: 102px;
@@ -1649,30 +1644,30 @@ line-height: 120%;
               }
             }
           }
-          @media screen and (max-width:586px){
-            h4{
+          @media screen and (max-width: 586px) {
+            h4 {
               font-size: 18px;
-line-height: 120%;
+              line-height: 120%;
             }
-            .section_logotips_item{
+            .section_logotips_item {
               min-height: 1050px;
-              .section_logotips_item_img{
-                img{
+              .section_logotips_item_img {
+                img {
                   width: 141px;
                   height: 43px;
                   object-fit: contain;
                 }
               }
-              .section_logotips_item_text{
+              .section_logotips_item_text {
                 margin-top: 305px;
-                .section_logotips_item_text_img{
+                .section_logotips_item_text_img {
                   width: 462px;
                 }
-                h1{
+                h1 {
                   font-size: 130px;
                   line-height: 68px;
                 }
-                p{
+                p {
                   font-size: 20px;
                   line-height: 120%;
                   margin-top: 82px;
@@ -1680,33 +1675,33 @@ line-height: 120%;
               }
             }
           }
-          @media screen and (max-width:476px){
-            h4{
+          @media screen and (max-width: 476px) {
+            h4 {
               font-size: 18px;
-line-height: 120%;
+              line-height: 120%;
             }
-            .section_logotips_item{
+            .section_logotips_item {
               min-height: 1050px;
-              .section_logotips_item_img{
-                img{
+              .section_logotips_item_img {
+                img {
                   width: 141px;
                   height: 43px;
                   object-fit: contain;
                 }
               }
-              .section_logotips_item_text{
+              .section_logotips_item_text {
                 margin-top: 305px;
-                .section_logotips_item_text_img{
+                .section_logotips_item_text_img {
                   width: 362px;
-                  img{
+                  img {
                     margin-top: 50px;
                   }
                 }
-                h1{
+                h1 {
                   font-size: 130px;
                   line-height: 68px;
                 }
-                p{
+                p {
                   font-size: 20px;
                   line-height: 120%;
                   margin-top: 82px;
@@ -1714,33 +1709,33 @@ line-height: 120%;
               }
             }
           }
-          @media screen and (max-width:385px){
-            h4{
+          @media screen and (max-width: 385px) {
+            h4 {
               font-size: 18px;
-line-height: 120%;
+              line-height: 120%;
             }
-            .section_logotips_item{
+            .section_logotips_item {
               min-height: 1250px;
-              .section_logotips_item_img{
-                img{
+              .section_logotips_item_img {
+                img {
                   width: 141px;
                   height: 43px;
                   object-fit: contain;
                 }
               }
-              .section_logotips_item_text{
+              .section_logotips_item_text {
                 margin-top: 105px;
-                .section_logotips_item_text_img{
+                .section_logotips_item_text_img {
                   width: 262px;
-                  img{
+                  img {
                     margin-top: 80px;
                   }
                 }
-                h1{
+                h1 {
                   font-size: 100px;
                   line-height: 52px;
                 }
-                p{
+                p {
                   font-size: 14px;
                   line-height: 120%;
                   margin-top: 42px;
@@ -1749,386 +1744,386 @@ line-height: 120%;
             }
           }
         }
-        .section_function {
-          min-height: 1677px;
-          background: url(../img/section_function\ background.png);
-          background-position: center center;
-          background-repeat: no-repeat;
-          background-size: contain;
-          background-color: #001324;
-          h3 {
-            font-family: "Exo 2";
-            font-style: normal;
-            font-weight: 400;
-            font-size: 72px;
-            line-height: 100%;
-            text-align: center;
-            background: linear-gradient(
-              92.56deg,
-              #73e5c6 9.18%,
-              #8179ef 54.53%,
-              #cf52fe 99.88%
-            );
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-            padding-top: 169px;
-          }
-          p {
-            font-family: "Exo 2";
-            font-style: normal;
-            font-weight: 400;
-            font-size: 24px;
-            line-height: 120%;
-            text-align: center;
-            color: #ffffff;
-            margin-top: 25px;
-          }
-          .section_function_item {
-            background-image: url(../img/section_function_item\ background.png);
-            background-position: center center;
-            background-repeat: no-repeat;
-            background-size: cover;
-            min-height: 981px;
-            margin-top: 100px;
-            h4 {
-              font-family: "Font Over";
-              font-style: normal;
-              font-weight: 500;
-              font-size: 18px;
-              line-height: 120%;
-              display: flex;
-              align-items: center;
-              justify-content: center;
-              text-align: center;
-              background: radial-gradient(
-                73.08% 73.08% at 50% -0.51%,
-                #fcdaff 0%,
-                #cf52fe 100%
-              );
-              -webkit-background-clip: text;
-              -webkit-text-fill-color: transparent;
-              background-clip: text;
-              padding-top: 50px;
-            }
-            .section_function_item_child {
-              display: flex;
-              justify-content: space-around;
-              align-items: center;
-              .section_function_item_child_left {
-                margin-top: 80px;
-                display: flex;
-                flex-direction: column;
-                gap: 30px;
-                .section_function_item_child_left_row1 {
-                  background: url(../img/Rectangle\ 126\ 22.png);
-                  background-position: center center;
-                  background-repeat: no-repeat;
-                  background-size: contain;
-                  padding: 16px 31px 15px 173px;
-                  display: flex;
-                  align-items: center;
-                  gap: 14px;
-                  h5 {
-                    font-family: "Exo 2";
-                    font-style: normal;
-                    font-weight: 600;
-                    font-size: 20px;
-                    line-height: 100%;
-                    text-align: right;
-                    background: linear-gradient(
-                      190.07deg,
-                      #ffffff 5.03%,
-                      #cf52fe 143.72%
-                    );
-                    -webkit-background-clip: text;
-                    -webkit-text-fill-color: transparent;
-                    background-clip: text;
-                  }
-                }
-                .section_function_item_child_left_row2 {
-                  background: url(../img/section_function_item_child_left_row2\ 22.png);
-                  background-position: center center;
-                  background-repeat: no-repeat;
-                  background-size: contain;
-                  padding: 16px 36px 16px 85px;
-                  display: flex;
-                  align-items: center;
-                  gap: 14px;
-                  h5 {
-                    font-family: "Exo 2";
-                    font-style: normal;
-                    font-weight: 600;
-                    font-size: 20px;
-                    line-height: 100%;
-                    text-align: right;
-                    background: linear-gradient(
-                      190.07deg,
-                      #ffffff 5.03%,
-                      #cf52fe 143.72%
-                    );
-                    -webkit-background-clip: text;
-                    -webkit-text-fill-color: transparent;
-                    background-clip: text;
-                  }
-                }
-                .section_function_item_child_left_row3 {
-                  background: url(../img/section_function_item_child_left_row2\ 333.png);
-                  background-position: center center;
-                  background-repeat: no-repeat;
-                  background-size: contain;
-                  padding: 16px 36px 20px 85px;
-                  display: flex;
-                  align-items: center;
-                  gap: 14px;
-                  h5 {
-                    font-family: "Exo 2";
-                    font-style: normal;
-                    font-weight: 600;
-                    font-size: 20px;
-                    line-height: 100%;
-                    text-align: right;
-                    background: linear-gradient(
-                      190.07deg,
-                      #ffffff 5.03%,
-                      #cf52fe 143.72%
-                    );
-                    -webkit-background-clip: text;
-                    -webkit-text-fill-color: transparent;
-                    background-clip: text;
-                  }
-                }
-                .section_function_item_child_left_row4 {
-                  background: url(../img/section_function_item_child_left_row4\ 44.png);
-                  background-position: center center;
-                  background-repeat: no-repeat;
-                  background-size: contain;
-                  padding: 16px 36px 20px 65px;
-                  display: flex;
-                  justify-content: flex-start;
-                  align-items: center;
-                  gap: 14px;
-                  h5 {
-                    font-family: "Exo 2";
-                    font-style: normal;
-                    font-weight: 600;
-                    font-size: 20px;
-                    line-height: 100%;
-                    text-align: right;
-                    background: linear-gradient(
-                      190.07deg,
-                      #ffffff 5.03%,
-                      #cf52fe 143.72%
-                    );
-                    -webkit-background-clip: text;
-                    -webkit-text-fill-color: transparent;
-                    background-clip: text;
-                  }
-                }
-                .section_function_item_child_left_row5 {
-                  background: url(../img/section_function_item_child_left_row5\ 55.png);
-                  background-position: center center;
-                  background-repeat: no-repeat;
-                  background-size: contain;
-                  padding: 16px 36px 20px 65px;
-                  display: flex;
-                  justify-content: center;
-                  align-items: center;
-                  gap: 14px;
-                  h5 {
-                    font-family: "Exo 2";
-                    font-style: normal;
-                    font-weight: 600;
-                    font-size: 20px;
-                    line-height: 100%;
-                    text-align: right;
-                    background: linear-gradient(
-                      190.07deg,
-                      #ffffff 5.03%,
-                      #cf52fe 143.72%
-                    );
-                    -webkit-background-clip: text;
-                    -webkit-text-fill-color: transparent;
-                    background-clip: text;
-                  }
-                }
-                .section_function_item_child_left_row6 {
-                  background: url(../img/section_function_item_child_left_row6\ 6666.png);
-                  background-position: center center;
-                  background-repeat: no-repeat;
-                  background-size: contain;
-                  padding: 16px 36px 20px 65px;
-                  display: flex;
-                  align-items: center;
-                  justify-content: center;
-                  gap: 14px;
-                  h5 {
-                    font-family: "Exo 2";
-                    font-style: normal;
-                    font-weight: 600;
-                    font-size: 20px;
-                    line-height: 100%;
-                    text-align: right;
-                    background: linear-gradient(
-                      190.07deg,
-                      #ffffff 5.03%,
-                      #cf52fe 143.72%
-                    );
-                    -webkit-background-clip: text;
-                    -webkit-text-fill-color: transparent;
-                    background-clip: text;
-                  }
-                }
-                .section_function_item_child_left_row7 {
-                  background: url(../img/section_function_item_child_left_row7\ 7777.png);
-                  background-position: center center;
-                  background-repeat: no-repeat;
-                  background-size: contain;
-                  padding: 16px 36px 20px 65px;
-                  display: flex;
-                  align-items: center;
-                  justify-content: center;
-                  gap: 14px;
-                  h5 {
-                    font-family: "Exo 2";
-                    font-style: normal;
-                    font-weight: 600;
-                    font-size: 20px;
-                    line-height: 100%;
-                    text-align: right;
-                    background: linear-gradient(
-                      190.07deg,
-                      #ffffff 5.03%,
-                      #cf52fe 143.72%
-                    );
-                    -webkit-background-clip: text;
-                    -webkit-text-fill-color: transparent;
-                    background-clip: text;
-                  }
-                }
-              }
-              .swiper {
-                p {
-                  font-family: "Exo 2";
-                  font-style: normal;
-                  font-weight: 400;
-                  font-size: 32px;
-                  line-height: 120%;
-                  text-align: center;
-                  color: #ffffff;
-                  margin-top: 152px;
-                }
-                .swiper-wrapper {
-                  .swiper-slide {
-                    background: url(../img/swiper-slide\ background.png);
-                    background-position: center center;
-                    background-repeat: no-repeat;
-                    background-size: contain;
-                    min-height: 504px;
-                    margin: 40px 48px 42px 0px;
-                    padding: 55px 99px 58px 98px;
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    gap: 42px;
-                    .swiper-slide_item {
-                      img {
-                        display: block;
-                        width: 100%;
-                        height: 100%;
-                        object-fit: cover;
-                      }
-                      h4 {
-                        font-family: "Font Over";
-                        font-style: normal;
-                        font-weight: 500;
-                        font-size: 13.7859px;
-                        line-height: 120%;
-                        display: flex;
-                        align-items: flex-start;
-                        background: linear-gradient(
-                          49.18deg,
-                          #11e5b3 13.03%,
-                          #5263fe 83.05%
-                        );
-                        -webkit-background-clip: text;
-                        -webkit-text-fill-color: transparent;
-                        background-clip: text;
-                        margin-bottom: 18px;
-                      }
-                    }
-                  }
-                }
-                .swiper-button-next {
-                  right: var(--swiper-navigation-sides-offset, 10%);
-                  top: var(--swiper-navigation-sides-offset, 65%);
-                  background: url("/./assets/img/Group 94.png");
-                  background-position: center center;
-                  background-repeat: no-repeat;
-                  background-size: contain;
-                  padding: 20px;
-                  &::after {
-                    content: none;
-                  }
-                }
-                .swiper-button-prev {
-                  position: absolute;
-                  left: var(--swiper-navigation-sides-offset, 10%);
-                  top: var(--swiper-navigation-sides-offset, 65%);
-                  background: url("/./assets/img/Group 95.png");
-                  background-position: center center;
-                  background-repeat: no-repeat;
-                  background-size: contain;
-                  padding: 20px;
-                  &::after {
-                    content: none;
-                  }
-                }
-                .autoplay-progress {
-                  position: absolute;
-                  right: 16px;
-                  bottom: 16px;
-                  z-index: 10;
-                  width: 48px;
-                  height: 48px;
-                  display: flex;
-                  align-items: center;
-                  justify-content: center;
-                  font-weight: bold;
-                  color: var(--swiper-theme-color);
-                  display: none;
-                  svg {
-                    --progress: 0;
-                    position: absolute;
-                    left: 0;
-                    top: 0px;
-                    z-index: 10;
-                    width: 100%;
-                    height: 100%;
-                    stroke-width: 4px;
-                    stroke: var(--swiper-theme-color);
-                    fill: none;
-                    stroke-dashoffset: calc(125.6 * (1 - var(--progress)));
-                    stroke-dasharray: 125.6;
-                    transform: rotate(-90deg);
-                  }
-                }
-                .swiper-pagination {
-                  span {
-                    background: url(/./assets/img/Ellipse\ 25.png);
-                    background-position: center center;
-                    background-repeat: no-repeat;
-                    background-size: cover;
-                    width: 12px;
-                    height: 12px;
-                    background: #083940;
-                    border: 2px solid #11e5b3;
-                  }
-                }
-              }
-            }
-          }
-        }
+        // .section_function {
+        //   min-height: 1677px;
+        //   background: url(../img/section_function\ background.png);
+        //   background-position: center center;
+        //   background-repeat: no-repeat;
+        //   background-size: contain;
+        //   background-color: #001324;
+        //   h3 {
+        //     font-family: "Exo 2";
+        //     font-style: normal;
+        //     font-weight: 400;
+        //     font-size: 72px;
+        //     line-height: 100%;
+        //     text-align: center;
+        //     background: linear-gradient(
+        //       92.56deg,
+        //       #73e5c6 9.18%,
+        //       #8179ef 54.53%,
+        //       #cf52fe 99.88%
+        //     );
+        //     -webkit-background-clip: text;
+        //     -webkit-text-fill-color: transparent;
+        //     background-clip: text;
+        //     padding-top: 169px;
+        //   }
+        //   p {
+        //     font-family: "Exo 2";
+        //     font-style: normal;
+        //     font-weight: 400;
+        //     font-size: 24px;
+        //     line-height: 120%;
+        //     text-align: center;
+        //     color: #ffffff;
+        //     margin-top: 25px;
+        //   }
+        //   .section_function_item {
+        //     background-image: url(../img/section_function_item\ background.png);
+        //     background-position: center center;
+        //     background-repeat: no-repeat;
+        //     background-size: cover;
+        //     min-height: 981px;
+        //     margin-top: 100px;
+        //     h4 {
+        //       font-family: "Font Over";
+        //       font-style: normal;
+        //       font-weight: 500;
+        //       font-size: 18px;
+        //       line-height: 120%;
+        //       display: flex;
+        //       align-items: center;
+        //       justify-content: center;
+        //       text-align: center;
+        //       background: radial-gradient(
+        //         73.08% 73.08% at 50% -0.51%,
+        //         #fcdaff 0%,
+        //         #cf52fe 100%
+        //       );
+        //       -webkit-background-clip: text;
+        //       -webkit-text-fill-color: transparent;
+        //       background-clip: text;
+        //       padding-top: 50px;
+        //     }
+        //     .section_function_item_child {
+        //       display: flex;
+        //       justify-content: space-around;
+        //       align-items: center;
+        //       .section_function_item_child_left {
+        //         margin-top: 80px;
+        //         display: flex;
+        //         flex-direction: column;
+        //         gap: 30px;
+        //         .section_function_item_child_left_row1 {
+        //           background: url(../img/Rectangle\ 126\ 22.png);
+        //           background-position: center center;
+        //           background-repeat: no-repeat;
+        //           background-size: contain;
+        //           padding: 16px 31px 15px 173px;
+        //           display: flex;
+        //           align-items: center;
+        //           gap: 14px;
+        //           h5 {
+        //             font-family: "Exo 2";
+        //             font-style: normal;
+        //             font-weight: 600;
+        //             font-size: 20px;
+        //             line-height: 100%;
+        //             text-align: right;
+        //             background: linear-gradient(
+        //               190.07deg,
+        //               #ffffff 5.03%,
+        //               #cf52fe 143.72%
+        //             );
+        //             -webkit-background-clip: text;
+        //             -webkit-text-fill-color: transparent;
+        //             background-clip: text;
+        //           }
+        //         }
+        //         .section_function_item_child_left_row2 {
+        //           background: url(../img/section_function_item_child_left_row2\ 22.png);
+        //           background-position: center center;
+        //           background-repeat: no-repeat;
+        //           background-size: contain;
+        //           padding: 16px 36px 16px 85px;
+        //           display: flex;
+        //           align-items: center;
+        //           gap: 14px;
+        //           h5 {
+        //             font-family: "Exo 2";
+        //             font-style: normal;
+        //             font-weight: 600;
+        //             font-size: 20px;
+        //             line-height: 100%;
+        //             text-align: right;
+        //             background: linear-gradient(
+        //               190.07deg,
+        //               #ffffff 5.03%,
+        //               #cf52fe 143.72%
+        //             );
+        //             -webkit-background-clip: text;
+        //             -webkit-text-fill-color: transparent;
+        //             background-clip: text;
+        //           }
+        //         }
+        //         .section_function_item_child_left_row3 {
+        //           background: url(../img/section_function_item_child_left_row2\ 333.png);
+        //           background-position: center center;
+        //           background-repeat: no-repeat;
+        //           background-size: contain;
+        //           padding: 16px 36px 20px 85px;
+        //           display: flex;
+        //           align-items: center;
+        //           gap: 14px;
+        //           h5 {
+        //             font-family: "Exo 2";
+        //             font-style: normal;
+        //             font-weight: 600;
+        //             font-size: 20px;
+        //             line-height: 100%;
+        //             text-align: right;
+        //             background: linear-gradient(
+        //               190.07deg,
+        //               #ffffff 5.03%,
+        //               #cf52fe 143.72%
+        //             );
+        //             -webkit-background-clip: text;
+        //             -webkit-text-fill-color: transparent;
+        //             background-clip: text;
+        //           }
+        //         }
+        //         .section_function_item_child_left_row4 {
+        //           background: url(../img/section_function_item_child_left_row4\ 44.png);
+        //           background-position: center center;
+        //           background-repeat: no-repeat;
+        //           background-size: contain;
+        //           padding: 16px 36px 20px 65px;
+        //           display: flex;
+        //           justify-content: flex-start;
+        //           align-items: center;
+        //           gap: 14px;
+        //           h5 {
+        //             font-family: "Exo 2";
+        //             font-style: normal;
+        //             font-weight: 600;
+        //             font-size: 20px;
+        //             line-height: 100%;
+        //             text-align: right;
+        //             background: linear-gradient(
+        //               190.07deg,
+        //               #ffffff 5.03%,
+        //               #cf52fe 143.72%
+        //             );
+        //             -webkit-background-clip: text;
+        //             -webkit-text-fill-color: transparent;
+        //             background-clip: text;
+        //           }
+        //         }
+        //         .section_function_item_child_left_row5 {
+        //           background: url(../img/section_function_item_child_left_row5\ 55.png);
+        //           background-position: center center;
+        //           background-repeat: no-repeat;
+        //           background-size: contain;
+        //           padding: 16px 36px 20px 65px;
+        //           display: flex;
+        //           justify-content: center;
+        //           align-items: center;
+        //           gap: 14px;
+        //           h5 {
+        //             font-family: "Exo 2";
+        //             font-style: normal;
+        //             font-weight: 600;
+        //             font-size: 20px;
+        //             line-height: 100%;
+        //             text-align: right;
+        //             background: linear-gradient(
+        //               190.07deg,
+        //               #ffffff 5.03%,
+        //               #cf52fe 143.72%
+        //             );
+        //             -webkit-background-clip: text;
+        //             -webkit-text-fill-color: transparent;
+        //             background-clip: text;
+        //           }
+        //         }
+        //         .section_function_item_child_left_row6 {
+        //           background: url(../img/section_function_item_child_left_row6\ 6666.png);
+        //           background-position: center center;
+        //           background-repeat: no-repeat;
+        //           background-size: contain;
+        //           padding: 16px 36px 20px 65px;
+        //           display: flex;
+        //           align-items: center;
+        //           justify-content: center;
+        //           gap: 14px;
+        //           h5 {
+        //             font-family: "Exo 2";
+        //             font-style: normal;
+        //             font-weight: 600;
+        //             font-size: 20px;
+        //             line-height: 100%;
+        //             text-align: right;
+        //             background: linear-gradient(
+        //               190.07deg,
+        //               #ffffff 5.03%,
+        //               #cf52fe 143.72%
+        //             );
+        //             -webkit-background-clip: text;
+        //             -webkit-text-fill-color: transparent;
+        //             background-clip: text;
+        //           }
+        //         }
+        //         .section_function_item_child_left_row7 {
+        //           background: url(../img/section_function_item_child_left_row7\ 7777.png);
+        //           background-position: center center;
+        //           background-repeat: no-repeat;
+        //           background-size: contain;
+        //           padding: 16px 36px 20px 65px;
+        //           display: flex;
+        //           align-items: center;
+        //           justify-content: center;
+        //           gap: 14px;
+        //           h5 {
+        //             font-family: "Exo 2";
+        //             font-style: normal;
+        //             font-weight: 600;
+        //             font-size: 20px;
+        //             line-height: 100%;
+        //             text-align: right;
+        //             background: linear-gradient(
+        //               190.07deg,
+        //               #ffffff 5.03%,
+        //               #cf52fe 143.72%
+        //             );
+        //             -webkit-background-clip: text;
+        //             -webkit-text-fill-color: transparent;
+        //             background-clip: text;
+        //           }
+        //         }
+        //       }
+        //       .swiper {
+        //         p {
+        //           font-family: "Exo 2";
+        //           font-style: normal;
+        //           font-weight: 400;
+        //           font-size: 32px;
+        //           line-height: 120%;
+        //           text-align: center;
+        //           color: #ffffff;
+        //           margin-top: 152px;
+        //         }
+        //         .swiper-wrapper {
+        //           .swiper-slide {
+        //             background: url(../img/swiper-slide\ background.png);
+        //             background-position: center center;
+        //             background-repeat: no-repeat;
+        //             background-size: contain;
+        //             min-height: 504px;
+        //             margin: 40px 48px 42px 0px;
+        //             padding: 55px 99px 58px 98px;
+        //             display: flex;
+        //             justify-content: center;
+        //             align-items: center;
+        //             gap: 42px;
+        //             .swiper-slide_item {
+        //               img {
+        //                 display: block;
+        //                 width: 100%;
+        //                 height: 100%;
+        //                 object-fit: cover;
+        //               }
+        //               h4 {
+        //                 font-family: "Font Over";
+        //                 font-style: normal;
+        //                 font-weight: 500;
+        //                 font-size: 13.7859px;
+        //                 line-height: 120%;
+        //                 display: flex;
+        //                 align-items: flex-start;
+        //                 background: linear-gradient(
+        //                   49.18deg,
+        //                   #11e5b3 13.03%,
+        //                   #5263fe 83.05%
+        //                 );
+        //                 -webkit-background-clip: text;
+        //                 -webkit-text-fill-color: transparent;
+        //                 background-clip: text;
+        //                 margin-bottom: 18px;
+        //               }
+        //             }
+        //           }
+        //         }
+        //         .swiper-button-next {
+        //           right: var(--swiper-navigation-sides-offset, 10%);
+        //           top: var(--swiper-navigation-sides-offset, 65%);
+        //           background: url("/./assets/img/Group 94.png");
+        //           background-position: center center;
+        //           background-repeat: no-repeat;
+        //           background-size: contain;
+        //           padding: 20px;
+        //           &::after {
+        //             content: none;
+        //           }
+        //         }
+        //         .swiper-button-prev {
+        //           position: absolute;
+        //           left: var(--swiper-navigation-sides-offset, 10%);
+        //           top: var(--swiper-navigation-sides-offset, 65%);
+        //           background: url("/./assets/img/Group 95.png");
+        //           background-position: center center;
+        //           background-repeat: no-repeat;
+        //           background-size: contain;
+        //           padding: 20px;
+        //           &::after {
+        //             content: none;
+        //           }
+        //         }
+        //         .autoplay-progress {
+        //           position: absolute;
+        //           right: 16px;
+        //           bottom: 16px;
+        //           z-index: 10;
+        //           width: 48px;
+        //           height: 48px;
+        //           display: flex;
+        //           align-items: center;
+        //           justify-content: center;
+        //           font-weight: bold;
+        //           color: var(--swiper-theme-color);
+        //           display: none;
+        //           svg {
+        //             --progress: 0;
+        //             position: absolute;
+        //             left: 0;
+        //             top: 0px;
+        //             z-index: 10;
+        //             width: 100%;
+        //             height: 100%;
+        //             stroke-width: 4px;
+        //             stroke: var(--swiper-theme-color);
+        //             fill: none;
+        //             stroke-dashoffset: calc(125.6 * (1 - var(--progress)));
+        //             stroke-dasharray: 125.6;
+        //             transform: rotate(-90deg);
+        //           }
+        //         }
+        //         .swiper-pagination {
+        //           span {
+        //             background: url(/./assets/img/Ellipse\ 25.png);
+        //             background-position: center center;
+        //             background-repeat: no-repeat;
+        //             background-size: cover;
+        //             width: 12px;
+        //             height: 12px;
+        //             background: #083940;
+        //             border: 2px solid #11e5b3;
+        //           }
+        //         }
+        //       }
+        //     }
+        //   }
+        // }
         .section_diagramma {
           .section_diagramma_text {
             max-width: 1150px;
@@ -2438,6 +2433,827 @@ line-height: 120%;
                           color: #11e5b3;
                           margin: auto;
                           margin-top: 46px;
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+          @media screen and (max-width: 1351px) {
+            .section_diagramma_item {
+              flex-direction: column;
+              .section_diagramma_item_child {
+                &:first-of-type {
+                  margin-top: 200px;
+                  display: flex;
+                  justify-content: center;
+                  align-items: center;
+                  background: url(../img/media\ diagram.png);
+                  background-position: center center;
+                  background-repeat: no-repeat;
+                  background-size: contain;
+                  .section_diagramma_item_child_row {
+                    &:first-of-type {
+                      background: none;
+                      h4 {
+                        br {
+                          display: none;
+                        }
+                      }
+                      img {
+                        margin-top: 15px;
+                      }
+                    }
+                    &:last-of-type {
+                      background: none;
+                      &::before {
+                        display: none;
+                      }
+                    }
+                  }
+                }
+                &:last-of-type {
+                  .section_diagramma_item_child_row {
+                    &:first-of-type {
+                      width: 100%;
+                      background: url(../img/Rectangle\ 80\ 33333.png);
+                      background-position: center center;
+                      padding: 16px 32px;
+                      max-width: 1088px;
+                      background-repeat: no-repeat;
+                      background-size: contain;
+                      display: flex;
+                      justify-content: center;
+                      margin: auto;
+                      p {
+                        justify-content: center;
+                        br {
+                          display: none;
+                        }
+                      }
+                    }
+                    &:last-of-type {
+                      background-image: url(../img/Calculator\ Background\ Frame.png);
+                      width: 100%;
+                      padding: 33px 29px 22px 29px;
+                      background-position: center center;
+                      background-repeat: no-repeat;
+                      background-size: contain;
+                      .section_diagramma_item_child_row_col {
+                        &:nth-of-type(1) {
+                          .section_diagramma_item_child_row_col_item {
+                            max-width: 884px;
+                            width: 1204px;
+                          }
+                        }
+                        &:nth-of-type(2) {
+                          margin: auto;
+                          max-width: 884px;
+                        }
+                        &:nth-of-type(3) {
+                          img {
+                            width: 70%;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            margin: auto;
+                            margin-top: 21px;
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+          @media screen and (max-width: 1127px) {
+            .section_diagramma_item {
+              flex-direction: column;
+              .section_diagramma_item_child {
+                &:first-of-type {
+                  margin-top: 200px;
+                  display: flex;
+                  justify-content: center;
+                  align-items: center;
+                  background: url(../img/media\ diagram.png);
+                  background-position: center center;
+                  background-repeat: no-repeat;
+                  background-size: contain;
+                  .section_diagramma_item_child_row {
+                    &:first-of-type {
+                      background: none;
+                      h4 {
+                        margin-top: 40px;
+                        br {
+                          display: none;
+                        }
+                      }
+                      img {
+                        margin-top: 15px;
+                      }
+                    }
+                    &:last-of-type {
+                      background: none;
+                      &::before {
+                        display: none;
+                      }
+                    }
+                  }
+                }
+                &:last-of-type {
+                  .section_diagramma_item_child_row {
+                    &:first-of-type {
+                      width: 100%;
+                      background: url(../img/Rectangle\ 80\ 33333.png);
+                      background-position: center center;
+                      padding: 16px 32px;
+                      max-width: 1088px;
+                      background-repeat: no-repeat;
+                      background-size: contain;
+                      display: flex;
+                      justify-content: center;
+                      margin: auto;
+                      p {
+                        justify-content: center;
+                        br {
+                          display: none;
+                        }
+                      }
+                    }
+                    &:last-of-type {
+                      background-image: url(../img/Calculator\ Background\ Frame.png);
+                      width: 100%;
+                      padding: 33px 29px 22px 29px;
+                      background-position: center center;
+                      background-repeat: no-repeat;
+                      background-size: contain;
+                      .section_diagramma_item_child_row_col {
+                        &:nth-of-type(1) {
+                          .section_diagramma_item_child_row_col_item {
+                            max-width: 884px;
+                            width: 1204px;
+                          }
+                        }
+                        &:nth-of-type(2) {
+                          margin: auto;
+                          max-width: 884px;
+                        }
+                        &:nth-of-type(3) {
+                          img {
+                            width: 70%;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            margin: auto;
+                            margin-top: 21px;
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+          @media screen and (max-width: 974px) {
+            .section_diagramma_item {
+              flex-direction: column;
+              .section_diagramma_item_child {
+                &:first-of-type {
+                  margin-top: 200px;
+                  display: flex;
+                  justify-content: center;
+                  align-items: center;
+                  background: url(../img/media\ diagram.png);
+                  background-position: center center;
+                  background-repeat: no-repeat;
+                  background-size: contain;
+                  .section_diagramma_item_child_row {
+                    &:first-of-type {
+                      background: none;
+                      h4 {
+                        margin-top: 40px;
+                        br {
+                          display: none;
+                        }
+                      }
+                      img {
+                        margin-top: 15px;
+                        width: 80%;
+                      }
+                    }
+                    &:last-of-type {
+                      background: none;
+                      &::before {
+                        display: none;
+                      }
+                    }
+                  }
+                }
+                &:last-of-type {
+                  .section_diagramma_item_child_row {
+                    &:first-of-type {
+                      width: 100%;
+                      background: url(../img/Rectangle\ 80\ 33333.png);
+                      background-position: center center;
+                      padding: 16px 32px;
+                      max-width: 1088px;
+                      background-repeat: no-repeat;
+                      background-size: contain;
+                      display: flex;
+                      justify-content: center;
+                      margin: auto;
+                      p {
+                        justify-content: center;
+                        br {
+                          display: none;
+                        }
+                      }
+                    }
+                    &:last-of-type {
+                      background-image: url(../img/Calculator\ Background\ Frame.png);
+                      width: 100%;
+                      padding: 33px 29px 22px 29px;
+                      background-position: center center;
+                      background-repeat: no-repeat;
+                      background-size: contain;
+                      .section_diagramma_item_child_row_col {
+                        &:nth-of-type(1) {
+                          .section_diagramma_item_child_row_col_item {
+                            max-width: 884px;
+                            width: 1204px;
+                          }
+                        }
+                        &:nth-of-type(2) {
+                          margin: auto;
+                          max-width: 884px;
+                        }
+                        &:nth-of-type(3) {
+                          img {
+                            width: 70%;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            margin: auto;
+                            margin-top: 21px;
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+          @media screen and (max-width: 949px) {
+            .section_diagramma_item {
+              flex-direction: column;
+              .section_diagramma_item_child {
+                &:first-of-type {
+                  margin-top: 200px;
+                  display: flex;
+                  justify-content: center;
+                  align-items: center;
+                  background: url(../img/media\ diagram.png);
+                  background-position: center center;
+                  background-repeat: no-repeat;
+                  background-size: contain;
+                  .section_diagramma_item_child_row {
+                    &:first-of-type {
+                      background: none;
+                      h4 {
+                        margin-top: 40px;
+                        br {
+                          display: none;
+                        }
+                      }
+                      img {
+                        margin-top: 15px;
+                        width: 80%;
+                      }
+                    }
+                    &:last-of-type {
+                      background: none;
+                      &::before {
+                        display: none;
+                      }
+                    }
+                  }
+                }
+                &:last-of-type {
+                  margin-top: 0px;
+                  .section_diagramma_item_child_row {
+                    &:first-of-type {
+                      width: 100%;
+                      background: url(../img/Rectangle\ 80\ 33333.png);
+                      background-position: center center;
+                      padding: 16px 32px;
+                      max-width: 1088px;
+                      background-repeat: no-repeat;
+                      background-size: contain;
+                      display: flex;
+                      justify-content: center;
+                      margin: auto;
+                      p {
+                        justify-content: center;
+                        br {
+                          display: none;
+                        }
+                      }
+                    }
+                    &:last-of-type {
+                      background-image: url(../img/Calculator\ Background\ Frame.png);
+                      width: 100%;
+                      padding: 73px 29px 52px 29px;
+                      background-position: center center;
+                      background-repeat: no-repeat;
+                      background-size: contain;
+                      min-height: 1000px;
+                      .section_diagramma_item_child_row_col {
+                        &:nth-of-type(1) {
+                          .section_diagramma_item_child_row_col_item {
+                            max-width: 684px;
+                          }
+                        }
+                        &:nth-of-type(2) {
+                          margin: auto;
+                          max-width: 684px;
+                        }
+                        &:nth-of-type(3) {
+                          img {
+                            width: 70%;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            margin: auto;
+                            margin-top: 21px;
+                          }
+                          button {
+                            padding: 18px 22px 16px 32px;
+                            font-size: 18px;
+                            line-height: 100%;
+                            margin-top: 26px;
+                            gap: 10px;
+                            span {
+                              svg {
+                                width: 16px;
+                                height: 12px;
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+          @media screen and (max-width: 918px) {
+            .section_diagramma_item {
+              flex-direction: column;
+              .section_diagramma_item_child {
+                &:first-of-type {
+                  margin-top: 200px;
+                  display: flex;
+                  justify-content: center;
+                  align-items: center;
+                  background: url(../img/media\ diagram.png);
+                  background-position: center center;
+                  background-repeat: no-repeat;
+                  background-size: contain;
+                  .section_diagramma_item_child_row {
+                    &:first-of-type {
+                      background: none;
+                      h4 {
+                        margin-top: 40px;
+                        br {
+                          display: none;
+                        }
+                      }
+                      img {
+                        margin-top: 15px;
+                        width: 80%;
+                      }
+                    }
+                    &:last-of-type {
+                      background: none;
+                      &::before {
+                        display: none;
+                      }
+                    }
+                  }
+                }
+                &:last-of-type {
+                  margin-top: 0px;
+                  .section_diagramma_item_child_row {
+                    &:first-of-type {
+                      width: 100%;
+                      background: url(../img/Rectangle\ 80\ 33333.png);
+                      background-position: center center;
+                      padding: 16px 32px;
+                      max-width: 1088px;
+                      background-repeat: no-repeat;
+                      background-size: contain;
+                      display: flex;
+                      justify-content: center;
+                      margin: auto;
+                      p {
+                        justify-content: center;
+                        br {
+                          display: none;
+                        }
+                      }
+                    }
+                    &:last-of-type {
+                      background-image: url(../img/Calculator\ Background\ Frame.png);
+                      width: 100%;
+                      background-image: none;
+                      padding: 73px 29px 52px 29px;
+                      background-position: center center;
+                      background-repeat: no-repeat;
+                      background-size: contain;
+                      min-height: 1000px;
+                      .section_diagramma_item_child_row_col {
+                        &:nth-of-type(1) {
+                          .section_diagramma_item_child_row_col_item {
+                            max-width: 684px;
+                          }
+                        }
+                        &:nth-of-type(2) {
+                          margin: auto;
+                          max-width: 684px;
+                        }
+                        &:nth-of-type(3) {
+                          img {
+                            width: 70%;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            margin: auto;
+                            margin-top: 21px;
+                          }
+                          button {
+                            padding: 18px 22px 16px 32px;
+                            font-size: 18px;
+                            line-height: 100%;
+                            margin-top: 26px;
+                            gap: 10px;
+                            margin-bottom: 10px;
+                            span {
+                              svg {
+                                width: 16px;
+                                height: 12px;
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+          @media screen and (max-width: 843px) {
+            .section_diagramma_item {
+              flex-direction: column;
+              .section_diagramma_item_child {
+                &:first-of-type {
+                  margin-top: 200px;
+                  display: flex;
+                  justify-content: center;
+                  align-items: center;
+                  background: url(../img/media\ diagram.png);
+                  background-position: center center;
+                  background-repeat: no-repeat;
+                  background-size: contain;
+                  .section_diagramma_item_child_row {
+                    &:first-of-type {
+                      padding: 30px 0px 30px 15px;
+                      background: none;
+                      h4 {
+                        margin-top: 40px;
+                        br {
+                          display: none;
+                        }
+                      }
+                      img {
+                        margin-top: 15px;
+                        width: 80%;
+                      }
+                    }
+                    &:last-of-type {
+                      padding: 33px 47px 39px 0px;
+                      background: none;
+                      &::before {
+                        display: none;
+                      }
+                    }
+                  }
+                }
+                &:last-of-type {
+                  margin-top: 0px;
+                  .section_diagramma_item_child_row {
+                    &:first-of-type {
+                      width: 100%;
+                      background: url(../img/Rectangle\ 80\ 33333.png);
+                      background-position: center center;
+                      padding: 16px 32px;
+                      max-width: 1088px;
+                      background-repeat: no-repeat;
+                      background-size: contain;
+                      display: flex;
+                      justify-content: center;
+                      margin: auto;
+                      p {
+                        justify-content: center;
+                        br {
+                          display: none;
+                        }
+                      }
+                    }
+                    &:last-of-type {
+                      background-image: url(../img/Calculator\ Background\ Frame.png);
+                      width: 100%;
+                      background-image: none;
+                      padding: 73px 29px 52px 29px;
+                      background-position: center center;
+                      background-repeat: no-repeat;
+                      background-size: contain;
+                      min-height: 1000px;
+                      .section_diagramma_item_child_row_col {
+                        &:nth-of-type(1) {
+                          .section_diagramma_item_child_row_col_item {
+                            max-width: 684px;
+                          }
+                        }
+                        &:nth-of-type(2) {
+                          margin: auto;
+                          max-width: 684px;
+                        }
+                        &:nth-of-type(3) {
+                          img {
+                            width: 70%;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            margin: auto;
+                            margin-top: 21px;
+                          }
+                          button {
+                            padding: 18px 22px 16px 32px;
+                            font-size: 18px;
+                            line-height: 100%;
+                            margin-top: 26px;
+                            gap: 10px;
+                            margin-bottom: 10px;
+                            span {
+                              svg {
+                                width: 16px;
+                                height: 12px;
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+          @media screen and (max-width: 801px) {
+            .section_diagramma_item {
+              flex-direction: column;
+              .section_diagramma_item_child {
+                &:first-of-type {
+                  margin-top: 200px;
+                  display: flex;
+                  justify-content: center;
+                  align-items: center;
+                  background: url(../img/media\ diagram.png);
+                  background-position: center center;
+                  background-repeat: no-repeat;
+                  background-size: contain;
+                  .section_diagramma_item_child_row {
+                    &:first-of-type {
+                      margin-left: 20px;
+                      padding: 30px 0px 30px 15px;
+                      background: none;
+                      h4 {
+                        margin-top: 30px;
+                        font-size: 14px;
+                        line-height: 120%;
+                        br {
+                          display: none;
+                        }
+                      }
+                      img {
+                        margin-top: 5px;
+                        width: 70%;
+                      }
+                    }
+                    &:last-of-type {
+                      padding: 33px 47px 39px 0px;
+                      background: none;
+                      p {
+                        font-size: 22px;
+                        line-height: 120%;
+                      }
+                      &::before {
+                        display: none;
+                      }
+                    }
+                  }
+                }
+                &:last-of-type {
+                  margin-top: 0px;
+                  .section_diagramma_item_child_row {
+                    &:first-of-type {
+                      width: 100%;
+                      background: url(../img/Rectangle\ 80\ 33333.png);
+                      background-position: center center;
+                      padding: 16px 32px;
+                      max-width: 688px;
+                      background-repeat: no-repeat;
+                      background-size: contain;
+                      display: flex;
+                      justify-content: center;
+                      margin: auto;
+                      p {
+                        font-size: 14px;
+                        line-height: 120%;
+                        justify-content: center;
+                        br {
+                          display: none;
+                        }
+                      }
+                    }
+                    &:last-of-type {
+                      background-image: url(../img/Calculator\ Background\ Frame.png);
+                      width: 100%;
+                      background-image: none;
+                      padding: 23px 29px 52px 29px;
+                      background-position: center center;
+                      background-repeat: no-repeat;
+                      background-size: contain;
+                      min-height: 700px;
+                      margin-top: 0;
+                      .section_diagramma_item_child_row_col {
+                        &:nth-of-type(1) {
+                          .section_diagramma_item_child_row_col_item {
+                            max-width: 684px;
+                          }
+                        }
+                        &:nth-of-type(2) {
+                          margin: auto;
+                          max-width: 684px;
+                        }
+                        &:nth-of-type(3) {
+                          img {
+                            width: 70%;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            margin: auto;
+                            margin-top: 21px;
+                          }
+                          button {
+                            padding: 18px 22px 16px 32px;
+                            font-size: 18px;
+                            line-height: 100%;
+                            margin-top: 26px;
+                            gap: 10px;
+                            margin-bottom: 10px;
+                            span {
+                              svg {
+                                width: 16px;
+                                height: 12px;
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+          @media screen and (max-width: 724px) {
+            .section_diagramma_item {
+              flex-direction: column;
+              .section_diagramma_item_child {
+                &:first-of-type {
+                  margin-top: 200px;
+                  display: flex;
+                  justify-content: center;
+                  align-items: center;
+                  background: url(../img/media\ diagram.png);
+                  background-position: center center;
+                  background-repeat: no-repeat;
+                  background-size: contain;
+                  .section_diagramma_item_child_row {
+                    &:first-of-type {
+                      margin-left: 20px;
+                      padding: 30px 0px 30px 15px;
+                      background: none;
+                      h4 {
+                        margin-top: 30px;
+                        font-size: 14px;
+                        line-height: 120%;
+                        br {
+                          display: none;
+                        }
+                      }
+                      img {
+                        margin-top: 5px;
+                        width: 70%;
+                      }
+                    }
+                    &:last-of-type {
+                      padding: 33px 47px 39px 0px;
+                      background: none;
+                      p {
+                        font-size: 22px;
+                        line-height: 120%;
+                      }
+                      &::before {
+                        display: none;
+                      }
+                    }
+                  }
+                }
+                &:last-of-type {
+                  margin-top: 0px;
+                  .section_diagramma_item_child_row {
+                    &:first-of-type {
+                      width: 100%;
+                      background: url(../img/Rectangle\ 80\ 33333.png);
+                      background-position: center center;
+                      padding: 16px 32px;
+                      max-width: 688px;
+                      background-repeat: no-repeat;
+                      background-size: contain;
+                      display: flex;
+                      justify-content: center;
+                      margin: auto;
+                      p {
+                        font-size: 14px;
+                        line-height: 120%;
+                        justify-content: center;
+                        br {
+                          display: none;
+                        }
+                      }
+                    }
+                    &:last-of-type {
+                      background-image: url(../img/Calculator\ Background\ Frame.png);
+                      width: 100%;
+                      background-image: none;
+                      padding: 23px 29px 52px 29px;
+                      background-position: center center;
+                      background-repeat: no-repeat;
+                      background-size: contain;
+                      min-height: 700px;
+                      margin-top: 0;
+                      .section_diagramma_item_child_row_col {
+                        &:nth-of-type(1) {
+                          .section_diagramma_item_child_row_col_item {
+                            max-width: 684px;
+                          }
+                        }
+                        &:nth-of-type(2) {
+                          margin: auto;
+                          max-width: 684px;
+                        }
+                        &:nth-of-type(3) {
+                          img {
+                            width: 70%;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            margin: auto;
+                            margin-top: 21px;
+                          }
+                          button {
+                            padding: 18px 22px 16px 32px;
+                            font-size: 18px;
+                            line-height: 100%;
+                            margin-top: 26px;
+                            gap: 10px;
+                            margin-bottom: 10px;
+                            span {
+                              svg {
+                                width: 16px;
+                                height: 12px;
+                              }
+                            }
+                          }
                         }
                       }
                     }
@@ -3329,48 +4145,48 @@ line-height: 120%;
           font-feature-settings: "liga" off;
           color: #ffffff;
         }
-        @media screen and (max-width:725px){
-          h2{
+        @media screen and (max-width: 725px) {
+          h2 {
             font-size: 250px;
             line-height: 78px;
           }
-          p{
+          p {
             font-size: 24px;
             line-height: 120%;
           }
         }
-        @media screen and (max-width:582px){
-          h2{
+        @media screen and (max-width: 582px) {
+          h2 {
             font-size: 200px;
             line-height: 68px;
           }
-          p{
+          p {
             font-size: 22px;
             line-height: 120%;
             margin-top: 60px;
           }
         }
-        @media screen and (max-width:470px){
+        @media screen and (max-width: 470px) {
           min-height: 700px;
-          h2{
+          h2 {
             font-size: 150px;
             line-height: 58px;
             padding-top: 400px;
           }
-          p{
+          p {
             font-size: 20px;
             line-height: 120%;
             margin-top: 50px;
           }
         }
-        @media screen and (max-width:380px){
+        @media screen and (max-width: 380px) {
           min-height: 500px;
-          h2{
+          h2 {
             font-size: 100px;
             line-height: 48px;
             padding-top: 200px;
           }
-          p{
+          p {
             font-size: 16px;
             line-height: 120%;
             margin-top: 30px;
