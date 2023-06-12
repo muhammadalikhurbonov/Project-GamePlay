@@ -1041,6 +1041,90 @@
   color: #ffffff;
   margin-top: 16px;
 }
+* body .container main .section_geroy .section_geroy_item .section_geroy_item_child:nth-of-type(5) .name_box {
+  margin-top: 205px;
+}
+* body .container main .section_geroy .section_geroy_item .section_geroy_item_child:nth-of-type(5) .information_box {
+  margin-top: 10px;
+  background: url(../img/information_box\ background.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  min-height: 144px;
+}
+* body .container main .section_geroy .section_geroy_item .section_geroy_item_child:nth-of-type(5) .information_box span {
+  padding-left: 26px;
+}
+* body .container main .section_geroy .section_geroy_item .section_geroy_item_child:nth-of-type(5) .information_box span svg {
+  margin-top: 13px;
+}
+* body .container main .section_geroy .section_geroy_item .section_geroy_item_child:nth-of-type(5) .information_box p {
+  padding-left: 21px;
+  padding-bottom: 29px;
+  font-family: "Exo 2";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 140%;
+  color: #ffffff;
+  margin-top: 16px;
+}
+* body .container main .section_geroy .section_geroy_item .section_geroy_item_child:nth-of-type(6) .name_box {
+  margin-top: 205px;
+}
+* body .container main .section_geroy .section_geroy_item .section_geroy_item_child:nth-of-type(6) .information_box {
+  margin-top: 10px;
+  background: url(../img/information_box\ background.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  min-height: 144px;
+}
+* body .container main .section_geroy .section_geroy_item .section_geroy_item_child:nth-of-type(6) .information_box span {
+  padding-left: 26px;
+}
+* body .container main .section_geroy .section_geroy_item .section_geroy_item_child:nth-of-type(6) .information_box span svg {
+  margin-top: 13px;
+}
+* body .container main .section_geroy .section_geroy_item .section_geroy_item_child:nth-of-type(6) .information_box p {
+  padding-left: 21px;
+  padding-bottom: 29px;
+  font-family: "Exo 2";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 140%;
+  color: #ffffff;
+  margin-top: 16px;
+}
+* body .container main .section_geroy .section_geroy_item .section_geroy_item_child:nth-of-type(7) .name_box {
+  margin-top: 205px;
+}
+* body .container main .section_geroy .section_geroy_item .section_geroy_item_child:nth-of-type(7) .information_box {
+  margin-top: 10px;
+  background: url(../img/information_box\ background.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  min-height: 144px;
+}
+* body .container main .section_geroy .section_geroy_item .section_geroy_item_child:nth-of-type(7) .information_box span {
+  padding-left: 26px;
+}
+* body .container main .section_geroy .section_geroy_item .section_geroy_item_child:nth-of-type(7) .information_box span svg {
+  margin-top: 13px;
+}
+* body .container main .section_geroy .section_geroy_item .section_geroy_item_child:nth-of-type(7) .information_box p {
+  padding-left: 21px;
+  padding-bottom: 29px;
+  font-family: "Exo 2";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 140%;
+  color: #ffffff;
+  margin-top: 16px;
+}
 * body .container main .section_geroy .section_geroy_item .section_geroy_item_child .img_box {
   top: 5px;
   left: 20px;
