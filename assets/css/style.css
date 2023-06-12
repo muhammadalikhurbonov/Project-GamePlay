@@ -16,6 +16,9 @@
   overflow-x: hidden;
   background: #001324;
 }
+* body .container {
+  border: 2px solid red;
+}
 * body .container main .section_main {
   position: relative;
   background: url(../img/peakpx.jpg);
@@ -288,6 +291,9 @@
   }
 }
 @media screen and (max-width: 1163px) {
+  * body .container main .section_main {
+    background-position: center center;
+  }
   * body .container main .section_main .section_main_item .section_main_item_width {
     max-width: 800px;
   }
