@@ -1103,8 +1103,9 @@
           height: 100%;
           display: flex;
           justify-content: center;
-          align-items: center;
+          align-items: flex-start;
           position: relative;
+          min-height: 900px;
           .section_geroy_item {
             .section_geroy_item_child {
               margin-left: 15px;
@@ -1490,7 +1491,7 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            // top: var(--swiper-navigation-sides-offset, 100%);
+            top: var(--swiper-navigation-sides-offset, 99%);
             span {
               background: url(/./assets/img/Ellipse\ 25.png);
               background-position: center center;
@@ -1724,6 +1725,7 @@
               max-width: 1153px;
             }
             .section_logotips_item_text {
+                padding-bottom: 100px;
               margin-top: 665px;
               .section_logotips_item_text_img {
                 position: relative;
@@ -1993,7 +1995,7 @@
           background: url(../img/section_function\ background.png);
           background-position: center center;
           background-repeat: no-repeat;
-          background-size: contain;
+          background-size: cover;
           background-color: #001324;
           padding-top: 169px;
           h3 {
@@ -2585,6 +2587,8 @@
             }
           }
           @media screen and (max-width: 1546px) {
+            padding-top: 100px;
+            min-height: 1377px;
             .section_function_item {
               .section_function_item_child {
                 .section_function_item_child_left {
@@ -2675,7 +2679,6 @@
           }
         }
         .section_diagramma {
-          margin-top: 169px;
           .section_diagramma_text {
             max-width: 1150px;
             display: flex;
@@ -2992,12 +2995,14 @@
               }
             }
           }
+          @media screen and (max-width: 1546px) {
+            margin-top: 169px;
+          }
           @media screen and (max-width: 1351px) {
             .section_diagramma_item {
               flex-direction: column;
               .section_diagramma_item_child {
                 &:first-of-type {
-                  margin-top: 200px;
                   display: flex;
                   justify-content: center;
                   align-items: center;
@@ -3085,7 +3090,6 @@
               flex-direction: column;
               .section_diagramma_item_child {
                 &:first-of-type {
-                  margin-top: 100px;
                   display: flex;
                   justify-content: center;
                   align-items: center;
@@ -3174,7 +3178,6 @@
               flex-direction: column;
               .section_diagramma_item_child {
                 &:first-of-type {
-                  margin-top: 100px;
                   display: flex;
                   justify-content: center;
                   align-items: center;
@@ -3264,7 +3267,6 @@
               flex-direction: column;
               .section_diagramma_item_child {
                 &:first-of-type {
-                  margin-top: 100px;
                   display: flex;
                   justify-content: center;
                   align-items: center;
@@ -3368,7 +3370,6 @@
               flex-direction: column;
               .section_diagramma_item_child {
                 &:first-of-type {
-                  margin-top: 100px;
                   display: flex;
                   justify-content: center;
                   align-items: center;
@@ -3474,7 +3475,6 @@
               flex-direction: column;
               .section_diagramma_item_child {
                 &:first-of-type {
-                  margin-top: 100px;
                   display: flex;
                   justify-content: center;
                   align-items: center;
@@ -3582,7 +3582,6 @@
               flex-direction: column;
               .section_diagramma_item_child {
                 &:first-of-type {
-                  margin-top: 100px;
                   display: flex;
                   justify-content: center;
                   align-items: center;
