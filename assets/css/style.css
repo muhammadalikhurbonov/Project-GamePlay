@@ -17,7 +17,11 @@
   background: #001324;
 }
 * body .container {
+  overflow-x: hidden;
   border: 2px solid red;
+}
+* body .container main {
+  overflow-x: hidden;
 }
 * body .container main .section_main {
   position: relative;
@@ -9801,9 +9805,6 @@
   * body .container main .section_servise .section_servise_main .section_servise_main_child {
     transform: translateY(-37px);
     margin-top: 0;
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
     margin: auto;
     max-width: 500px;
     max-height: 50px;
@@ -9850,18 +9851,6 @@
   }
   * body .container main .section_servise .section_servise_end .section_servise_end_text h5 {
     font-size: 10px;
-    line-height: 110%;
-  }
-  * body .container main .section_servise .section_servise_end .section_servise_end_text h5:nth-of-type(2) {
-    gap: 10px;
-  }
-}
-@media screen and (max-width: 622px) {
-  * body .container main .section_servise .section_servise_end {
-    padding: 93px 10px 48px 10px;
-  }
-  * body .container main .section_servise .section_servise_end .section_servise_end_text h5 {
-    font-size: 8px;
     line-height: 110%;
   }
   * body .container main .section_servise .section_servise_end .section_servise_end_text h5:nth-of-type(2) {
@@ -9947,9 +9936,6 @@
   * body .container main .section_servise .section_servise_main .section_servise_main_child {
     transform: translateY(-50px);
     margin-top: 0;
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
     margin: auto;
     max-width: 400px;
     max-height: 50px;
@@ -9990,18 +9976,6 @@
     transform: translate(-45px, -15px);
     font-size: 6px;
     line-height: 120%;
-  }
-}
-@media screen and (max-width: 622px) {
-  * body .container main .section_servise .section_servise_end {
-    padding: 43px 10px 28px 10px;
-  }
-  * body .container main .section_servise .section_servise_end .section_servise_end_text h5 {
-    font-size: 7px;
-    line-height: 100%;
-  }
-  * body .container main .section_servise .section_servise_end .section_servise_end_text h5:nth-of-type(2) {
-    gap: 6px;
   }
 }
 @media screen and (max-width: 431px) {
@@ -10087,9 +10061,6 @@
   * body .container main .section_servise .section_servise_main .section_servise_main_child {
     transform: translateY(-16px);
     margin-top: 0;
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
     margin: auto;
     max-width: 300px;
     max-height: 50px;
