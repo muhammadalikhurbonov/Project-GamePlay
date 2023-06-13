@@ -5045,7 +5045,7 @@
     min-height: 662px;
     margin-top: 33px;
   }
-  * body .container main .section_otzivi .section_otzivi_main .otzifi .otzifi_wrapper {
+  * body .container main .section_otzivi .section_otzivi_main .otzifi {
     max-width: 900px;
     display: flex;
     justify-content: center;
@@ -5103,7 +5103,7 @@
     margin-top: 0px;
     min-height: 600px;
   }
-  * body .container main .section_otzivi .section_otzivi_main .otzifi .otzifi_wrapper {
+  * body .container main .section_otzivi .section_otzivi_main .otzifi {
     max-width: 800px;
     display: flex;
     justify-content: center;
@@ -5173,7 +5173,7 @@
     margin-top: 0px;
     min-height: 500px;
   }
-  * body .container main .section_otzivi .section_otzivi_main .otzifi .otzifi_wrapper {
+  * body .container main .section_otzivi .section_otzivi_main .otzifi {
     max-width: 700px;
     display: flex;
     justify-content: center;
@@ -5247,7 +5247,7 @@
     margin-top: 0px;
     min-height: 500px;
   }
-  * body .container main .section_otzivi .section_otzivi_main .otzifi .otzifi_wrapper {
+  * body .container main .section_otzivi .section_otzivi_main .otzifi {
     max-width: 700px;
     display: flex;
     justify-content: center;
@@ -5322,7 +5322,7 @@
     margin-top: 0px;
     min-height: 300px;
   }
-  * body .container main .section_otzivi .section_otzivi_main .otzifi .otzifi_wrapper {
+  * body .container main .section_otzivi .section_otzivi_main .otzifi {
     max-width: 700px;
     display: flex;
     justify-content: center;
@@ -5399,7 +5399,7 @@
     margin-top: 0px;
     min-height: 300px;
   }
-  * body .container main .section_otzivi .section_otzivi_main .otzifi .otzifi_wrapper {
+  * body .container main .section_otzivi .section_otzivi_main .otzifi {
     max-width: 700px;
     display: flex;
     justify-content: center;
@@ -5475,9 +5475,9 @@
     line-height: 120%;
   }
   * body .container main .section_otzivi .section_otzivi_main {
-    max-height: 300px;
+    min-height: 200px;
   }
-  * body .container main .section_otzivi .section_otzivi_main .otzifi .otzifi_wrapper {
+  * body .container main .section_otzivi .section_otzivi_main .otzifi {
     max-width: 700px;
     display: flex;
     justify-content: center;
@@ -5564,9 +5564,9 @@
     line-height: 120%;
   }
   * body .container main .section_otzivi .section_otzivi_main {
-    max-height: 300px;
+    min-height: 200px;
   }
-  * body .container main .section_otzivi .section_otzivi_main .otzifi .otzifi_wrapper {
+  * body .container main .section_otzivi .section_otzivi_main .otzifi {
     max-width: 700px;
     display: flex;
     justify-content: center;
@@ -5659,9 +5659,9 @@
     line-height: 120%;
   }
   * body .container main .section_otzivi .section_otzivi_main {
-    max-height: 300px;
+    min-height: 200px;
   }
-  * body .container main .section_otzivi .section_otzivi_main .otzifi .otzifi_wrapper {
+  * body .container main .section_otzivi .section_otzivi_main .otzifi {
     max-width: 700px;
     display: flex;
     justify-content: center;
@@ -5754,9 +5754,9 @@
     line-height: 120%;
   }
   * body .container main .section_otzivi .section_otzivi_main {
-    max-height: 300px;
+    min-height: 100px !important;
   }
-  * body .container main .section_otzivi .section_otzivi_main .otzifi .otzifi_wrapper {
+  * body .container main .section_otzivi .section_otzivi_main .otzifi {
     max-width: 700px;
     display: flex;
     justify-content: center;
@@ -5849,9 +5849,9 @@
     line-height: 120%;
   }
   * body .container main .section_otzivi .section_otzivi_main {
-    max-height: 100px;
+    min-height: 100px;
   }
-  * body .container main .section_otzivi .section_otzivi_main .otzifi .otzifi_wrapper {
+  * body .container main .section_otzivi .section_otzivi_main .otzifi {
     max-width: 700px;
     display: flex;
     justify-content: center;
@@ -5948,9 +5948,9 @@
     padding-top: 20px;
   }
   * body .container main .section_otzivi .section_otzivi_main {
-    max-height: 0px;
+    min-height: 0px;
   }
-  * body .container main .section_otzivi .section_otzivi_main .otzifi .otzifi_wrapper {
+  * body .container main .section_otzivi .section_otzivi_main .otzifi {
     max-width: 700px;
     display: flex;
     justify-content: center;
