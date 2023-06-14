@@ -42,11 +42,11 @@ var swiper = new Swiper(".MYSwiper", {
     },
     "@1.00": {
       slidesPerView: 2,
-      spaceBetween: 20,
+      spaceBetween: 10,
     },
     "@1.50": {
       slidesPerView: 3,
-      spaceBetween: 20,
+      spaceBetween: 10,
     },
     "@2.00": {
       slidesPerView: 4,
@@ -81,3 +81,12 @@ var swiper = new Swiper(".MYSwiper", {
 //     },
 //   },
 // });
+
+function menuFunction() {
+  document.querySelector(".header_modal").style.display = "none";
+}
+
+document.querySelector(".menu").addEventListener("click", (e) => {
+  e.preventDefault();
+  document.querySelector(".header_modal").style.display = "block";
+});

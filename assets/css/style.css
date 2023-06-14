@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 @font-face {
   font-family: "Font Over";
@@ -54,6 +55,178 @@
   justify-content: space-between;
   z-index: 9;
   padding: 37px 79px 0 79px;
+  position: relative;
+}
+* body .container main .section_main header .header_modal {
+  position: absolute;
+  display: none;
+}
+* body .container main .section_main header .header_modal .header_modal_item {
+  background: url(../img/Окно\ системы.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  padding: 80px;
+  position: relative;
+}
+* body .container main .section_main header .header_modal .header_modal_item .xclass {
+  top: 16%;
+  right: 12%;
+  position: absolute;
+  font-family: "Exo 2";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 120%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-feature-settings: "liga" off;
+  color: #11e5b3;
+  padding: 1px 5px 2px 5px;
+  border-radius: 4px;
+  border: 1px solid #11e5b3;
+  cursor: pointer;
+  transition: all 0.4s;
+}
+* body .container main .section_main header .header_modal .header_modal_item .xclass:hover {
+  color: red;
+  border: 1px solid red;
+}
+* body .container main .section_main header .header_modal .header_modal_item p {
+  font-family: "Exo 2";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 130%;
+  text-align: center;
+  font-feature-settings: "liga" off;
+  color: rgba(255, 255, 255, 0.8);
+  margin-top: 20px;
+}
+* body .container main .section_main header .header_modal .header_modal_item p span {
+  font-weight: bold;
+  cursor: pointer;
+}
+* body .container main .section_main header .header_modal .header_modal_item button {
+  background: url(../img/button\ background.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  font-family: "Font Over";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  letter-spacing: 0.1em;
+  font-feature-settings: "liga" off;
+  color: #11e5b3;
+  gap: 12px;
+  padding: 10px 10px 10px 21px;
+  transition: all 0.4s;
+  margin: auto;
+  margin-top: 12px;
+  cursor: pointer;
+  border: none;
+}
+* body .container main .section_main header .header_modal .header_modal_item button:hover {
+  scale: 1.1;
+}
+* body .container main .section_main header .header_modal .header_modal_item ul {
+  margin-top: 27px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+* body .container main .section_main header .header_modal .header_modal_item ul li {
+  list-style-type: none;
+}
+* body .container main .section_main header .header_modal .header_modal_item ul li a {
+  text-decoration: none;
+  font-family: "Font Over";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 120%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-feature-settings: "liga" off;
+  color: #ffffff;
+  transition: all 0.4s;
+  position: relative;
+}
+* body .container main .section_main header .header_modal .header_modal_item ul li a::before {
+  position: absolute;
+  content: "";
+  width: 0;
+  height: 2px;
+  top: 120%;
+  left: 20%;
+  background-color: #11e5b3;
+  transition: all 0.4s;
+}
+* body .container main .section_main header .header_modal .header_modal_item ul li a:hover::before {
+  width: 60%;
+}
+* body .container main .section_main header .header_modal .header_modal_item .header_modal_footer {
+  padding: 0 11px;
+  margin-top: 15px;
+  background: url(../img/main\ frame\ backgroundd.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+* body .container main .section_main header .header_modal .header_modal_item .header_modal_footer h4 {
+  font-family: "Font Over";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 120%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-feature-settings: "liga" off;
+  background: radial-gradient(73.08% 73.08% at 50% -0.51%, #69fedb 0%, #11e5b3 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  padding-top: 30px;
+}
+* body .container main .section_main header .header_modal .header_modal_item .header_modal_footer h5 {
+  margin-top: 4px;
+  padding-bottom: 17px;
+  font-family: "Exo 2";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 8px;
+  line-height: 120%;
+  text-align: center;
+  font-feature-settings: "liga" off;
+  color: #abffeb;
+}
+* body .container main .section_main header .header_modal .header_modal_item h6 {
+  font-family: "Font Over";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 4px;
+  line-height: 120%;
+  display: flex;
+  align-items: center;
+  font-feature-settings: "liga" off;
+  justify-content: flex-start;
+  background: radial-gradient(73.08% 73.08% at 50% -0.51%, #69fedb 0%, #11e5b3 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  transform: translateY(-6px);
 }
 * body .container main .section_main header .header_left ul {
   display: flex;
@@ -286,10 +459,9 @@
   transition: all 0.4s;
 }
 * body .container main .section_main .section_main_item .section_main_item_text .dropdown_button:hover .dropdown_button_item {
-  opacity: 1;
+  display: flex;
 }
 * body .container main .section_main .section_main_item .section_main_item_text .dropdown_button .dropdown_button_item {
-  opacity: 0;
   transition: all 0.4s;
   background-color: #001324;
   border-radius: 8px;
@@ -301,11 +473,11 @@
   max-height: 200px;
   margin: auto;
   z-index: 10;
-  top: -200%;
+  top: -190%;
   left: 0;
+  display: none;
 }
 * body .container main .section_main .section_main_item .section_main_item_text .dropdown_button .dropdown_button_item p {
-  transform: translateY(-25px);
   font-family: "Exo 2";
   font-style: normal;
   font-weight: 500;
@@ -313,7 +485,7 @@
   line-height: 120%;
   text-align: center;
   font-feature-settings: "liga" off;
-  background: radial-gradient(73.08% 73.08% at 50% -0.51%, #69FEDB 0%, #11E5B3 100%);
+  background: radial-gradient(73.08% 73.08% at 50% -0.51%, #69fedb 0%, #11e5b3 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -1087,12 +1259,11 @@
 }
 * body .container main .section_geroy {
   width: 100%;
-  height: 100%;
   display: flex;
   justify-content: center;
-  align-items: flex-start;
+  align-items: center;
   position: relative;
-  min-height: 900px;
+  min-height: 720px;
 }
 * body .container main .section_geroy .section_geroy_item .section_geroy_item_child {
   margin-left: 15px;
@@ -1525,33 +1696,32 @@
   transition: all 0.4s;
   scale: 1;
 }
-@media screen and (max-width: 1773px) {
-  * body .container main .section_geroy .section_geroy_item .section_geroy_item_child .img_box {
-    width: 301px;
-    height: 400px;
-    overflow: hidden;
-  }
-}
-@media screen and (max-width: 1677px) {
+@media screen and (max-width: 1900px) {
   * body .container main .section_geroy .section_geroy_item .section_geroy_item_child {
-    width: 355px;
     max-width: 355px;
+    max-height: 669px;
   }
-  * body .container main .section_geroy .section_geroy_item .section_geroy_item_child .img_box {
-    width: 301px;
-    height: 400px;
-    overflow: hidden;
+  * body .container main .section_geroy .section_geroy_item .section_geroy_item_child:nth-of-type(1) .name_box {
+    margin-top: 150px;
   }
-  * body .container main .section_geroy .section_geroy_item .section_geroy_item_child:nth-of-type(2) .information_box p {
+  * body .container main .section_geroy .section_geroy_item .section_geroy_item_child:nth-of-type(1) .information_box {
+    min-height: 100px;
+    margin-top: 0px;
+  }
+  * body .container main .section_geroy .section_geroy_item .section_geroy_item_child:nth-of-type(1) .information_box span svg {
+    margin-top: 23px;
+  }
+  * body .container main .section_geroy .section_geroy_item .section_geroy_item_child:nth-of-type(1) .information_box p {
     font-size: 16px;
     line-height: 130%;
+    margin-top: 21px;
   }
-}
-@media screen and (max-width: 1594px) {
-  * body .container main .section_geroy .section_geroy_item .section_geroy_item_child .img_box {
-    width: 301px;
-    height: 400px;
-    overflow: hidden;
+  * body .container main .section_geroy .section_geroy_item .section_geroy_item_child:nth-of-type(2) .name_box {
+    margin-top: 115px;
+  }
+  * body .container main .section_geroy .section_geroy_item .section_geroy_item_child:nth-of-type(2) .information_box {
+    min-height: 100px;
+    margin-top: 0;
   }
   * body .container main .section_geroy .section_geroy_item .section_geroy_item_child:nth-of-type(2) .information_box span svg {
     margin-top: 23px;
@@ -1560,6 +1730,13 @@
     font-size: 15px;
     line-height: 130%;
   }
+  * body .container main .section_geroy .section_geroy_item .section_geroy_item_child:nth-of-type(3) .name_box {
+    margin-top: 115px;
+  }
+  * body .container main .section_geroy .section_geroy_item .section_geroy_item_child:nth-of-type(3) .information_box {
+    margin-top: 0;
+    min-height: 100px;
+  }
   * body .container main .section_geroy .section_geroy_item .section_geroy_item_child:nth-of-type(3) .information_box span svg {
     margin-top: 23px;
   }
@@ -1567,12 +1744,12 @@
     font-size: 16px;
     line-height: 130%;
   }
-  * body .container main .section_geroy .section_geroy_item .section_geroy_item_child:nth-of-type(1) .information_box span svg {
-    margin-top: 23px;
+  * body .container main .section_geroy .section_geroy_item .section_geroy_item_child:nth-of-type(4) .name_box {
+    margin-top: 115px;
   }
-  * body .container main .section_geroy .section_geroy_item .section_geroy_item_child:nth-of-type(1) .information_box p {
-    font-size: 16px;
-    line-height: 130%;
+  * body .container main .section_geroy .section_geroy_item .section_geroy_item_child:nth-of-type(4) .information_box {
+    margin-top: 0;
+    min-height: 100px;
   }
   * body .container main .section_geroy .section_geroy_item .section_geroy_item_child:nth-of-type(4) .information_box span svg {
     margin-top: 23px;
@@ -1581,12 +1758,26 @@
     font-size: 16px;
     line-height: 130%;
   }
+  * body .container main .section_geroy .section_geroy_item .section_geroy_item_child:nth-of-type(5) .name_box {
+    margin-top: 115px;
+  }
+  * body .container main .section_geroy .section_geroy_item .section_geroy_item_child:nth-of-type(5) .information_box {
+    margin-top: 0;
+    min-height: 100px;
+  }
   * body .container main .section_geroy .section_geroy_item .section_geroy_item_child:nth-of-type(5) .information_box span svg {
     margin-top: 23px;
   }
   * body .container main .section_geroy .section_geroy_item .section_geroy_item_child:nth-of-type(5) .information_box p {
     font-size: 16px;
     line-height: 130%;
+  }
+  * body .container main .section_geroy .section_geroy_item .section_geroy_item_child:nth-of-type(6) .name_box {
+    margin-top: 115px;
+  }
+  * body .container main .section_geroy .section_geroy_item .section_geroy_item_child:nth-of-type(6) .information_box {
+    margin-top: 0;
+    min-height: 100px;
   }
   * body .container main .section_geroy .section_geroy_item .section_geroy_item_child:nth-of-type(6) .information_box span svg {
     margin-top: 23px;
@@ -1595,12 +1786,66 @@
     font-size: 16px;
     line-height: 130%;
   }
+  * body .container main .section_geroy .section_geroy_item .section_geroy_item_child:nth-of-type(7) .name_box {
+    margin-top: 115px;
+  }
+  * body .container main .section_geroy .section_geroy_item .section_geroy_item_child:nth-of-type(7) .information_box {
+    margin-top: 0;
+    min-height: 100px;
+  }
   * body .container main .section_geroy .section_geroy_item .section_geroy_item_child:nth-of-type(7) .information_box span svg {
     margin-top: 23px;
   }
   * body .container main .section_geroy .section_geroy_item .section_geroy_item_child:nth-of-type(7) .information_box p {
     font-size: 16px;
     line-height: 130%;
+  }
+  * body .container main .section_geroy .section_geroy_item .section_geroy_item_child .img_box {
+    width: 251px;
+    height: 350px;
+    overflow: hidden;
+  }
+  * body .container main .section_geroy .section_geroy_item .section_geroy_item_child .geroy_box {
+    background-size: contain;
+  }
+  * body .container main .section_geroy .section_geroy_item .section_geroy_item_child .geroy_box h4 {
+    font-size: 9px;
+    line-height: 120%;
+  }
+  * body .container main .section_geroy .section_geroy_item .section_geroy_item_child .name_box h2 {
+    font-size: 30px;
+    line-height: 100%;
+    padding: 22px 9px 16px 15px;
+  }
+  * body .container main .section_geroy .section_geroy_item .section_geroy_item_child .klan_box {
+    padding-bottom: 20px;
+  }
+  * body .container main .section_geroy .section_geroy_item .section_geroy_item_child .klan_box .klan_box_item {
+    gap: 15px;
+  }
+  * body .container main .section_geroy .section_geroy_item .section_geroy_item_child .klan_box .klan_box_item .klan_box_item_text h5 {
+    font-size: 12px;
+    line-height: 130%;
+  }
+  * body .container main .section_geroy .section_geroy_item .section_geroy_item_child .klan_box .klan_box_item .klan_box_item_text p {
+    font-size: 16px;
+    line-height: 20px;
+  }
+  * body .container main .section_geroy .section_geroy_item .section_geroy_item_child .klan_box .klass_box_item {
+    gap: 15px;
+  }
+  * body .container main .section_geroy .section_geroy_item .section_geroy_item_child .klan_box .klass_box_item .klass_box_item_text h5 {
+    font-size: 12px;
+    line-height: 130%;
+  }
+  * body .container main .section_geroy .section_geroy_item .section_geroy_item_child .klan_box .klass_box_item .klass_box_item_text p {
+    font-size: 16px;
+    line-height: 20px;
+  }
+}
+@media screen and (max-width: 388px) {
+  * body .container main .section_geroy .section_geroy_item .section_geroy_item_child {
+    margin-left: 0;
   }
 }
 * body .container main .section_logotips {
@@ -1632,7 +1877,7 @@
   gap: 60px;
   margin: auto;
   margin-top: 42px;
-  max-width: 1153px;
+  max-width: 1253px;
 }
 * body .container main .section_logotips .section_logotips_item .section_logotips_item_text {
   padding-bottom: 100px;
