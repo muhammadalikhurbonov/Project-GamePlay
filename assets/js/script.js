@@ -3,7 +3,7 @@
 function modalFunction() {
   document.querySelector(".section_geroy_modal").classList.add("scale");
   document.querySelector("body").style.overflow = "hidden";
-  document.querySelector(".section_geroy").style.filter = "brightness(75%)";
+  // document.querySelector(".section_geroy").style.filter = "brightness(75%)";
 }
 
 function removeFunction() {
