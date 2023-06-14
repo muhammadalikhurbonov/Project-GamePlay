@@ -1165,8 +1165,8 @@
               padding: 0 33px 29px 22px;
               border: 4px solid #224f73;
               position: relative;
-              width: 431px;
-              max-width: 431px;
+              width: 455px;
+              max-width: 455px;
               height: 869px;
               max-height: 869px;
               &:nth-of-type(1) {
@@ -1613,6 +1613,7 @@
           @media screen and (max-width: 1773px) {
             .section_geroy_item {
               .section_geroy_item_child {
+             
                 .img_box {
                   width: 301px;
                   height: 400px;
@@ -1624,6 +1625,8 @@
           @media screen and (max-width: 1677px) {
             .section_geroy_item {
               .section_geroy_item_child {
+                width: 355px;
+                max-width: 355px;
                 .img_box {
                   width: 301px;
                   height: 400px;
@@ -1643,6 +1646,7 @@
           @media screen and (max-width: 1594px) {
             .section_geroy_item {
               .section_geroy_item_child {
+            
                 .img_box {
                   width: 301px;
                   height: 400px;
@@ -11458,8 +11462,8 @@
               }
             }
             .section_servise_main {
-              min-height: 558px;
-              padding-top: 100px;
+              min-height: 458px;
+              padding-top: 65px;
               .section_servise_main_item {
                 max-width: 300px;
                 display: flex;
@@ -11513,7 +11517,7 @@
                 &:nth-of-type(3) {
                   z-index: 999999;
                   gap: 80px;
-                  margin-top: 40px;
+                  margin-top: 20px;
                   .section_servise_main_item_row {
                     &:last-of-type {
                       span {
@@ -11526,7 +11530,7 @@
                 }
                 &:nth-of-type(5) {
                   gap: 30px;
-                  margin-top: 40px;
+                  margin-top: 20px;
                   .section_servise_main_item_row {
                     &:last-of-type {
                       span {

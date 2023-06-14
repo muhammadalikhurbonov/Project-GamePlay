@@ -10,21 +10,21 @@ function removeFunction() {
   document.querySelector("body").style.overflow = "auto";
 }
 
-var acc = document.getElementsByClassName("section_servise_main_item");
-var i;
+// var acc = document.getElementsByClassName("section_servise_main_item");
+// var i;
 
-for (i = 0; i < acc.length; i++) {
-  acc[i].addEventListener("click", function () {
-    this.classList.toggle("active");
+// for (i = 0; i < acc.length; i++) {
+//   acc[i].addEventListener("click", function () {
+//     this.classList.toggle("active");
 
-    var accordion = this.nextElementSibling;
-    if (accordion.style.display === "block") {
-      accordion.style.display = "none";
-    } else {
-      accordion.style.display = "block";
-    }
-  });
-}
+//     var accordion = this.nextElementSibling;
+//     if (accordion.style.display === "block") {
+//       accordion.style.display = "none";
+//     } else {
+//       accordion.style.display = "block";
+//     }
+//   });
+// }
 
 var swiper = new Swiper(".MYSwiper", {
   slidesPerView: 1,
@@ -48,7 +48,7 @@ var swiper = new Swiper(".MYSwiper", {
     },
     "@2.00": {
       slidesPerView: 4,
-      spaceBetween: 20,
+      spaceBetween: 10,
     },
   },
 });
