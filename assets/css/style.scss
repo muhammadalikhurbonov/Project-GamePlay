@@ -16,10 +16,11 @@
     background: #001324;
     .container {
       overflow-x: hidden;
-      // border: 2px solid red;
+      border: 2px solid red;
       main {
         overflow-x: hidden;
         .section_main {
+          
           position: relative;
           background: url(../img/peakpx.jpg);
           background-position: center left;
@@ -322,38 +323,78 @@
                   cursor: pointer;
                 }
               }
-              button {
-                background: linear-gradient(
-                  10.53deg,
-                  rgba(0, 137, 105, 0.8) 13.41%,
-                  rgba(12, 30, 48, 0) 103.35%
-                );
-                border: none;
-                font-family: "Font Over";
-                font-style: normal;
-                font-weight: 500;
-                font-size: 22px;
-                line-height: 100%;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                gap: 23px;
-                padding: 17px 35px 15px 36px;
-                text-align: center;
-                letter-spacing: 0.1em;
-                font-feature-settings: "liga" off;
-                color: #11e5b3;
-                margin-top: 22px;
-                background: url(../img/button\ background.png);
-                background-repeat: no;
-                background-size: cover;
-                background-position: center center;
-                width: 281px;
-                max-width: 281px;
-                cursor: pointer;
+              .dropdown_button{
+                position: relative;
+                display: inline-block;
                 transition: all 0.4s;
                 &:hover{
-                  scale: 1.1;
+                  .dropdown_button_item{
+                    opacity: 1;
+                  }
+                }
+                .dropdown_button_item{
+                  opacity: 0;
+                  transition: all 0.4s;
+                  background-color: #001324;
+                  border-radius: 8px;
+                  position: absolute;
+                  display:flex;
+                  justify-content: center;
+                  align-items: center;
+                  max-width: 400px;
+                  max-height: 200px;
+                  margin: auto;
+                  z-index: 10;
+                  top: -200%;
+                  left: 0;
+                  p{
+                    transform: translateY(-25px);
+                    font-family: 'Exo 2';
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 16px;
+                    line-height: 120%;
+                    text-align: center;
+                    font-feature-settings: 'liga' off;
+                    background: radial-gradient(73.08% 73.08% at 50% -0.51%, #69FEDB 0%, #11E5B3 100%);
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                    background-clip: text;
+                  }
+                }
+                button {
+                  background: linear-gradient(
+                    10.53deg,
+                    rgba(0, 137, 105, 0.8) 13.41%,
+                    rgba(12, 30, 48, 0) 103.35%
+                  );
+                  border: none;
+                  font-family: "Font Over";
+                  font-style: normal;
+                  font-weight: 500;
+                  font-size: 22px;
+                  line-height: 100%;
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  gap: 23px;
+                  padding: 17px 35px 15px 36px;
+                  text-align: center;
+                  letter-spacing: 0.1em;
+                  font-feature-settings: "liga" off;
+                  color: #11e5b3;
+                  margin-top: 22px;
+                  background: url(../img/button\ background.png);
+                  background-repeat: no;
+                  background-size: cover;
+                  background-position: center center;
+                  width: 281px;
+                  max-width: 281px;
+                  cursor: pointer;
+                  transition: all 0.4s;
+                  &:hover{
+                    scale: 1.1;
+                  }
                 }
               }
             }
@@ -534,20 +575,23 @@
                   line-height: 130%;
                   margin-top: 39px;
                 }
-                button {
-                  font-size: 16px;
-                  line-height: 100%;
-                  padding: 14px 15px 14px 27px;
-                  gap: 17px;
-                  width: 195px;
-                  max-width: 195px;
-                  background-size: contain;
-                  background-repeat: no-repeat;
-                  margin-top: 20px;
-                  span {
-                    svg {
-                      width: 16px;
-                      height: 12px;
+                .dropdown_button{
+
+                  button {
+                    font-size: 16px;
+                    line-height: 100%;
+                    padding: 14px 15px 14px 27px;
+                    gap: 17px;
+                    width: 195px;
+                    max-width: 195px;
+                    background-size: contain;
+                    background-repeat: no-repeat;
+                    margin-top: 20px;
+                    span {
+                      svg {
+                        width: 16px;
+                        height: 12px;
+                      }
                     }
                   }
                 }
@@ -673,20 +717,23 @@
                   line-height: 130%;
                   margin-top: 39px;
                 }
-                button {
-                  font-size: 16px;
-                  line-height: 100%;
-                  padding: 14px 15px 14px 27px;
-                  gap: 17px;
-                  width: 195px;
-                  max-width: 195px;
-                  background-size: contain;
-                  background-repeat: no-repeat;
-                  margin-top: 20px;
-                  span {
-                    svg {
-                      width: 16px;
-                      height: 12px;
+                .dropdown_button{
+
+                  button {
+                    font-size: 16px;
+                    line-height: 100%;
+                    padding: 14px 15px 14px 27px;
+                    gap: 17px;
+                    width: 195px;
+                    max-width: 195px;
+                    background-size: contain;
+                    background-repeat: no-repeat;
+                    margin-top: 20px;
+                    span {
+                      svg {
+                        width: 16px;
+                        height: 12px;
+                      }
                     }
                   }
                 }
@@ -812,20 +859,22 @@
                   line-height: 130%;
                   margin-top: 39px;
                 }
-                button {
-                  font-size: 16px;
-                  line-height: 100%;
-                  padding: 14px 15px 14px 27px;
-                  gap: 17px;
-                  width: 195px;
-                  max-width: 195px;
-                  background-size: contain;
-                  background-repeat: no-repeat;
-                  margin-top: 20px;
-                  span {
-                    svg {
-                      width: 16px;
-                      height: 12px;
+                .dropdown_button{
+                  button {
+                    font-size: 16px;
+                    line-height: 100%;
+                    padding: 14px 15px 14px 27px;
+                    gap: 17px;
+                    width: 195px;
+                    max-width: 195px;
+                    background-size: contain;
+                    background-repeat: no-repeat;
+                    margin-top: 20px;
+                    span {
+                      svg {
+                        width: 16px;
+                        height: 12px;
+                      }
                     }
                   }
                 }
@@ -951,20 +1000,23 @@
                   line-height: 130%;
                   margin-top: 39px;
                 }
-                button {
-                  font-size: 16px;
-                  line-height: 100%;
-                  padding: 14px 15px 14px 27px;
-                  gap: 17px;
-                  width: 195px;
-                  max-width: 195px;
-                  background-size: contain;
-                  background-repeat: no-repeat;
-                  margin-top: 20px;
-                  span {
-                    svg {
-                      width: 16px;
-                      height: 12px;
+                .dropdown_button{
+
+                  button {
+                    font-size: 16px;
+                    line-height: 100%;
+                    padding: 14px 15px 14px 27px;
+                    gap: 17px;
+                    width: 195px;
+                    max-width: 195px;
+                    background-size: contain;
+                    background-repeat: no-repeat;
+                    margin-top: 20px;
+                    span {
+                      svg {
+                        width: 16px;
+                        height: 12px;
+                      }
                     }
                   }
                 }
@@ -1119,26 +1171,28 @@
                   line-height: 130%;
                   margin-top: 26px;
                 }
-                button {
-                  font-size: 10px;
-                  line-height: 100%;
-                  padding: 10px 20px 7px 21px;
-                  gap: 12px;
-                  width: 137px;
-                  max-width: 137px;
-                  background-size: contain;
-                  background-repeat: no-repeat;
-                  margin-top: 12px;
-                  display: flex;
-                  justify-content: center !important;
-                  align-items: center !important;
-                  height: 28px;
-                  max-height: 28px;
-                  span {
-                    svg {
-                      margin-bottom: 10px;
-                      width: 11px;
-                      height: 8px;
+                .dropdown_button{
+                  button {
+                    font-size: 10px;
+                    line-height: 100%;
+                    padding: 10px 20px 7px 21px;
+                    gap: 12px;
+                    width: 137px;
+                    max-width: 137px;
+                    background-size: contain;
+                    background-repeat: no-repeat;
+                    margin-top: 12px;
+                    display: flex;
+                    justify-content: center !important;
+                    align-items: center !important;
+                    height: 28px;
+                    max-height: 28px;
+                    span {
+                      svg {
+                        margin-bottom: 10px;
+                        width: 11px;
+                        height: 8px;
+                      }
                     }
                   }
                 }
@@ -10400,6 +10454,7 @@
           }
         }
         .section_servise {
+          width: 100%;
           .section_servise_faq {
             background: url(../img/section_servise_faq.png);
             background-position: center center;

@@ -18,6 +18,7 @@
 }
 * body .container {
   overflow-x: hidden;
+  border: 2px solid red;
 }
 * body .container main {
   overflow-x: hidden;
@@ -282,7 +283,45 @@
   font-weight: bold;
   cursor: pointer;
 }
-* body .container main .section_main .section_main_item .section_main_item_text button {
+* body .container main .section_main .section_main_item .section_main_item_text .dropdown_button {
+  position: relative;
+  display: inline-block;
+  transition: all 0.4s;
+}
+* body .container main .section_main .section_main_item .section_main_item_text .dropdown_button:hover .dropdown_button_item {
+  opacity: 1;
+}
+* body .container main .section_main .section_main_item .section_main_item_text .dropdown_button .dropdown_button_item {
+  opacity: 0;
+  transition: all 0.4s;
+  background-color: #001324;
+  border-radius: 8px;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 400px;
+  max-height: 200px;
+  margin: auto;
+  z-index: 10;
+  top: -200%;
+  left: 0;
+}
+* body .container main .section_main .section_main_item .section_main_item_text .dropdown_button .dropdown_button_item p {
+  transform: translateY(-25px);
+  font-family: "Exo 2";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 120%;
+  text-align: center;
+  font-feature-settings: "liga" off;
+  background: radial-gradient(73.08% 73.08% at 50% -0.51%, #69FEDB 0%, #11E5B3 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+* body .container main .section_main .section_main_item .section_main_item_text .dropdown_button button {
   background: linear-gradient(10.53deg, rgba(0, 137, 105, 0.8) 13.41%, rgba(12, 30, 48, 0) 103.35%);
   border: none;
   font-family: "Font Over";
@@ -309,7 +348,7 @@
   cursor: pointer;
   transition: all 0.4s;
 }
-* body .container main .section_main .section_main_item .section_main_item_text button:hover {
+* body .container main .section_main .section_main_item .section_main_item_text .dropdown_button button:hover {
   scale: 1.1;
 }
 @media screen and (max-width: 1600px) {
@@ -438,7 +477,7 @@
     line-height: 130%;
     margin-top: 39px;
   }
-  * body .container main .section_main .section_main_item .section_main_item_text button {
+  * body .container main .section_main .section_main_item .section_main_item_text .dropdown_button button {
     font-size: 16px;
     line-height: 100%;
     padding: 14px 15px 14px 27px;
@@ -449,7 +488,7 @@
     background-repeat: no-repeat;
     margin-top: 20px;
   }
-  * body .container main .section_main .section_main_item .section_main_item_text button span svg {
+  * body .container main .section_main .section_main_item .section_main_item_text .dropdown_button button span svg {
     width: 16px;
     height: 12px;
   }
@@ -551,7 +590,7 @@
     line-height: 130%;
     margin-top: 39px;
   }
-  * body .container main .section_main .section_main_item .section_main_item_text button {
+  * body .container main .section_main .section_main_item .section_main_item_text .dropdown_button button {
     font-size: 16px;
     line-height: 100%;
     padding: 14px 15px 14px 27px;
@@ -562,7 +601,7 @@
     background-repeat: no-repeat;
     margin-top: 20px;
   }
-  * body .container main .section_main .section_main_item .section_main_item_text button span svg {
+  * body .container main .section_main .section_main_item .section_main_item_text .dropdown_button button span svg {
     width: 16px;
     height: 12px;
   }
@@ -664,7 +703,7 @@
     line-height: 130%;
     margin-top: 39px;
   }
-  * body .container main .section_main .section_main_item .section_main_item_text button {
+  * body .container main .section_main .section_main_item .section_main_item_text .dropdown_button button {
     font-size: 16px;
     line-height: 100%;
     padding: 14px 15px 14px 27px;
@@ -675,7 +714,7 @@
     background-repeat: no-repeat;
     margin-top: 20px;
   }
-  * body .container main .section_main .section_main_item .section_main_item_text button span svg {
+  * body .container main .section_main .section_main_item .section_main_item_text .dropdown_button button span svg {
     width: 16px;
     height: 12px;
   }
@@ -777,7 +816,7 @@
     line-height: 130%;
     margin-top: 39px;
   }
-  * body .container main .section_main .section_main_item .section_main_item_text button {
+  * body .container main .section_main .section_main_item .section_main_item_text .dropdown_button button {
     font-size: 16px;
     line-height: 100%;
     padding: 14px 15px 14px 27px;
@@ -788,7 +827,7 @@
     background-repeat: no-repeat;
     margin-top: 20px;
   }
-  * body .container main .section_main .section_main_item .section_main_item_text button span svg {
+  * body .container main .section_main .section_main_item .section_main_item_text .dropdown_button button span svg {
     width: 16px;
     height: 12px;
   }
@@ -916,7 +955,7 @@
     line-height: 130%;
     margin-top: 26px;
   }
-  * body .container main .section_main .section_main_item .section_main_item_text button {
+  * body .container main .section_main .section_main_item .section_main_item_text .dropdown_button button {
     font-size: 10px;
     line-height: 100%;
     padding: 10px 20px 7px 21px;
@@ -932,7 +971,7 @@
     height: 28px;
     max-height: 28px;
   }
-  * body .container main .section_main .section_main_item .section_main_item_text button span svg {
+  * body .container main .section_main .section_main_item .section_main_item_text .dropdown_button button span svg {
     margin-bottom: 10px;
     width: 11px;
     height: 8px;
@@ -9173,6 +9212,9 @@
     width: 15px;
     height: 15px;
   }
+}
+* body .container main .section_servise {
+  width: 100%;
 }
 * body .container main .section_servise .section_servise_faq {
   background: url(../img/section_servise_faq.png);
