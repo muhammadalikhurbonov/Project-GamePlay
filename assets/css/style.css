@@ -1669,23 +1669,142 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 500px;
-  height: 500px;
+  width: 450px;
+  height: 510px;
   scale: 0;
   z-index: 99999;
+  border-radius: 16px;
+}
+* body .container main .section_geroy .section_geroy_modal .section_geroy_modal_item .modal_geroy_box {
+  z-index: -1;
+  margin-top: 21px;
+  background: url("../img/geroy_box background.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+  padding: 15px;
+}
+* body .container main .section_geroy .section_geroy_modal .section_geroy_modal_item .modal_geroy_box h4 {
+  font-family: "Font Over";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 10.4274px;
+  line-height: 120%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-feature-settings: "liga" off;
+  background: radial-gradient(73.08% 73.08% at 50% -0.51%, #69fedb 0%, #11e5b3 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  transform: translateX(-60px);
+}
+* body .container main .section_geroy .section_geroy_modal .section_geroy_modal_item .modal_img_box {
+  width: 281px;
+  height: 280px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+* body .container main .section_geroy .section_geroy_modal .section_geroy_modal_item .modal_img_box img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  display: block;
+}
+* body .container main .section_geroy .section_geroy_modal .section_geroy_modal_item .modal_name_box {
+  z-index: 99 !important;
+  background: url(../img/name_box\ background.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+* body .container main .section_geroy .section_geroy_modal .section_geroy_modal_item .modal_name_box h2 {
+  font-family: "Exo 2";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 42px;
+  line-height: 100%;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+* body .container main .section_geroy .section_geroy_modal .section_geroy_modal_item .modal_klan_box {
+  background: url(../img/klan_box\ background.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+* body .container main .section_geroy .section_geroy_modal .section_geroy_modal_item .modal_klan_box .klan_box_item {
+  display: flex;
+  gap: 11px;
+  padding-top: 28px;
+}
+* body .container main .section_geroy .section_geroy_modal .section_geroy_modal_item .modal_klan_box .klan_box_item .klan_box_item_text h5 {
+  font-family: "Exo 2";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 130%;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: #11e5b3;
+}
+* body .container main .section_geroy .section_geroy_modal .section_geroy_modal_item .modal_klan_box .klan_box_item .klan_box_item_text p {
+  font-family: "Exo 2";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #ffffff;
+  margin-top: 4px;
+}
+* body .container main .section_geroy .section_geroy_modal .section_geroy_modal_item .modal_klan_box .klass_box_item {
+  margin-top: 13px;
+  display: flex;
+  align-items: center;
+  gap: 11px;
+}
+* body .container main .section_geroy .section_geroy_modal .section_geroy_modal_item .modal_klan_box .klass_box_item .klass_box_item_text h5 {
+  font-family: "Exo 2";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 130%;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: #11e5b3;
+}
+* body .container main .section_geroy .section_geroy_modal .section_geroy_modal_item .modal_klan_box .klass_box_item .klass_box_item_text p {
+  font-family: "Exo 2";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #ffffff;
+  margin-top: 4px;
 }
 * body .container main .section_geroy .section_geroy_modal .remove {
   position: absolute;
   color: #fff;
   border: 1px solid #fff;
   top: 10px;
-  right: 20px;
-  font-size: 24px;
+  right: 10px;
+  font-size: 20px;
   font-family: monospace;
   font-weight: 500;
   cursor: pointer;
   transition: all 0.4s;
-  padding: 0px 6px;
+  padding: 0px 6px 0 7px;
   border-radius: 3px;
 }
 * body .container main .section_geroy .section_geroy_modal .remove:hover {
@@ -1845,7 +1964,7 @@
 }
 @media screen and (max-width: 388px) {
   * body .container main .section_geroy .section_geroy_item .section_geroy_item_child {
-    margin-left: 0;
+    margin-left: 0px;
   }
 }
 * body .container main .section_logotips {
@@ -2735,6 +2854,9 @@
   * body .container main .section_function .section_function_item .section_function_item_child .swiper .swiper-button-next {
     right: var(--swiper-navigation-sides-offset, 0%);
   }
+}
+* body .container main .section_diagramma {
+  width: 100%;
 }
 * body .container main .section_diagramma .section_diagramma_text {
   max-width: 1150px;
@@ -6495,7 +6617,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 204px;
 }
 * body .container main .section_inerfeys .section_inerfeys_h2 h2 {
   font-family: "Exo 2";
@@ -6506,6 +6627,7 @@
   color: #ffffff;
   display: flex;
   justify-content: flex-start;
+  transform: translateY(80px);
 }
 * body .container main .section_inerfeys .section_inerfeys_item {
   margin-top: 20px;

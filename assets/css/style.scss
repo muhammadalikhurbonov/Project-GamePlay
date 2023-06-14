@@ -1536,7 +1536,6 @@
         }
         .section_geroy {
           width: 100%;
-          // height: 100vh;
           display: flex;
           justify-content: center;
           align-items: center;
@@ -1973,22 +1972,150 @@
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
-            width: 500px;
-            height: 500px;
+            width: 450px;
+            height: 510px;
             scale: 0;
             z-index: 99999;
+            border-radius: 16px;
+            .section_geroy_modal_item{
+              .modal_geroy_box {
+                z-index: -1;
+                margin-top: 21px;
+                background: url("../img/geroy_box\ background.png");
+                background-repeat: no-repeat;
+                background-size: contain;
+                background-position: center center;
+                padding: 15px;
+                h4 {
+                  font-family: "Font Over";
+                  font-style: normal;
+                  font-weight: 500;
+                  font-size: 10.4274px;
+                  line-height: 120%;
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  font-feature-settings: "liga" off;
+                  background: radial-gradient(
+                    73.08% 73.08% at 50% -0.51%,
+                    #69fedb 0%,
+                    #11e5b3 100%
+                  );
+                  -webkit-background-clip: text;
+                  -webkit-text-fill-color: transparent;
+                  background-clip: text;
+                  transform: translateX(-60px);
+                }
+              }
+              .modal_img_box {
+                width: 281px;
+                height: 280px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin: auto;
+                img {
+                  width: 100%;
+                  height: 100%;
+                  object-fit: contain;
+                  display: block;
+                }
+              }
+              .modal_name_box {
+                z-index: 99 !important;
+                background: url(../img/name_box\ background.png);
+                background-position: center center;
+                background-repeat: no-repeat;
+                background-size: contain;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                h2 {
+                  font-family: "Exo 2";
+                  font-style: normal;
+                  font-weight: 600;
+                  font-size: 42px;
+                  line-height: 100%;
+                  text-transform: uppercase;
+                  color: #ffffff;
+                }
+              }
+              .modal_klan_box {
+                background: url(../img/klan_box\ background.png);
+                background-position: center center;
+                background-repeat: no-repeat;
+                background-size: cover;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 40px;
+                .klan_box_item {
+                  display: flex;
+                  gap: 11px;
+                  padding-top: 28px;
+                  .klan_box_item_text {
+                    h5 {
+                      font-family: "Exo 2";
+                      font-style: normal;
+                      font-weight: 400;
+                      font-size: 14px;
+                      line-height: 130%;
+                      letter-spacing: 0.2em;
+                      text-transform: uppercase;
+                      color: #11e5b3;
+                    }
+                    p {
+                      font-family: "Exo 2";
+                      font-style: normal;
+                      font-weight: 400;
+                      font-size: 16px;
+                      line-height: 20px;
+                      color: #ffffff;
+                      margin-top: 4px;
+                    }
+                  }
+                }
+                .klass_box_item {
+                  margin-top: 13px;
+                  display: flex;
+                  align-items: center;
+                  gap: 11px;
+                  .klass_box_item_text {
+                    h5 {
+                      font-family: "Exo 2";
+                      font-style: normal;
+                      font-weight: 400;
+                      font-size: 14px;
+                      line-height: 130%;
+                      letter-spacing: 0.2em;
+                      text-transform: uppercase;
+                      color: #11e5b3;
+                    }
+                    p {
+                      font-family: "Exo 2";
+                      font-style: normal;
+                      font-weight: 400;
+                      font-size: 16px;
+                      line-height: 20px;
+                      color: #ffffff;
+                      margin-top: 4px;
+                    }
+                  }
+                }
+              }
+            }
             .remove {
               position: absolute;
               color: #fff;
               border: 1px solid #fff;
               top: 10px;
-              right: 20px;
-              font-size: 24px;
+              right: 10px;
+              font-size: 20px;
               font-family: monospace;
               font-weight: 500;
               cursor: pointer;
               transition: all 0.4s;
-              padding: 0px 6px;
+              padding: 0px 6px 0 7px;
               border-radius: 3px;
               &:hover {
                 color: red;
@@ -2186,7 +2313,7 @@
           @media screen and (max-width: 388px) {
             .section_geroy_item {
               .section_geroy_item_child {
-                margin-left: 0;
+                margin-left: 0px;
               }
             }
           }
@@ -3175,6 +3302,7 @@
           }
         }
         .section_diagramma {
+          width: 100%;
           .section_diagramma_text {
             max-width: 1150px;
             display: flex;
@@ -7529,7 +7657,6 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            margin-top: 204px;
             h2 {
               font-family: "Exo 2";
               font-style: normal;
@@ -7539,6 +7666,7 @@
               color: #ffffff;
               display: flex;
               justify-content: flex-start;
+              transform: translateY(80px);
             }
           }
           .section_inerfeys_item {
