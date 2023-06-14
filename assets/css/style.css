@@ -1428,6 +1428,27 @@
     font-size: 16px;
     line-height: 130%;
   }
+  * body .container main .section_geroy .section_geroy_item .section_geroy_item_child:nth-of-type(5) .information_box span svg {
+    margin-top: 23px;
+  }
+  * body .container main .section_geroy .section_geroy_item .section_geroy_item_child:nth-of-type(5) .information_box p {
+    font-size: 16px;
+    line-height: 130%;
+  }
+  * body .container main .section_geroy .section_geroy_item .section_geroy_item_child:nth-of-type(6) .information_box span svg {
+    margin-top: 23px;
+  }
+  * body .container main .section_geroy .section_geroy_item .section_geroy_item_child:nth-of-type(6) .information_box p {
+    font-size: 16px;
+    line-height: 130%;
+  }
+  * body .container main .section_geroy .section_geroy_item .section_geroy_item_child:nth-of-type(7) .information_box span svg {
+    margin-top: 23px;
+  }
+  * body .container main .section_geroy .section_geroy_item .section_geroy_item_child:nth-of-type(7) .information_box p {
+    font-size: 16px;
+    line-height: 130%;
+  }
 }
 * body .container main .section_logotips {
   margin-top: 102px;
