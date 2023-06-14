@@ -3,11 +3,13 @@
 function modalFunction() {
   document.querySelector(".section_geroy_modal").classList.add("scale");
   document.querySelector("body").style.overflow = "hidden";
+  document.querySelector(".section_geroy").style.filter = "brightness(75%)";
 }
 
 function removeFunction() {
   document.querySelector(".section_geroy_modal").classList.remove("scale");
   document.querySelector("body").style.overflow = "auto";
+  document.querySelector(".section_geroy").style.filter = "brightness()";
 }
 
 // var acc = document.getElementsByClassName("section_servise_main_item");

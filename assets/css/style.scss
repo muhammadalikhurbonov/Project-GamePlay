@@ -11,6 +11,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
   body {
     overflow-x: hidden;
     background: #001324;
@@ -20,7 +21,7 @@
       main {
         overflow-x: hidden;
         .section_main {
-          
+          width: 100%;
           position: relative;
           background: url(../img/peakpx.jpg);
           background-position: center left;
@@ -113,7 +114,7 @@
               }
             }
             .header_right {
-              margin-bottom: 55px;
+              margin-bottom: 35px;
               ul {
                 display: flex;
                 flex-direction: column;
@@ -121,27 +122,20 @@
                 li {
                   &:nth-of-type(2) {
                     margin-top: 10px;
-                    margin-bottom: 17px;
                   }
                   &:nth-of-type(3){
                    a{
-                   &::before{
-                     display: none;
-                   }
+                   margin-top: 17px;
                   }
                   }
                   &:nth-of-type(4){
                     a{
-                      &::before{
-                        display: none;
-                      }
+                    margin-top: 18px;
                     }
                   }
                   &:nth-of-type(5){
                     a{
-                      &::before{
-                        display: none;
-                      }
+                    margin-top: 18px;
                     }
                   }
                   list-style-type: none;
@@ -1631,12 +1625,14 @@
             }
           }
           .section_geroy_modal {
+            background: url(../img/Review\ .png);
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: cover;
             position: absolute;
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
-            background-color: #1e1e1e;
-            border: 2px solid red;
             width: 500px;
             height: 500px;
             scale: 0;
@@ -5300,6 +5296,7 @@
                   flex-direction: column;
                   .section_diagramma_item_child_row {
                     &:first-of-type {
+                      min-height: 370px;
                       padding: 0;
                       margin-left: 20px;
                       margin-right: 20px;
@@ -11643,7 +11640,7 @@
               padding: 0px;
               button {
                 padding-top: 6%;
-                font-size: 12px;
+                font-size: 10px;
                 line-height: 120%;
                 min-height: 128px;
                 span {
@@ -11674,6 +11671,27 @@
               .section_servise_end_img {
                 margin-top: 0px;
               }
+            }
+          }
+          @media screen and (max-width: 376px) {
+            .section_servise_main_button {
+              padding: 0px;
+              button {
+                padding-top: 6%;
+                font-size: 8px;
+                line-height: 120%;
+                min-height: 128px;
+                span {
+                  font-size: 6px;
+                  margin-top: 0;
+                  line-height: 120%;
+                }
+              }
+            }
+            h4 {
+              transform: translate(-25px, -28px);
+              font-size: 5px;
+              line-height: 120%;
             }
           }
         }
