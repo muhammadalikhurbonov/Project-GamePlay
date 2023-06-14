@@ -154,7 +154,7 @@
   height: 2px;
   background: linear-gradient(233.38deg, #fcdaff -32.6%, #cf52fe 59.62%);
   top: 120%;
-  left: 0;
+  right: 0;
   transition: all 0.4s;
 }
 * body .container main .section_main header .header_right ul li a:hover::before {
