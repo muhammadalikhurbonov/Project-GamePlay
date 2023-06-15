@@ -84,9 +84,15 @@ var swiper = new Swiper(".MYSwiper", {
 
 function menuFunction() {
   document.querySelector(".header_modal").style.display = "none";
+  document.querySelector(".section_main_item").style.display = "block";
 }
 
 document.querySelector(".menu").addEventListener("click", (e) => {
   e.preventDefault();
-  document.querySelector(".header_modal").style.display = "block";
+  if (window.screen.width <= 400) {
+    document.querySelector(".header_modal").style.display = "block";
+    document.querySelector(".section_main_item").style.display = "none";
+  } else if (window.screen.width >= 400) {
+    document.querySelector(".header_modal").style.display = "none";
+  }
 });
