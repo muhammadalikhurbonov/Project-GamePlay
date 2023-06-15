@@ -11702,7 +11702,7 @@
           }
           @media screen and (max-width: 629px) {
             .section_servise_faq {
-              margin-top: 108px;
+              margin-top: 58px;
             }
             .section_servise_main {
               min-height: 308px;
@@ -11858,7 +11858,6 @@
           }
           @media screen and (max-width: 535px) {
             .section_servise_faq {
-              margin-top: 108px;
               min-height: 57px;
               h2 {
                 font-size: 12px;
@@ -12007,7 +12006,6 @@
           }
           @media screen and (max-width: 431px) {
             .section_servise_faq {
-              margin-top: 108px;
               min-height: 57px;
               h2 {
                 font-size: 12px;
@@ -12197,7 +12195,8 @@
         background-position: center center;
         background-repeat: no-repeat;
         background-size: cover;
-        min-height: 1366px;
+        width: 100%;
+        height: 100vh;
         h2 {
           font-family: "Cyberpunk";
           font-style: normal;
@@ -12209,10 +12208,10 @@
           font-feature-settings: "liga" off;
           color: #ffffff;
           mix-blend-mode: normal;
-          padding-top: 964px;
+          padding-top: 400px;
         }
         p {
-          margin-top: 80px;
+          margin-top: 120px;
           font-family: "Exo 2";
           font-style: normal;
           font-weight: 400;
@@ -12222,20 +12221,35 @@
           font-feature-settings: "liga" off;
           color: #ffffff;
         }
-        @media screen and (max-width: 725px) {
+        @media screen and (max-width: 1564px) {
           h2 {
             font-size: 250px;
             line-height: 78px;
+            padding-top: 350px;
           }
           p {
             font-size: 24px;
             line-height: 120%;
+            margin-top: 100px;
           }
         }
-        @media screen and (max-width: 582px) {
+        @media screen and (max-width: 1218px) {
           h2 {
             font-size: 200px;
-            line-height: 68px;
+            line-height: 78px;
+            padding-top: 330px;
+          }
+          p {
+            font-size: 24px;
+            line-height: 120%;
+            margin-top: 80px;
+          }
+        }
+        @media screen and (max-width: 1007px) {
+          h2 {
+            font-size: 150px;
+            line-height: 78px;
+            padding-top: 310px;
           }
           p {
             font-size: 22px;
@@ -12243,30 +12257,40 @@
             margin-top: 60px;
           }
         }
-        @media screen and (max-width: 470px) {
-          min-height: 700px;
-          h2 {
-            font-size: 150px;
-            line-height: 58px;
-            padding-top: 400px;
-          }
-          p {
-            font-size: 20px;
-            line-height: 120%;
-            margin-top: 50px;
-          }
-        }
-        @media screen and (max-width: 380px) {
-          min-height: 500px;
+        @media screen and (max-width: 738px) {
           h2 {
             font-size: 100px;
-            line-height: 48px;
-            padding-top: 200px;
+            line-height: 78px;
+            padding-top: 300px;
+          }
+          p {
+            font-size: 18px;
+            line-height: 120%;
+            margin-top: 20px;
+          }
+        }
+        @media screen and (max-width: 512px) {
+          h2 {
+            font-size: 80px;
+            line-height: 78px;
+            padding-top: 300px;
           }
           p {
             font-size: 16px;
             line-height: 120%;
-            margin-top: 30px;
+            margin-top: 10px;
+          }
+        }
+        @media screen and (max-width: 411px) {
+          h2 {
+            font-size: 65px;
+            line-height: 78px;
+            padding-top: 300px;
+          }
+          p {
+            font-size: 12px;
+            line-height: 120%;
+            margin-top: 0px;
           }
         }
       }
