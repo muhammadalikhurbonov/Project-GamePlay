@@ -96,3 +96,12 @@ document.querySelector(".menu").addEventListener("click", (e) => {
     document.querySelector(".header_modal").style.display = "none";
   }
 });
+
+// const header = document.querySelector("header");
+// window.addEventListener("scroll", (e) => {
+//   if (scrollY >= 50) {
+//     header.classList.add("header_function_fixed");
+//   } else if (scrollY <= 50) {
+//     header.classList.remove("header_function_fixed");
+//   }
+// });
