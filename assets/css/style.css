@@ -39,72 +39,104 @@
 * body .container main .fixed_icon {
   position: fixed;
   top: 30%;
-  right: 3.5%;
+  right: 0%;
   z-index: 999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-* body .container main .fixed_icon a {
+* body .container main .fixed_icon .fixed_icon_button {
+  cursor: pointer;
+  color: #fff;
+  transform: translateX(200%);
+  transition: all 0.4s;
+  padding: 15px 10px;
+  background-color: #9541de;
+  border-top-left-radius: 12px;
+  border-bottom-left-radius: 12px;
+}
+* body .container main .fixed_icon .fixed_icon_item {
+  transform: translateX(100%);
+  -webkit-backdrop-filter: brightness(70%);
+          backdrop-filter: brightness(70%);
+  padding: 25px 15px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  transition: all 0.4s;
+}
+* body .container main .fixed_icon .fixed_icon_item a {
   text-decoration: none;
   transition: all 0.4s;
 }
-* body .container main .fixed_icon a svg {
+* body .container main .fixed_icon .fixed_icon_item a svg {
   width: 30px;
   height: 30px;
   display: block;
-  margin-top: 30px;
   transition: all 0.4s;
   cursor: pointer;
 }
-* body .container main .fixed_icon a svg path {
+* body .container main .fixed_icon .fixed_icon_item a svg path {
   transition: all 0.4s;
   fill: #9541de;
 }
-* body .container main .fixed_icon a svg path fill {
+* body .container main .fixed_icon .fixed_icon_item a svg path fill {
   transition: all 0.4s;
 }
-* body .container main .fixed_icon a:nth-of-type(1) svg {
+* body .container main .fixed_icon .fixed_icon_item a:nth-of-type(1) svg {
   border-radius: 50%;
 }
-* body .container main .fixed_icon a:nth-of-type(3) svg {
+* body .container main .fixed_icon .fixed_icon_item a:nth-of-type(3) svg {
   border-radius: 50%;
 }
-* body .container main .fixed_icon a:nth-of-type(5) {
+* body .container main .fixed_icon .fixed_icon_item a:nth-of-type(5) {
   width: 30px;
-  height: 30px;
+  height: 20px;
+  display: block;
 }
-* body .container main .fixed_icon a:hover:nth-of-type(1) svg {
+* body .container main .fixed_icon .fixed_icon_item a:nth-of-type(5) svg {
+  border-radius: 5px;
+}
+* body .container main .fixed_icon .fixed_icon_item a:hover:nth-of-type(1) svg {
   background-color: #fff;
   scale: 1.2;
 }
-* body .container main .fixed_icon a:hover:nth-of-type(1) svg path {
+* body .container main .fixed_icon .fixed_icon_item a:hover:nth-of-type(1) svg path {
   fill: #269dd9;
 }
-* body .container main .fixed_icon a:hover:nth-of-type(2) svg {
+* body .container main .fixed_icon .fixed_icon_item a:hover:nth-of-type(2) svg {
   scale: 1.2;
 }
-* body .container main .fixed_icon a:hover:nth-of-type(2) svg path {
+* body .container main .fixed_icon .fixed_icon_item a:hover:nth-of-type(2) svg path {
   fill: #ff0000;
 }
-* body .container main .fixed_icon a:hover:nth-of-type(3) svg {
+* body .container main .fixed_icon .fixed_icon_item a:hover:nth-of-type(3) svg {
   scale: 1.2;
   background-color: #fff;
   border: none;
   border-radius: 50%;
 }
-* body .container main .fixed_icon a:hover:nth-of-type(3) svg path {
+* body .container main .fixed_icon .fixed_icon_item a:hover:nth-of-type(3) svg path {
   fill: #097eea;
 }
-* body .container main .fixed_icon a:hover:nth-of-type(4) svg {
+* body .container main .fixed_icon .fixed_icon_item a:hover:nth-of-type(4) svg {
   scale: 1.2;
   border: none;
 }
-* body .container main .fixed_icon a:hover:nth-of-type(4) svg path {
+* body .container main .fixed_icon .fixed_icon_item a:hover:nth-of-type(4) svg path {
   fill: #097eea;
 }
-* body .container main .fixed_icon a:hover:nth-of-type(5) svg {
+* body .container main .fixed_icon .fixed_icon_item a:hover:nth-of-type(5) svg {
   scale: 1.2;
 }
-* body .container main .fixed_icon a:hover:nth-of-type(5) svg path {
+* body .container main .fixed_icon .fixed_icon_item a:hover:nth-of-type(5) svg path {
   fill: #ff0000;
+}
+* body .container main .fixed_icon .fixed_icon_active {
+  transform: translateX(0);
 }
 * body .container main .section_main {
   width: 100%;

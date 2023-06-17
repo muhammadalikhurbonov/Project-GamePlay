@@ -105,3 +105,12 @@ document.querySelector(".menu").addEventListener("click", (e) => {
 //     header.classList.remove("header_function_fixed");
 //   }
 // });
+
+function fixed_icon_function() {
+  document
+    .querySelector(".fixed_icon_item")
+    .classList.toggle("fixed_icon_active");
+    document
+    .querySelector(".fixed_icon_button")
+    .classList.toggle("fixed_icon_active");
+}
