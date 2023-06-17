@@ -1688,15 +1688,15 @@
           padding-top: 30px;
           transition: all 0.4s;
           position: absolute;
-          top: 4.8%;
+          top: 4.1%;
           left: 50%;
           transform: translate(-50%, -50%);
-          width: 800px;
-          height: 700px;
-          background: url(https://wbsimms.com/wp-content/uploads/2015/02/VSBackgroundDark.jpg);
+          width: 700px;
+          height: 650px;
+          background: url(https://static.vecteezy.com/system/resources/thumbnails/003/988/049/small/realistic-black-wood-plank-background-vector.jpg);
           background-position: left right;
           background-repeat: no-repeat;
-          background-size: contain;
+          background-size: cover;
           border-radius: 18px;
           display: none;
           .remove {
@@ -1718,77 +1718,162 @@
             }
           }
           .dropdown_button_modal_item {
-            display: block;
-            button {
-              background: url(../img/Group\ 54.png);
-              background-position: center center;
-              background-size: contain;
-              background-repeat: no-repeat;
-              padding: 29px 25px 29px 25px;
-              font-family: "Font Over";
-              font-style: normal;
-              font-weight: 500;
-              font-size: 22px;
-              line-height: 100%;
-              display: flex;
-              justify-content: center;
-              align-items: center;
-              text-align: center;
-              margin: auto;
-              letter-spacing: 0.1em;
-              font-feature-settings: "liga" off;
-              color: #11e5b3;
-              transition: all 0.4s;
-              border: none;
-              cursor: pointer;
-              min-width: 500px;
-              margin-top: 20px;
-              &:hover {
-                scale: 1.1;
-              }
-            }
-            label {
-              font-family: "Exo 2";
-              font-style: normal;
-              font-weight: 300;
-              font-size: 24px;
-              line-height: 120%;
-              color: #11e5b3;
-              display: flex;
-              justify-content: center;
-              align-items: center;
-              margin: auto;
-            }
-            input {
-              font-family: "Exo 2";
-              font-style: normal;
-              font-weight: 300;
-              font-size: 24px;
-              line-height: 120%;
-              color: #ffffff;
-              padding: 20px 150px 25px 30px;
-              border: none;
-              outline: none;
-              background: #001324;
-              border-radius: 8px;
-              display: flex;
-              justify-content: center;
-              align-items: center;
-              margin: auto;
-              &::placeholder {
-                color: #fff;
-                font-size: 18px;
+            form{
+              display: block;
+              button {
+                background: url(../img/Group\ 54.png);
+                background-position: center center;
+                background-size: contain;
+                background-repeat: no-repeat;
+                padding: 29px 25px 29px 25px;
+                font-family: "Font Over";
+                font-style: normal;
+                font-weight: 500;
+                font-size: 22px;
+                line-height: 100%;
                 display: flex;
                 justify-content: center;
                 align-items: center;
+                text-align: center;
+                margin: auto;
+                letter-spacing: 0.1em;
+                font-feature-settings: "liga" off;
+                color: #11e5b3;
+                transition: all 0.4s;
+                border: none;
+                cursor: pointer;
+                min-width: 500px;
+                margin-top: 20px;
+                &:hover {
+                  scale: 1.1;
+                }
+              }
+              label {
+                font-family: "Exo 2";
+                font-style: normal;
+                font-weight: 300;
+                font-size: 24px;
+                line-height: 120%;
+                color: #11e5b3;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin: auto;
+              }
+              input {
+                font-family: "Exo 2";
+                font-style: normal;
+                font-weight: 300;
+                font-size: 24px;
+                line-height: 120%;
+                color: #ffffff;
+                padding: 20px 150px 25px 30px;
+                border: 1px solid #097eea;
+                outline: #11e5b3;
+                background: #001324;
+                border-radius: 40px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin: auto;
+                gap: 20px;
+                &::placeholder {
+                  color: #6c6969;
+                  font-size: 18px;
+                  display: flex;
+                  justify-content: center;
+                  align-items: center;
+                  margin: auto;
+                }
+              }
+              .form_icon{
+                margin-top: 30px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 40px;
+                transition: all 0.4s;
+                a {
+                  text-decoration: none;
+                  transition: all 0.4s;
+                  svg {
+                    width: 35px;
+                    height: 35px;
+                    display: block;
+                    transition: all 0.4s;
+                    cursor: pointer;
+                    path {
+                      transition: all 0.4s;
+                      fill {
+                        transition: all 0.4s;
+                      }
+                      fill: #9541de;
+                    }
+                  }
+                  &:nth-of-type(1) {
+                    svg {
+                      border-radius: 50%;
+                    }
+                  }
+                  &:nth-of-type(3) {
+                    svg {
+                      border-radius: 50%;
+                    }
+                  }
+                  &:hover {
+                    &:nth-of-type(1) {
+                      svg {
+                        background-color: #fff;
+                        scale: 1.2;
+                        path {
+                          fill: #269dd9;
+                        }
+                      }
+                    }
+                    &:nth-of-type(2) {
+                      svg {
+                        // background-color: #fff;
+                        scale: 1.2;
+                        path {
+                          fill: #ff0000;
+                        }
+                      }
+                    }
+                    &:nth-of-type(3) {
+                      svg {
+                        scale: 1.2;
+                        background-color: #fff;
+                        border: none;
+                        border-radius: 50%;
+                        path {
+                          fill: #097eea;
+                        }
+                      }
+                    }
+                    &:nth-of-type(4) {
+                      svg {
+                        scale: 1.2;
+                        border: none;
+                        path {
+                          fill: #097eea;
+                        }
+                      }
+                    }
+                    &:nth-of-type(5) {
+                      svg {
+                        scale: 1.2;
+                        // background-color: #fff;
+                        path {
+                          fill: #ff0000;
+                        }
+                      }
+                    }
+                  }
+                }
               }
             }
           }
         }
-        // .dropdown_button_modal_opacity {
-        //   opacity: 1;
-        //   transition: all 0.4s;
-        // }
         .section_geroy {
           width: 100%;
           display: flex;
