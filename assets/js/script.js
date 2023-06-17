@@ -3,13 +3,13 @@
 function modalFunction() {
   document.querySelector(".section_geroy_modal").classList.add("scale");
   document.querySelector("body").style.overflow = "hidden";
-  // document.querySelector(".section_geroy").style.filter = "brightness(75%)";
+  document.querySelector(".section_geroy_item").style.opacity = "0.5";
 }
 
 function removeFunction() {
   document.querySelector(".section_geroy_modal").classList.remove("scale");
   document.querySelector("body").style.overflow = "auto";
-  document.querySelector(".section_geroy").style.filter = "brightness()";
+  document.querySelector(".section_geroy_item").style.opacity = "1";
 }
 
 // var acc = document.getElementsByClassName("section_servise_main_item");
@@ -110,7 +110,23 @@ function fixed_icon_function() {
   document
     .querySelector(".fixed_icon_item")
     .classList.toggle("fixed_icon_active");
-    document
+  document
     .querySelector(".fixed_icon_button")
     .classList.toggle("fixed_icon_active");
+}
+
+function dropdown_button_modal_function() {
+  document
+    .querySelector(".dropdown_button_modal")
+    .classList.add("dropdown_button_modal_opacity");
+  document.querySelector(".section_main").style.opacity = "0.1";
+  document.querySelector("body").style.overflowY = "hidden";
+}
+
+function dropdown_button_modal_function_remove() {
+  document
+    .querySelector(".dropdown_button_modal")
+    .classList.remove("dropdown_button_modal_opacity");
+  document.querySelector("body").style.overflowY = "auto";
+  document.querySelector(".section_main").style.opacity = "1";
 }

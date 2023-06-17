@@ -540,6 +540,7 @@
   justify-content: center;
   align-items: center;
   margin-top: 140px;
+  position: relative;
 }
 * body .container main .section_main .section_main_item .section_main_item_text h2 {
   font-family: "Cyberpunk";
@@ -595,8 +596,8 @@
   z-index: 0;
   transition: all 0.4s;
   margin: auto;
-  top: -190%;
-  left: 35%;
+  top: -180%;
+  left: 78%;
   display: none;
 }
 * body .container main .section_main .section_main_item .section_main_item_text .dropdown_button i svg {
@@ -608,10 +609,9 @@
 * body .container main .section_main .section_main_item .section_main_item_text .dropdown_button i svg path {
   fill: #056b53;
 }
-* body .container main .section_main .section_main_item .section_main_item_text .dropdown_button i .dropdown_button_item {
-  position: relative;
-}
-* body .container main .section_main .section_main_item .section_main_item_text .dropdown_button i .dropdown_button_item p {
+* body .container main .section_main .section_main_item .section_main_item_text .dropdown_button p {
+  min-width: 200px;
+  position: absolute;
   font-family: monospace;
   font-style: normal;
   font-weight: 500;
@@ -623,7 +623,8 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
-  transform: translate(12px, 20px);
+  top: 15px;
+  left: -10px;
 }
 * body .container main .section_main .section_main_item .section_main_item_text .dropdown_button button {
   background: linear-gradient(10.53deg, rgba(0, 137, 105, 0.8) 13.41%, rgba(12, 30, 48, 0) 103.35%);
@@ -1392,6 +1393,117 @@
   * body .container main .section_main .section_main_item .section_main_item_text .dropdown_button button {
     margin-top: 16px;
   }
+}
+* body .container main .dropdown_button_modal {
+  padding-top: 50px;
+  transition: all 0.4s;
+  position: absolute;
+  top: 4%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 700px;
+  height: 600px;
+  background: url(https://wbsimms.com/wp-content/uploads/2015/02/VSBackgroundDark.jpg);
+  background-position: left right;
+  background-repeat: no-repeat;
+  background-size: contain;
+  border-radius: 18px;
+  opacity: 0;
+}
+* body .container main .dropdown_button_modal .remove {
+  position: absolute;
+  color: #fff;
+  border: 1px solid #fff;
+  top: 10px;
+  right: 10px;
+  font-size: 20px;
+  font-family: monospace;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.4s;
+  padding: 0px 6px 0 7px;
+  border-radius: 3px;
+}
+* body .container main .dropdown_button_modal .remove:hover {
+  color: red;
+  border: 1px solid red;
+}
+* body .container main .dropdown_button_modal .dropdown_button_modal_item {
+  display: block;
+}
+* body .container main .dropdown_button_modal .dropdown_button_modal_item button {
+  background: url(../img/Group\ 54.png);
+  background-position: center center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  padding: 21px 25px 19px 35px;
+  font-family: "Font Over";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: auto;
+  letter-spacing: 0.1em;
+  font-feature-settings: "liga" off;
+  color: #11e5b3;
+  transition: all 0.4s;
+  border: none;
+  cursor: pointer;
+  min-width: 500px;
+}
+* body .container main .dropdown_button_modal .dropdown_button_modal_item button:hover {
+  scale: 1.1;
+}
+* body .container main .dropdown_button_modal .dropdown_button_modal_item label {
+  font-family: "Exo 2";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 120%;
+  color: #11e5b3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+* body .container main .dropdown_button_modal .dropdown_button_modal_item input {
+  font-family: "Exo 2";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 120%;
+  color: #FFFFFF;
+  padding: 10px 150px 10px 10px;
+  border: none;
+  outline: none;
+  background: #001324;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+* body .container main .dropdown_button_modal .dropdown_button_modal_item input::-moz-placeholder {
+  color: #FFF;
+  font-size: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+* body .container main .dropdown_button_modal .dropdown_button_modal_item input::placeholder {
+  color: #FFF;
+  font-size: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+* body .container main .dropdown_button_modal_opacity {
+  opacity: 1;
+  transition: all 0.4s;
 }
 * body .container main .section_geroy {
   width: 100%;
@@ -2329,6 +2441,12 @@
   margin-top: 42px;
   max-width: 1253px;
 }
+* body .container main .section_logotips .section_logotips_item .section_logotips_item_img img {
+  transition: all 0.4s;
+}
+* body .container main .section_logotips .section_logotips_item .section_logotips_item_img img:hover {
+  scale: 1.2;
+}
 * body .container main .section_logotips .section_logotips_item .section_logotips_item_text {
   padding-bottom: 100px;
   margin-top: 665px;
@@ -2715,6 +2833,7 @@
   gap: 14px;
   margin-left: 45px;
   max-width: 382px;
+  transition: all 0.4s;
 }
 * body .container main .section_function .section_function_item .section_function_item_child .section_function_item_child_left .section_function_item_child_left_row3 h5 {
   font-family: "Exo 2";
@@ -3215,9 +3334,8 @@
     display: block;
   }
   * body .container main .section_function .section_function_item .section_function_item_child .section_function_item_child_left {
-    margin-top: 0px;
+    margin-top: 80px;
     margin-left: 0;
-    transform: translateY(80px);
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -3256,6 +3374,15 @@
     transform: translateX(0);
     background-position: center center;
     padding: 30px;
+    cursor: pointer;
+    transition: all 0.4s;
+  }
+  * body .container main .section_function .section_function_item .section_function_item_child .section_function_item_child_left .section_function_item_child_left_row3:hover {
+    background: url(../img/Mask\ group\ hover.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    scale: 1.1;
   }
   * body .container main .section_function .section_function_item .section_function_item_child .section_function_item_child_left .section_function_item_child_left_row3 h5 {
     font-size: 14px;
@@ -3269,6 +3396,14 @@
     transform: translateX(0);
     background-position: center center;
     padding: 30px;
+    transition: all 0.4s;
+  }
+  * body .container main .section_function .section_function_item .section_function_item_child .section_function_item_child_left .section_function_item_child_left_row4:hover {
+    background: url(../img/Mask\ group\ hover.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    scale: 1.2;
   }
   * body .container main .section_function .section_function_item .section_function_item_child .section_function_item_child_left .section_function_item_child_left_row4 h5 {
     font-size: 14px;
@@ -3282,6 +3417,14 @@
     transform: translateX(0);
     background-position: center center;
     padding: 30px;
+    transition: all 0.4s;
+  }
+  * body .container main .section_function .section_function_item .section_function_item_child .section_function_item_child_left .section_function_item_child_left_row5:hover {
+    background: url(../img/Mask\ group\ hover.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    scale: 1.3;
   }
   * body .container main .section_function .section_function_item .section_function_item_child .section_function_item_child_left .section_function_item_child_left_row5 h5 {
     font-size: 14px;
@@ -3295,6 +3438,14 @@
     transform: translateX(0);
     background-position: center center;
     padding: 30px;
+    transition: all 0.4s;
+  }
+  * body .container main .section_function .section_function_item .section_function_item_child .section_function_item_child_left .section_function_item_child_left_row6:hover {
+    background: url(../img/Mask\ group\ hover.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    scale: 1.3;
   }
   * body .container main .section_function .section_function_item .section_function_item_child .section_function_item_child_left .section_function_item_child_left_row6 h5 {
     font-size: 14px;
@@ -3308,6 +3459,14 @@
     transform: translateX(0);
     background-position: center center;
     padding: 30px;
+    transition: all 0.4s;
+  }
+  * body .container main .section_function .section_function_item .section_function_item_child .section_function_item_child_left .section_function_item_child_left_row7:hover {
+    background: url(../img/Mask\ group\ hover.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    scale: 1.3;
   }
   * body .container main .section_function .section_function_item .section_function_item_child .section_function_item_child_left .section_function_item_child_left_row7 h5 {
     font-size: 14px;
@@ -3319,7 +3478,7 @@
   * body .container main .section_function .section_function_item .section_function_item_child .swiper p {
     font-size: 24px;
     line-height: 120%;
-    margin-top: 90px;
+    margin-top: 0px;
   }
   * body .container main .section_function .section_function_item .section_function_item_child .swiper .swiper-wrapper .swiper-slide {
     background: url(../img/Слайд\ 33.png);
@@ -3428,9 +3587,8 @@
     display: block;
   }
   * body .container main .section_function .section_function_item .section_function_item_child .section_function_item_child_left {
-    margin-top: 0px;
+    margin-top: 80px;
     margin-left: 0;
-    transform: translateY(80px);
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -8311,6 +8469,9 @@
 * body .container main .section_inerfeys .section_inerfeys_item .section_inerfeys_item_child_1 ul:nth-of-type(2) li:nth-of-type(4)::before {
   display: none;
 }
+* body .container main .section_inerfeys .section_inerfeys_item .section_inerfeys_item_child_1 ul:nth-of-type(2) li:nth-of-type(4)::after:hover {
+  width: 100%;
+}
 * body .container main .section_inerfeys .section_inerfeys_item .section_inerfeys_item_child_1 ul li {
   list-style-type: none;
   font-family: "Exo 2";
@@ -8321,6 +8482,24 @@
   color: #ffffff;
   margin-top: 44px;
   position: relative;
+  transition: all 0.4s;
+  cursor: default;
+}
+* body .container main .section_inerfeys .section_inerfeys_item .section_inerfeys_item_child_1 ul li::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  background-color: #11e5b3;
+  top: 120%;
+  left: 0;
+  transition: all 0.4s;
+}
+* body .container main .section_inerfeys .section_inerfeys_item .section_inerfeys_item_child_1 ul li:hover {
+  color: #11e5b3;
+}
+* body .container main .section_inerfeys .section_inerfeys_item .section_inerfeys_item_child_1 ul li:hover::after {
+  width: 60%;
 }
 * body .container main .section_inerfeys .section_inerfeys_item .section_inerfeys_item_child_1 ul li:nth-of-type(5)::before {
   display: none;
@@ -8379,9 +8558,28 @@
   text-align: center;
   color: #11e5b3;
   margin-top: 37px;
+  position: relative;
+  transition: all 0.4s;
+  cursor: default;
 }
 * body .container main .section_inerfeys .section_inerfeys_item .section_inerfeys_item_child_2 .section_inerfeys_item_child_item h4:nth-of-type(1) {
   margin-top: 82px;
+}
+* body .container main .section_inerfeys .section_inerfeys_item .section_inerfeys_item_child_2 .section_inerfeys_item_child_item h4::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  background-color: #11e5b3;
+  top: 130%;
+  left: 0;
+  transition: all 0.4s;
+}
+* body .container main .section_inerfeys .section_inerfeys_item .section_inerfeys_item_child_2 .section_inerfeys_item_child_item h4:hover {
+  color: #11e5b3;
+}
+* body .container main .section_inerfeys .section_inerfeys_item .section_inerfeys_item_child_2 .section_inerfeys_item_child_item h4:hover::after {
+  width: 100%;
 }
 * body .container main .section_inerfeys .section_inerfeys_item .section_inerfeys_item_child_3 {
   grid-area: child3;
@@ -8427,9 +8625,28 @@
   text-align: center;
   color: #ffffff;
   margin-top: 42px;
+  position: relative;
+  transition: all 0.4s;
+  cursor: default;
 }
 * body .container main .section_inerfeys .section_inerfeys_item .section_inerfeys_item_child_3 .section_inerfeys_item_child_item_3 h4:nth-of-type(1) {
   margin-top: 82px;
+}
+* body .container main .section_inerfeys .section_inerfeys_item .section_inerfeys_item_child_3 .section_inerfeys_item_child_item_3 h4::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  background-color: #11e5b3;
+  top: 120%;
+  left: 0;
+  transition: all 0.4s;
+}
+* body .container main .section_inerfeys .section_inerfeys_item .section_inerfeys_item_child_3 .section_inerfeys_item_child_item_3 h4:hover {
+  color: #11e5b3;
+}
+* body .container main .section_inerfeys .section_inerfeys_item .section_inerfeys_item_child_3 .section_inerfeys_item_child_item_3 h4:hover::after {
+  width: 100%;
 }
 @media screen and (max-width: 1600px) {
   * body .container main .section_inerfeys .section_inerfeys_h2 h2 {
