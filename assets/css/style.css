@@ -2674,7 +2674,44 @@
     line-height: 120%;
   }
   * body .container main .section_logotips .section_logotips_item {
-    min-height: 1250px;
+    min-height: 850px;
+  }
+  * body .container main .section_logotips .section_logotips_item .section_logotips_item_img img {
+    width: 141px;
+    height: 43px;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+  * body .container main .section_logotips .section_logotips_item .section_logotips_item_text {
+    margin-top: 205px;
+    padding-bottom: 0px;
+  }
+  * body .container main .section_logotips .section_logotips_item .section_logotips_item_text .section_logotips_item_text_img {
+    width: 262px;
+  }
+  * body .container main .section_logotips .section_logotips_item .section_logotips_item_text .section_logotips_item_text_img img {
+    margin-top: 80px;
+  }
+  * body .container main .section_logotips .section_logotips_item .section_logotips_item_text h1 {
+    font-size: 100px;
+    line-height: 52px;
+  }
+  * body .container main .section_logotips .section_logotips_item .section_logotips_item_text p {
+    font-size: 14px;
+    line-height: 120%;
+    margin-top: 42px;
+  }
+}
+@media screen and (max-width: 382px) {
+  * body .container main .section_logotips {
+    margin-top: 52px;
+  }
+  * body .container main .section_logotips h4 {
+    font-size: 18px;
+    line-height: 120%;
+  }
+  * body .container main .section_logotips .section_logotips_item {
+    min-height: 950px;
   }
   * body .container main .section_logotips .section_logotips_item .section_logotips_item_img img {
     width: 141px;
@@ -2684,6 +2721,7 @@
   }
   * body .container main .section_logotips .section_logotips_item .section_logotips_item_text {
     margin-top: 105px;
+    padding-bottom: 50px;
   }
   * body .container main .section_logotips .section_logotips_item .section_logotips_item_text .section_logotips_item_text_img {
     width: 262px;
