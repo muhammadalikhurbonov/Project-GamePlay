@@ -1685,20 +1685,20 @@
           }
         }
         .dropdown_button_modal {
-          padding-top: 50px;
+          padding-top: 30px;
           transition: all 0.4s;
           position: absolute;
-          top: 4%;
+          top: 4.8%;
           left: 50%;
           transform: translate(-50%, -50%);
-          width: 700px;
-          height: 600px;
+          width: 800px;
+          height: 700px;
           background: url(https://wbsimms.com/wp-content/uploads/2015/02/VSBackgroundDark.jpg);
           background-position: left right;
           background-repeat: no-repeat;
           background-size: contain;
           border-radius: 18px;
-          opacity: 0;
+          display: none;
           .remove {
             position: absolute;
             color: #fff;
@@ -1724,7 +1724,7 @@
               background-position: center center;
               background-size: contain;
               background-repeat: no-repeat;
-              padding: 21px 25px 19px 35px;
+              padding: 29px 25px 29px 25px;
               font-family: "Font Over";
               font-style: normal;
               font-weight: 500;
@@ -1742,6 +1742,7 @@
               border: none;
               cursor: pointer;
               min-width: 500px;
+              margin-top: 20px;
               &:hover {
                 scale: 1.1;
               }
@@ -1765,7 +1766,7 @@
               font-size: 24px;
               line-height: 120%;
               color: #ffffff;
-              padding: 10px 150px 10px 10px;
+              padding: 20px 150px 25px 30px;
               border: none;
               outline: none;
               background: #001324;
@@ -1776,7 +1777,7 @@
               margin: auto;
               &::placeholder {
                 color: #fff;
-                font-size: 16px;
+                font-size: 18px;
                 display: flex;
                 justify-content: center;
                 align-items: center;
@@ -1784,10 +1785,10 @@
             }
           }
         }
-        .dropdown_button_modal_opacity {
-          opacity: 1;
-          transition: all 0.4s;
-        }
+        // .dropdown_button_modal_opacity {
+        //   opacity: 1;
+        //   transition: all 0.4s;
+        // }
         .section_geroy {
           width: 100%;
           display: flex;
