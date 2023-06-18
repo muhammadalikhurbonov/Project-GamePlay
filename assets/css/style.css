@@ -1316,8 +1316,7 @@
 }
 @media screen and (max-width: 401px) {
   * body .container main .section_main {
-    height: 100vh;
-    padding-bottom: 240px;
+    min-height: 550px;
   }
   * body .container main .section_main header .header_left ul li a {
     font-size: 12px;

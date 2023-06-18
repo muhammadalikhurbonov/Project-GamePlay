@@ -1572,8 +1572,7 @@
             }
           }
           @media screen and (max-width: 401px) {
-            height: 100vh;
-            padding-bottom: 240px;
+            min-height: 550px;
             header {
               .header_left {
                 ul {
