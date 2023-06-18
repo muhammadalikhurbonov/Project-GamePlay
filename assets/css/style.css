@@ -1215,7 +1215,7 @@
 }
 @media screen and (max-width: 435px) {
   * body .container main .section_main {
-    padding-bottom: 130px;
+    padding-bottom: 150px;
     height: auto;
   }
   * body .container main .section_main header .header_left ul li a {
@@ -1251,7 +1251,7 @@
     margin-top: 12px;
   }
   * body .container main .section_main .section_main_item .section_main_item_width {
-    margin-top: 20;
+    margin-top: 30;
     max-width: 250px;
   }
   * body .container main .section_main .section_main_item .section_main_item_width .section_main_item_child .section_main_item_child_row:first-of-type {
@@ -1286,7 +1286,7 @@
   * body .container main .section_main .section_main_item .section_main_item_text h2 {
     font-size: 80px;
     line-height: 88px;
-    margin-top: 25;
+    margin-top: 35;
   }
   * body .container main .section_main .section_main_item .section_main_item_text h4 {
     font-size: 18px;
