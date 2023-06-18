@@ -836,6 +836,15 @@
               }
             }
           }
+          @media screen and (max-width:1497px){
+            height: auto;
+            padding-bottom: 140px;
+            .section_main_item{
+              .section_main_item_text{
+                margin-top: 100px;
+              }
+            }
+          }
           @media screen and (max-width: 1163px) {
             background-position: center center;
             .section_main_item {
@@ -1559,6 +1568,7 @@
             }
           }
           @media screen and (max-width: 401px) {
+            height: 100vh;
             header {
               .header_left {
                 ul {

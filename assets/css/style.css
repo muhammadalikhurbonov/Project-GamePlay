@@ -751,6 +751,15 @@
     height: 20px;
   }
 }
+@media screen and (max-width: 1497px) {
+  * body .container main .section_main {
+    height: auto;
+    padding-bottom: 140px;
+  }
+  * body .container main .section_main .section_main_item .section_main_item_text {
+    margin-top: 100px;
+  }
+}
 @media screen and (max-width: 1163px) {
   * body .container main .section_main {
     background-position: center center;
@@ -1298,6 +1307,9 @@
   }
 }
 @media screen and (max-width: 401px) {
+  * body .container main .section_main {
+    height: 100vh;
+  }
   * body .container main .section_main header .header_left ul li a {
     font-size: 12px;
     line-height: 120%;
