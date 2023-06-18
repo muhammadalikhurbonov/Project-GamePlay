@@ -66,7 +66,7 @@ function fixed_icon_function() {
 function dropdown_button_modal_function() {
   document.querySelector(".dropdown_button_modal").style.display = "block";
   document.querySelector(".section_main").style.opacity = "0.1";
-  document.querySelector("body").style.overflowY = "hidden";
+  // document.querySelector("body").style.overflowY = "hidden";
 }
 
 function dropdown_button_modal_function_remove() {
