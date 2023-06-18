@@ -1597,6 +1597,271 @@
 * body .container main .dropdown_button_modal .dropdown_button_modal_item form .form_icon a:hover:nth-of-type(5) svg path {
   fill: #ff0000;
 }
+@media screen and (max-width: 1300px) {
+  * body .container main .dropdown_button_modal {
+    height: 600px;
+    top: 4.2%;
+  }
+  * body .container main .dropdown_button_modal .dropdown_button_modal_item form button {
+    font-size: 22px;
+    line-height: 100%;
+    padding: 29px 25px 29px 25px;
+    min-width: 450px;
+    margin-top: 10px;
+  }
+  * body .container main .dropdown_button_modal .dropdown_button_modal_item form input {
+    padding: 15px 140px 20px 25px;
+    font-size: 24px;
+    line-height: 120%;
+  }
+  * body .container main .dropdown_button_modal .dropdown_button_modal_item form label {
+    font-size: 24px;
+    line-height: 120%;
+  }
+}
+@media screen and (max-width: 955px) {
+  * body .container main .dropdown_button_modal {
+    height: 550px;
+    width: 600px;
+    padding-top: 20px;
+    top: 4.2%;
+  }
+  * body .container main .dropdown_button_modal .dropdown_button_modal_item form button {
+    font-size: 20px;
+    line-height: 100%;
+    padding: 24px 20px;
+    min-width: 450px;
+    margin-top: 10px;
+  }
+  * body .container main .dropdown_button_modal .dropdown_button_modal_item form input {
+    padding: 10px 130px 15px 20px;
+    font-size: 22px;
+    line-height: 120%;
+  }
+  * body .container main .dropdown_button_modal .dropdown_button_modal_item form label {
+    font-size: 22px;
+    line-height: 120%;
+  }
+  * body .container main .dropdown_button_modal .dropdown_button_modal_item form .form_icon {
+    gap: 30px;
+    margin-top: 30px;
+  }
+  * body .container main .dropdown_button_modal .dropdown_button_modal_item form .form_icon a svg {
+    width: 30px;
+    height: 30px;
+  }
+}
+@media screen and (max-width: 777px) {
+  * body .container main .dropdown_button_modal {
+    height: 550px;
+    width: 600px;
+    padding-top: 20px;
+    top: 4.2%;
+  }
+  * body .container main .dropdown_button_modal .dropdown_button_modal_item form button {
+    font-size: 20px;
+    line-height: 100%;
+    padding: 24px 20px;
+    min-width: 450px;
+    margin-top: 10px;
+  }
+  * body .container main .dropdown_button_modal .dropdown_button_modal_item form input {
+    padding: 10px 130px 15px 20px;
+    font-size: 22px;
+    line-height: 120%;
+  }
+  * body .container main .dropdown_button_modal .dropdown_button_modal_item form label {
+    font-size: 22px;
+    line-height: 120%;
+  }
+  * body .container main .dropdown_button_modal .dropdown_button_modal_item form .form_icon {
+    gap: 30px;
+    margin-top: 30px;
+  }
+  * body .container main .dropdown_button_modal .dropdown_button_modal_item form .form_icon a svg {
+    width: 30px;
+    height: 30px;
+  }
+}
+@media screen and (max-width: 678px) {
+  * body .container main .dropdown_button_modal {
+    height: 470px;
+    width: 500px;
+    padding-top: 20px;
+    top: 4.2%;
+  }
+  * body .container main .dropdown_button_modal .dropdown_button_modal_item form button {
+    font-size: 18px;
+    line-height: 100%;
+    padding: 24px 20px;
+    min-width: 400px;
+    margin-top: 10px;
+  }
+  * body .container main .dropdown_button_modal .dropdown_button_modal_item form input {
+    padding: 5px 100px 10px 15px;
+    font-size: 22px;
+    line-height: 120%;
+  }
+  * body .container main .dropdown_button_modal .dropdown_button_modal_item form input::-moz-placeholder {
+    font-size: 14px;
+    padding-left: 15px;
+  }
+  * body .container main .dropdown_button_modal .dropdown_button_modal_item form input::placeholder {
+    font-size: 14px;
+    padding-left: 15px;
+  }
+  * body .container main .dropdown_button_modal .dropdown_button_modal_item form label {
+    font-size: 20px;
+    line-height: 120%;
+    transform: translateY(7px);
+  }
+  * body .container main .dropdown_button_modal .dropdown_button_modal_item form .form_icon {
+    gap: 25px;
+    margin-top: 20px;
+  }
+  * body .container main .dropdown_button_modal .dropdown_button_modal_item form .form_icon a svg {
+    width: 25px;
+    height: 25px;
+  }
+}
+@media screen and (max-width: 542px) {
+  * body .container main .dropdown_button_modal {
+    height: 450px;
+    width: 400px;
+    padding-top: 20px;
+    top: 4%;
+  }
+  * body .container main .dropdown_button_modal .remove {
+    font-size: 16px;
+    padding: 0 5px 0 6px;
+  }
+  * body .container main .dropdown_button_modal .dropdown_button_modal_item form button {
+    font-size: 16px;
+    line-height: 100%;
+    padding: 18px 16px;
+    min-width: 300px;
+    margin-top: 10px;
+  }
+  * body .container main .dropdown_button_modal .dropdown_button_modal_item form input {
+    padding: 5px 30px 10px 15px;
+    font-size: 18px;
+    line-height: 120%;
+    padding-left: 20px;
+  }
+  * body .container main .dropdown_button_modal .dropdown_button_modal_item form input::-moz-placeholder {
+    font-size: 14px;
+    padding-left: 0px;
+  }
+  * body .container main .dropdown_button_modal .dropdown_button_modal_item form input::placeholder {
+    font-size: 14px;
+    padding-left: 0px;
+  }
+  * body .container main .dropdown_button_modal .dropdown_button_modal_item form label {
+    font-size: 20px;
+    line-height: 120%;
+    transform: translateY(7px);
+  }
+  * body .container main .dropdown_button_modal .dropdown_button_modal_item form .form_icon {
+    gap: 25px;
+    margin-top: 20px;
+  }
+  * body .container main .dropdown_button_modal .dropdown_button_modal_item form .form_icon a svg {
+    width: 22px;
+    height: 22px;
+  }
+}
+@media screen and (max-width: 433px) {
+  * body .container main .dropdown_button_modal {
+    height: 450px;
+    width: 350px;
+    padding-top: 20px;
+    top: 4%;
+  }
+  * body .container main .dropdown_button_modal .remove {
+    font-size: 16px;
+    padding: 0 5px 0 6px;
+  }
+  * body .container main .dropdown_button_modal .dropdown_button_modal_item form button {
+    font-size: 14px;
+    line-height: 100%;
+    padding: 16px 14px;
+    min-width: 300px;
+    margin-top: 10px;
+  }
+  * body .container main .dropdown_button_modal .dropdown_button_modal_item form input {
+    padding: 5px 30px 10px 15px;
+    font-size: 16px;
+    line-height: 120%;
+    padding-left: 20px;
+  }
+  * body .container main .dropdown_button_modal .dropdown_button_modal_item form input::-moz-placeholder {
+    font-size: 14px;
+    padding-left: 0px;
+  }
+  * body .container main .dropdown_button_modal .dropdown_button_modal_item form input::placeholder {
+    font-size: 14px;
+    padding-left: 0px;
+  }
+  * body .container main .dropdown_button_modal .dropdown_button_modal_item form label {
+    font-size: 20px;
+    line-height: 120%;
+    transform: translateY(7px);
+  }
+  * body .container main .dropdown_button_modal .dropdown_button_modal_item form .form_icon {
+    gap: 25px;
+    margin-top: 20px;
+  }
+  * body .container main .dropdown_button_modal .dropdown_button_modal_item form .form_icon a svg {
+    width: 22px;
+    height: 22px;
+  }
+}
+@media screen and (max-width: 383px) {
+  * body .container main .dropdown_button_modal {
+    height: 400px;
+    width: 300px;
+    padding-top: 5px;
+    top: 4%;
+  }
+  * body .container main .dropdown_button_modal .remove {
+    font-size: 14px;
+    padding: 0 4px 0 5px;
+  }
+  * body .container main .dropdown_button_modal .dropdown_button_modal_item form button {
+    font-size: 14px;
+    line-height: 100%;
+    padding: 16px 14px;
+    min-width: 300px;
+    margin-top: 10px;
+  }
+  * body .container main .dropdown_button_modal .dropdown_button_modal_item form input {
+    padding: 5px 30px 10px 15px;
+    font-size: 16px;
+    line-height: 120%;
+    padding-left: 20px;
+  }
+  * body .container main .dropdown_button_modal .dropdown_button_modal_item form input::-moz-placeholder {
+    font-size: 14px;
+    padding-left: 0px;
+  }
+  * body .container main .dropdown_button_modal .dropdown_button_modal_item form input::placeholder {
+    font-size: 14px;
+    padding-left: 0px;
+  }
+  * body .container main .dropdown_button_modal .dropdown_button_modal_item form label {
+    font-size: 18px;
+    line-height: 120%;
+    transform: translateY(10px);
+  }
+  * body .container main .dropdown_button_modal .dropdown_button_modal_item form .form_icon {
+    gap: 15px;
+    margin-top: 15px;
+  }
+  * body .container main .dropdown_button_modal .dropdown_button_modal_item form .form_icon a svg {
+    width: 20px;
+    height: 20px;
+  }
+}
 * body .container main .section_geroy {
   width: 100%;
   display: flex;

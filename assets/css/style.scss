@@ -836,11 +836,11 @@
               }
             }
           }
-          @media screen and (max-width:1497px){
+          @media screen and (max-width: 1497px) {
             height: auto;
             padding-bottom: 140px;
-            .section_main_item{
-              .section_main_item_text{
+            .section_main_item {
+              .section_main_item_text {
                 margin-top: 100px;
               }
             }
@@ -1554,7 +1554,6 @@
                   margin-top: 50px;
                 }
                 .dropdown_button {
-
                   button {
                     font-size: 16px;
                     line-height: 100%;
@@ -1736,7 +1735,7 @@
             }
           }
           .dropdown_button_modal_item {
-            form{
+            form {
               display: block;
               button {
                 background: url(../img/Group\ 54.png);
@@ -1804,7 +1803,7 @@
                   margin: auto;
                 }
               }
-              .form_icon{
+              .form_icon {
                 margin-top: 30px;
                 display: flex;
                 justify-content: center;
@@ -1885,6 +1884,281 @@
                           fill: #ff0000;
                         }
                       }
+                    }
+                  }
+                }
+              }
+            }
+          }
+          @media screen and (max-width: 1300px) {
+            height: 600px;
+            top: 4.2%;
+            .dropdown_button_modal_item {
+              form {
+                button {
+                  font-size: 22px;
+                  line-height: 100%;
+                  padding: 29px 25px 29px 25px;
+                  min-width: 450px;
+                  margin-top: 10px;
+                }
+                input {
+                  padding: 15px 140px 20px 25px;
+                  font-size: 24px;
+                  line-height: 120%;
+                }
+                label {
+                  font-size: 24px;
+                  line-height: 120%;
+                }
+              }
+            }
+          }
+          @media screen and (max-width: 955px) {
+            height: 550px;
+            width: 600px;
+            padding-top: 20px;
+            top: 4.2%;
+            .dropdown_button_modal_item {
+              form {
+                button {
+                  font-size: 20px;
+                  line-height: 100%;
+                  padding: 24px 20px;
+                  min-width: 450px;
+                  margin-top: 10px;
+                }
+                input {
+                  padding: 10px 130px 15px 20px;
+                  font-size: 22px;
+                  line-height: 120%;
+                }
+                label {
+                  font-size: 22px;
+                  line-height: 120%;
+                }
+                .form_icon {
+                  gap: 30px;
+                  margin-top: 30px;
+                  a {
+                    svg {
+                      width: 30px;
+                      height: 30px;
+                    }
+                  }
+                }
+              }
+            }
+          }
+          @media screen and (max-width: 777px) {
+            height: 550px;
+            width: 600px;
+            padding-top: 20px;
+            top: 4.2%;
+            .dropdown_button_modal_item {
+              form {
+                button {
+                  font-size: 20px;
+                  line-height: 100%;
+                  padding: 24px 20px;
+                  min-width: 450px;
+                  margin-top: 10px;
+                }
+                input {
+                  padding: 10px 130px 15px 20px;
+                  font-size: 22px;
+                  line-height: 120%;
+                }
+                label {
+                  font-size: 22px;
+                  line-height: 120%;
+                }
+                .form_icon {
+                  gap: 30px;
+                  margin-top: 30px;
+                  a {
+                    svg {
+                      width: 30px;
+                      height: 30px;
+                    }
+                  }
+                }
+              }
+            }
+          }
+          @media screen and (max-width: 678px) {
+            height: 470px;
+            width: 500px;
+            padding-top: 20px;
+            top: 4.2%;
+            .dropdown_button_modal_item {
+              form {
+                button {
+                  font-size: 18px;
+                  line-height: 100%;
+                  padding: 24px 20px;
+                  min-width: 400px;
+                  margin-top: 10px;
+                }
+                input {
+                  padding: 5px 100px 10px 15px;
+                  font-size: 22px;
+                  line-height: 120%;
+                  &::placeholder {
+                    font-size: 14px;
+                    padding-left: 15px;
+                  }
+                }
+                label {
+                  font-size: 20px;
+                  line-height: 120%;
+                  transform: translateY(7px);
+                }
+                .form_icon {
+                  gap: 25px;
+                  margin-top: 20px;
+                  a {
+                    svg {
+                      width: 25px;
+                      height: 25px;
+                    }
+                  }
+                }
+              }
+            }
+          }
+          @media screen and (max-width: 542px) {
+            height: 450px;
+            width: 400px;
+            padding-top: 20px;
+            top: 4%;
+            .remove {
+              font-size: 16px;
+              padding: 0 5px 0 6px;
+            }
+            .dropdown_button_modal_item {
+              form {
+                button {
+                  font-size: 16px;
+                  line-height: 100%;
+                  padding: 18px 16px;
+                  min-width: 300px;
+                  margin-top: 10px;
+                }
+                input {
+                  padding: 5px 30px 10px 15px;
+                  font-size: 18px;
+                  line-height: 120%;
+                  padding-left: 20px;
+                  &::placeholder {
+                    font-size: 14px;
+                    padding-left: 0px;
+                  }
+                }
+                label {
+                  font-size: 20px;
+                  line-height: 120%;
+                  transform: translateY(7px);
+                }
+                .form_icon {
+                  gap: 25px;
+                  margin-top: 20px;
+                  a {
+                    svg {
+                      width: 22px;
+                      height: 22px;
+                    }
+                  }
+                }
+              }
+            }
+          }
+          @media screen and (max-width: 433px) {
+            height: 450px;
+            width: 350px;
+            padding-top: 20px;
+            top: 4%;
+            .remove {
+              font-size: 16px;
+              padding: 0 5px 0 6px;
+            }
+            .dropdown_button_modal_item {
+              form {
+                button {
+                  font-size: 14px;
+                  line-height: 100%;
+                  padding: 16px 14px;
+                  min-width: 300px;
+                  margin-top: 10px;
+                }
+                input {
+                  padding: 5px 30px 10px 15px;
+                  font-size: 16px;
+                  line-height: 120%;
+                  padding-left: 20px;
+                  &::placeholder {
+                    font-size: 14px;
+                    padding-left: 0px;
+                  }
+                }
+                label {
+                  font-size: 20px;
+                  line-height: 120%;
+                  transform: translateY(7px);
+                }
+                .form_icon {
+                  gap: 25px;
+                  margin-top: 20px;
+                  a {
+                    svg {
+                      width: 22px;
+                      height: 22px;
+                    }
+                  }
+                }
+              }
+            }
+          }
+          @media screen and (max-width: 383px) {
+            height: 400px;
+            width: 300px;
+            padding-top: 5px;
+            top: 4%;
+            .remove {
+              font-size: 14px;
+              padding: 0 4px 0 5px;
+            }
+            .dropdown_button_modal_item {
+              form {
+                button {
+                  font-size: 14px;
+                  line-height: 100%;
+                  padding: 16px 14px;
+                  min-width: 300px;
+                  margin-top: 10px;
+                }
+                input {
+                  padding: 5px 30px 10px 15px;
+                  font-size: 16px;
+                  line-height: 120%;
+                  padding-left: 20px;
+                  &::placeholder {
+                    font-size: 14px;
+                    padding-left: 0px;
+                  }
+                }
+                label {
+                  font-size: 18px;
+                  line-height: 120%;
+                  transform: translateY(10px);
+                }
+                .form_icon {
+                  gap: 15px;
+                  margin-top: 15px;
+                  a {
+                    svg {
+                      width: 20px;
+                      height: 20px;
                     }
                   }
                 }
