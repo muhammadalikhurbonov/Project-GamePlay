@@ -1216,7 +1216,7 @@
 @media screen and (max-width: 435px) {
   * body .container main .section_main {
     padding-bottom: 150px;
-    height: auto;
+    height: 100vh;
   }
   * body .container main .section_main header .header_left ul li a {
     font-size: 10px;
