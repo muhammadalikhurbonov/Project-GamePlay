@@ -1318,7 +1318,7 @@
 }
 @media screen and (max-width: 401px) {
   * body .container main .section_main {
-    min-height: 700px;
+    height: 100vh;
   }
   * body .container main .section_main header .header_left ul li a {
     font-size: 12px;
