@@ -1316,7 +1316,7 @@
 }
 @media screen and (max-width: 401px) {
   * body .container main .section_main {
-    min-height: 700px;
+    min-height: 730px;
   }
   * body .container main .section_main header .header_left ul li a {
     font-size: 12px;
@@ -1393,7 +1393,7 @@
     width: 24px;
   }
   * body .container main .section_main .section_main_item .section_main_item_text {
-    margin-top: 0px;
+    margin-top: 30px;
   }
   * body .container main .section_main .section_main_item .section_main_item_text h2 {
     font-size: 70px;
