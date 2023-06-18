@@ -2497,6 +2497,153 @@
     line-height: 20px;
   }
 }
+@media screen and (max-width: 1404px) {
+  * body .container main .section_geroy .section_geroy_item .section_geroy_item_child {
+    max-width: 355px;
+    max-height: 669px;
+  }
+  * body .container main .section_geroy .section_geroy_item .section_geroy_item_child:nth-of-type(1) .name_box {
+    margin-top: 150px;
+  }
+  * body .container main .section_geroy .section_geroy_item .section_geroy_item_child:nth-of-type(1) .information_box {
+    min-height: 100px;
+    margin-top: 0px;
+  }
+  * body .container main .section_geroy .section_geroy_item .section_geroy_item_child:nth-of-type(1) .information_box span svg {
+    margin-top: 23px;
+  }
+  * body .container main .section_geroy .section_geroy_item .section_geroy_item_child:nth-of-type(1) .information_box p {
+    font-size: 15px;
+    line-height: 120%;
+    margin-top: 21px;
+  }
+  * body .container main .section_geroy .section_geroy_item .section_geroy_item_child:nth-of-type(2) .name_box {
+    margin-top: 115px;
+  }
+  * body .container main .section_geroy .section_geroy_item .section_geroy_item_child:nth-of-type(2) .information_box {
+    min-height: 100px;
+    margin-top: 0;
+  }
+  * body .container main .section_geroy .section_geroy_item .section_geroy_item_child:nth-of-type(2) .information_box span svg {
+    margin-top: 23px;
+  }
+  * body .container main .section_geroy .section_geroy_item .section_geroy_item_child:nth-of-type(2) .information_box p {
+    font-size: 14px;
+    line-height: 120%;
+  }
+  * body .container main .section_geroy .section_geroy_item .section_geroy_item_child:nth-of-type(3) .name_box {
+    margin-top: 115px;
+  }
+  * body .container main .section_geroy .section_geroy_item .section_geroy_item_child:nth-of-type(3) .information_box {
+    margin-top: 0;
+    min-height: 100px;
+  }
+  * body .container main .section_geroy .section_geroy_item .section_geroy_item_child:nth-of-type(3) .information_box span svg {
+    margin-top: 23px;
+  }
+  * body .container main .section_geroy .section_geroy_item .section_geroy_item_child:nth-of-type(3) .information_box p {
+    font-size: 15px;
+    line-height: 120%;
+  }
+  * body .container main .section_geroy .section_geroy_item .section_geroy_item_child:nth-of-type(4) .name_box {
+    margin-top: 115px;
+  }
+  * body .container main .section_geroy .section_geroy_item .section_geroy_item_child:nth-of-type(4) .information_box {
+    margin-top: 0;
+    min-height: 100px;
+  }
+  * body .container main .section_geroy .section_geroy_item .section_geroy_item_child:nth-of-type(4) .information_box span svg {
+    margin-top: 23px;
+  }
+  * body .container main .section_geroy .section_geroy_item .section_geroy_item_child:nth-of-type(4) .information_box p {
+    font-size: 15px;
+    line-height: 120%;
+  }
+  * body .container main .section_geroy .section_geroy_item .section_geroy_item_child:nth-of-type(5) .name_box {
+    margin-top: 115px;
+  }
+  * body .container main .section_geroy .section_geroy_item .section_geroy_item_child:nth-of-type(5) .information_box {
+    margin-top: 0;
+    min-height: 100px;
+  }
+  * body .container main .section_geroy .section_geroy_item .section_geroy_item_child:nth-of-type(5) .information_box span svg {
+    margin-top: 23px;
+  }
+  * body .container main .section_geroy .section_geroy_item .section_geroy_item_child:nth-of-type(5) .information_box p {
+    font-size: 15px;
+    line-height: 120%;
+  }
+  * body .container main .section_geroy .section_geroy_item .section_geroy_item_child:nth-of-type(6) .name_box {
+    margin-top: 115px;
+  }
+  * body .container main .section_geroy .section_geroy_item .section_geroy_item_child:nth-of-type(6) .information_box {
+    margin-top: 0;
+    min-height: 100px;
+  }
+  * body .container main .section_geroy .section_geroy_item .section_geroy_item_child:nth-of-type(6) .information_box span svg {
+    margin-top: 23px;
+  }
+  * body .container main .section_geroy .section_geroy_item .section_geroy_item_child:nth-of-type(6) .information_box p {
+    font-size: 15px;
+    line-height: 120%;
+  }
+  * body .container main .section_geroy .section_geroy_item .section_geroy_item_child:nth-of-type(7) .name_box {
+    margin-top: 115px;
+  }
+  * body .container main .section_geroy .section_geroy_item .section_geroy_item_child:nth-of-type(7) .information_box {
+    margin-top: 0;
+    min-height: 100px;
+  }
+  * body .container main .section_geroy .section_geroy_item .section_geroy_item_child:nth-of-type(7) .information_box span svg {
+    margin-top: 23px;
+  }
+  * body .container main .section_geroy .section_geroy_item .section_geroy_item_child:nth-of-type(7) .information_box p {
+    font-size: 15px;
+    line-height: 120%;
+  }
+  * body .container main .section_geroy .section_geroy_item .section_geroy_item_child .img_box {
+    width: 251px;
+    height: 350px;
+    overflow: hidden;
+  }
+  * body .container main .section_geroy .section_geroy_item .section_geroy_item_child .geroy_box {
+    background-size: contain;
+  }
+  * body .container main .section_geroy .section_geroy_item .section_geroy_item_child .geroy_box h4 {
+    font-size: 9px;
+    line-height: 120%;
+  }
+  * body .container main .section_geroy .section_geroy_item .section_geroy_item_child .name_box h2 {
+    font-size: 30px;
+    line-height: 100%;
+    padding: 22px 9px 16px 15px;
+  }
+  * body .container main .section_geroy .section_geroy_item .section_geroy_item_child .klan_box {
+    padding-bottom: 20px;
+  }
+  * body .container main .section_geroy .section_geroy_item .section_geroy_item_child .klan_box .klan_box_item {
+    gap: 15px;
+  }
+  * body .container main .section_geroy .section_geroy_item .section_geroy_item_child .klan_box .klan_box_item .klan_box_item_text h5 {
+    font-size: 12px;
+    line-height: 130%;
+  }
+  * body .container main .section_geroy .section_geroy_item .section_geroy_item_child .klan_box .klan_box_item .klan_box_item_text p {
+    font-size: 16px;
+    line-height: 20px;
+  }
+  * body .container main .section_geroy .section_geroy_item .section_geroy_item_child .klan_box .klass_box_item {
+    gap: 15px;
+  }
+  * body .container main .section_geroy .section_geroy_item .section_geroy_item_child .klan_box .klass_box_item .klass_box_item_text h5 {
+    font-size: 12px;
+    line-height: 130%;
+  }
+  * body .container main .section_geroy .section_geroy_item .section_geroy_item_child .klan_box .klass_box_item .klass_box_item_text p {
+    font-size: 16px;
+    line-height: 20px;
+  }
+}
 @media screen and (max-width: 388px) {
   * body .container main .section_geroy .section_geroy_item .section_geroy_item_child {
     margin-left: 0px;
