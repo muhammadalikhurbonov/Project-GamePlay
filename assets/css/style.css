@@ -1215,7 +1215,7 @@
 }
 @media screen and (max-width: 435px) {
   * body .container main .section_main {
-    padding-bottom: 100px;
+    padding-bottom: 130px;
     height: auto;
   }
   * body .container main .section_main header .header_left ul li a {
@@ -1300,7 +1300,7 @@
   * body .container main .section_main .section_main_item .section_main_item_text p {
     font-size: 14px;
     line-height: 130%;
-    margin-top: 35px;
+    margin-top: 50px;
   }
   * body .container main .section_main .section_main_item .section_main_item_text .dropdown_button button {
     font-size: 16px;
