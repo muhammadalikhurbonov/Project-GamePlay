@@ -9357,7 +9357,7 @@
   color: #11e5b3;
 }
 * body .container main .section_inerfeys .section_inerfeys_item .section_inerfeys_item_child_1 ul li:hover::after {
-  width: 60%;
+  width: 100%;
 }
 * body .container main .section_inerfeys .section_inerfeys_item .section_inerfeys_item_child_1 ul li:nth-of-type(5)::before {
   display: none;
