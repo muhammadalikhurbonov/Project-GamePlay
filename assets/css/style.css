@@ -554,6 +554,9 @@
   color: #ffffff;
   mix-blend-mode: normal;
 }
+* body .container main .section_main .section_main_item .section_main_item_text h2 span {
+  display: inline-block;
+}
 * body .container main .section_main .section_main_item .section_main_item_text h4 {
   font-family: "Exo 2";
   font-style: normal;
@@ -1428,12 +1431,154 @@
   transform: translate(-50%, -50%);
   width: 700px;
   height: 650px;
-  background: url(https://static.vecteezy.com/system/resources/thumbnails/003/988/049/small/realistic-black-wood-plank-background-vector.jpg);
+  background-color: #010101;
   background-position: left right;
   background-repeat: no-repeat;
   background-size: cover;
   border-radius: 18px;
   display: none;
+}
+* body .container main .dropdown_button_modal .lines {
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  left: 0%;
+  height: 100%;
+  margin: auto;
+  width: 11vw;
+}
+* body .container main .dropdown_button_modal .lines .line {
+  position: absolute;
+  width: 1px;
+  height: 100%;
+  top: 0;
+  left: 50%;
+  background: rgba(255, 255, 255, 0.1);
+  overflow: hidden;
+}
+* body .container main .dropdown_button_modal .lines .line::after {
+  content: "";
+  display: block;
+  position: absolute;
+  height: 15vh;
+  width: 100%;
+  top: -50%;
+  left: 0;
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, #ffffff 75%, #ffffff 100%);
+  animation: drop 7s 0s infinite;
+  animation-fill-mode: forwards;
+  animation-timing-function: cubic-bezier(0.4, 0.26, 0, 0.97);
+}
+* body .container main .dropdown_button_modal .lines .line:nth-child(1) {
+  margin-left: -25%;
+}
+* body .container main .dropdown_button_modal .lines .line:nth-child(1)::after {
+  animation-delay: -1;
+  animation-timing-function: linear;
+}
+* body .container main .dropdown_button_modal .lines .line:nth-child(2) {
+  margin-left: 25%;
+}
+* body .container main .dropdown_button_modal .lines .line:nth-child(2)::after {
+  animation-timing-function: linear;
+  animation-delay: -2s;
+}
+* body .container main .dropdown_button_modal .lines .line:nth-child(3)::after {
+  animation-timing-function: linear;
+  animation-delay: -3s;
+  margin-left: 50%;
+}
+* body .container main .dropdown_button_modal .lines .line:nth-child(4) {
+  margin-left: 75%;
+}
+* body .container main .dropdown_button_modal .lines .line:nth-child(4)::after {
+  animation-timing-function: linear;
+  animation-delay: -4s;
+}
+* body .container main .dropdown_button_modal .lines .line:nth-child(5) {
+  margin-left: 100%;
+}
+* body .container main .dropdown_button_modal .lines .line:nth-child(5)::after {
+  animation-timing-function: linear;
+  animation-delay: -5s;
+}
+* body .container main .dropdown_button_modal .lines .line:nth-child(6) {
+  margin-left: 125%;
+}
+* body .container main .dropdown_button_modal .lines .line:nth-child(6)::after {
+  animation-timing-function: linear;
+  animation-delay: -6s;
+}
+* body .container main .dropdown_button_modal .lines .line:nth-child(7) {
+  margin-left: 150%;
+}
+* body .container main .dropdown_button_modal .lines .line:nth-child(7)::after {
+  animation-timing-function: linear;
+  animation-delay: -7s;
+}
+* body .container main .dropdown_button_modal .lines .line:nth-child(8) {
+  margin-left: 175%;
+}
+* body .container main .dropdown_button_modal .lines .line:nth-child(8)::after {
+  animation-timing-function: linear;
+  animation-delay: -8s;
+}
+* body .container main .dropdown_button_modal .lines .line:nth-child(9) {
+  margin-left: 200%;
+}
+* body .container main .dropdown_button_modal .lines .line:nth-child(9)::after {
+  animation-timing-function: linear;
+  animation-delay: -9s;
+}
+* body .container main .dropdown_button_modal .lines .line:nth-child(10) {
+  margin-left: 225%;
+}
+* body .container main .dropdown_button_modal .lines .line:nth-child(10)::after {
+  animation-timing-function: linear;
+  animation-delay: -10s;
+}
+* body .container main .dropdown_button_modal .lines .line:nth-child(11) {
+  margin-left: 250%;
+}
+* body .container main .dropdown_button_modal .lines .line:nth-child(11)::after {
+  animation-timing-function: linear;
+  animation-delay: -11s;
+}
+* body .container main .dropdown_button_modal .lines .line:nth-child(12) {
+  margin-left: 275%;
+}
+* body .container main .dropdown_button_modal .lines .line:nth-child(12)::after {
+  animation-timing-function: linear;
+  animation-delay: -12s;
+}
+* body .container main .dropdown_button_modal .lines .line:nth-child(13) {
+  margin-left: 300%;
+}
+* body .container main .dropdown_button_modal .lines .line:nth-child(13)::after {
+  animation-timing-function: linear;
+  animation-delay: -13s;
+}
+* body .container main .dropdown_button_modal .lines .line:nth-child(14) {
+  margin-left: 325%;
+}
+* body .container main .dropdown_button_modal .lines .line:nth-child(14)::after {
+  animation-timing-function: linear;
+  animation-delay: -14s;
+}
+* body .container main .dropdown_button_modal .lines .line:nth-child(15) {
+  margin-left: 355%;
+}
+* body .container main .dropdown_button_modal .lines .line:nth-child(15)::after {
+  animation-timing-function: linear;
+  animation-delay: -15s;
+}
+@keyframes drop {
+  0% {
+    top: -50%;
+  }
+  100% {
+    top: 110%;
+  }
 }
 * body .container main .dropdown_button_modal .remove {
   position: absolute;
@@ -1454,6 +1599,7 @@
   border: 1px solid red;
 }
 * body .container main .dropdown_button_modal .dropdown_button_modal_item form {
+  z-index: 2;
   display: block;
 }
 * body .container main .dropdown_button_modal .dropdown_button_modal_item form button {
@@ -2266,7 +2412,7 @@
   content: none;
 }
 * body .container main .section_geroy .section_geroy_modal {
-  background: url(../img/Review\ .png);
+  background: url(https://images3.alphacoders.com/919/919075.jpg);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -2322,7 +2468,6 @@
 }
 * body .container main .section_geroy .section_geroy_modal .section_geroy_modal_item .modal_name_box {
   z-index: 99 !important;
-  background: url(../img/name_box\ background.png);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: contain;
@@ -2340,7 +2485,6 @@
   color: #ffffff;
 }
 * body .container main .section_geroy .section_geroy_modal .section_geroy_modal_item .modal_klan_box {
-  background: url(../img/klan_box\ background.png);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;

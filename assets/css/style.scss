@@ -328,6 +328,7 @@
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
+
             .header_modal_item {
               background: url(../img/Окно\ системы.png);
               background-position: center center;
@@ -608,6 +609,9 @@
                 font-feature-settings: "liga" off;
                 color: #ffffff;
                 mix-blend-mode: normal;
+                span {
+                  display: inline-block;
+                }
               }
               h4 {
                 font-family: "Exo 2";
@@ -1711,12 +1715,164 @@
           transform: translate(-50%, -50%);
           width: 700px;
           height: 650px;
-          background: url(https://static.vecteezy.com/system/resources/thumbnails/003/988/049/small/realistic-black-wood-plank-background-vector.jpg);
+          // background: url(https://static.vecteezy.com/system/resources/thumbnails/003/988/049/small/realistic-black-wood-plank-background-vector.jpg);
+          background-color: #010101;
           background-position: left right;
           background-repeat: no-repeat;
           background-size: cover;
           border-radius: 18px;
           display: none;
+          .lines {
+            z-index: -1;
+            position: absolute;
+            top: 0;
+            left: 0%;
+            height: 100%;
+            margin: auto;
+            width: 11vw;
+            .line {
+              position: absolute;
+              width: 1px;
+              height: 100%;
+              top: 0;
+              left: 50%;
+              background: rgba(255, 255, 255, 0.1);
+              overflow: hidden;
+              &::after {
+                content: "";
+                display: block;
+                position: absolute;
+                height: 15vh;
+                width: 100%;
+                top: -50%;
+                left: 0;
+                // background-color: #11e5b3;
+                background: linear-gradient(
+                  to bottom,
+                  rgba(255, 255, 255, 0) 0%,
+                  #ffffff 75%,
+                  #ffffff 100%
+                );
+                animation: drop 7s 0s infinite;
+                animation-fill-mode: forwards;
+                animation-timing-function: cubic-bezier(0.4, 0.26, 0, 0.97);
+              }
+              &:nth-child(1) {
+                margin-left: -25%;
+                &::after {
+                  animation-delay: -1;
+                  animation-timing-function: linear;
+                }
+              }
+              &:nth-child(2) {
+                margin-left: 25%;
+                &::after {
+                  animation-timing-function: linear;
+                  animation-delay: -2s;
+                }
+              }
+              &:nth-child(3) {
+                &::after {
+                  animation-timing-function: linear;
+                  animation-delay: -3s;
+                  margin-left: 50%;
+                }
+              }
+              &:nth-child(4) {
+                margin-left: 75%;
+                &::after {
+                  animation-timing-function: linear;
+                  animation-delay: -4s;
+                }
+              }
+              &:nth-child(5) {
+                margin-left: 100%;
+                &::after {
+                  animation-timing-function: linear;
+                  animation-delay: -5s;
+                }
+              }
+              &:nth-child(6) {
+                margin-left: 125%;
+                &::after {
+                  animation-timing-function: linear;
+                  animation-delay: -6s;
+                }
+              }
+              &:nth-child(7) {
+                margin-left: 150%;
+                &::after {
+                  animation-timing-function: linear;
+                  animation-delay: -7s;
+                }
+              }
+              &:nth-child(8) {
+                margin-left: 175%;
+                &::after {
+                  animation-timing-function: linear;
+                  animation-delay: -8s;
+                }
+              }
+              &:nth-child(9) {
+                margin-left: 200%;
+                &::after {
+                  animation-timing-function: linear;
+                  animation-delay: -9s;
+                }
+              }
+              &:nth-child(10) {
+                margin-left: 225%;
+                &::after {
+                  animation-timing-function: linear;
+                  animation-delay: -10s;
+                }
+              }
+              &:nth-child(11) {
+                margin-left: 250%;
+                &::after {
+                  animation-timing-function: linear;
+                  animation-delay: -11s;
+                }
+              }
+              &:nth-child(12) {
+                margin-left: 275%;
+                &::after {
+                  animation-timing-function: linear;
+                  animation-delay: -12s;
+                }
+              }
+              &:nth-child(13) {
+                margin-left: 300%;
+                &::after {
+                  animation-timing-function: linear;
+                  animation-delay: -13s;
+                }
+              }
+              &:nth-child(14) {
+                margin-left: 325%;
+                &::after {
+                  animation-timing-function: linear;
+                  animation-delay: -14s;
+                }
+              }
+              &:nth-child(15) {
+                margin-left: 355%;
+                &::after {
+                  animation-timing-function: linear;
+                  animation-delay: -15s;
+                }
+              }
+              @keyframes drop {
+                0% {
+                  top: -50%;
+                }
+
+                100% {
+                  top: 110%;
+                }
+              }
+            }
+          }
           .remove {
             position: absolute;
             color: #fff;
@@ -1737,6 +1893,7 @@
           }
           .dropdown_button_modal_item {
             form {
+              z-index: 2;
               display: block;
               button {
                 background: url(../img/Group\ 54.png);
@@ -2597,7 +2754,9 @@
             }
           }
           .section_geroy_modal {
-            background: url(../img/Review\ .png);
+            // background: url(../img/Review\ .png);
+                background: url(https://images3.alphacoders.com/919/919075.jpg);
+            // background-color: #010101;
             background-position: center center;
             background-repeat: no-repeat;
             background-size: cover;
@@ -2656,7 +2815,7 @@
               }
               .modal_name_box {
                 z-index: 99 !important;
-                background: url(../img/name_box\ background.png);
+                // background: url(../img/name_box\ background.png);
                 background-position: center center;
                 background-repeat: no-repeat;
                 background-size: contain;
@@ -2674,7 +2833,7 @@
                 }
               }
               .modal_klan_box {
-                background: url(../img/klan_box\ background.png);
+                // background: url(../img/klan_box\ background.png);
                 background-position: center center;
                 background-repeat: no-repeat;
                 background-size: cover;
@@ -4847,7 +5006,7 @@
                     }
                   }
                   .section_function_item_child_left_row3 {
-                    max-width: 5  00px;
+                    max-width: 5 00px;
                     transform: translateX(0);
                     background-position: center center;
                     cursor: pointer;
