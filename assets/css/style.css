@@ -656,6 +656,19 @@
   cursor: pointer;
   transition: all 0.4s;
   z-index: 2 !important;
+  animation-duration: 2s;
+  animation-direction: alternate;
+  animation-name: slidein;
+  animation-iteration-count: infinite;
+  transition: all 0.4s;
+}
+@keyframes slidein {
+  from {
+    scale: 1;
+  }
+  to {
+    scale: 1.2;
+  }
 }
 * body .container main .section_main .section_main_item .section_main_item_text .dropdown_button button:hover {
   scale: 1.1;
@@ -13462,6 +13475,9 @@
   color: #ffffff;
   mix-blend-mode: normal;
   padding-top: 400px;
+}
+* body .container footer h2 span {
+  display: inline-block;
 }
 * body .container footer p {
   margin-top: 120px;

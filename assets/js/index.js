@@ -21,3 +21,4 @@ animation
     color: "#fff",
     scale: 1,
   });
+

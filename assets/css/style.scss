@@ -717,6 +717,20 @@
                   cursor: pointer;
                   transition: all 0.4s;
                   z-index: 2 !important;
+                  animation-duration: 2s;
+                  animation-direction: alternate;
+                  animation-name: slidein;
+                  animation-iteration-count: infinite;
+                  transition: all 0.4s;
+                  @keyframes slidein {
+                    from {
+                    scale: 1;
+                    }
+                  
+                    to {
+                      scale: 1.2;
+                    }
+                  }
                   &:hover {
                     scale: 1.1;
                   }
@@ -15420,6 +15434,9 @@
           color: #ffffff;
           mix-blend-mode: normal;
           padding-top: 400px;
+          span{
+            display: inline-block;
+          }
         }
         p {
           margin-top: 120px;
