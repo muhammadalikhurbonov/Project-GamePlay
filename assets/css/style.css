@@ -3397,10 +3397,14 @@
   font-family: "Exo 2";
   font-style: normal;
   font-weight: 400;
-  font-size: 32px;
+  font-size: 52px;
   line-height: 120%;
   text-align: center;
   color: #ffffff;
+  text-transform: uppercase;
+}
+* body .container main .section_logotips h4 span {
+  display: inline-block;
 }
 * body .container main .section_logotips .section_logotips_item {
   background: url(../img/section_logotips_item\ background.png);

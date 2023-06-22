@@ -3902,10 +3902,14 @@
             font-family: "Exo 2";
             font-style: normal;
             font-weight: 400;
-            font-size: 32px;
+            font-size: 52px;
             line-height: 120%;
             text-align: center;
             color: #ffffff;
+            text-transform: uppercase;
+            span{
+              display: inline-block;
+            }
           }
           .section_logotips_item {
             background: url(../img/section_logotips_item\ background.png);
@@ -3928,6 +3932,7 @@
                 width: 180px;
                 height: 46px;
                 transition: all 0.4s;
+                
                 &:hover {
                   scale: 1.2;
                 }
